@@ -39,6 +39,86 @@
 	export let x = 'x';
 	export let x1 = 'x1';
 	export let x2 = 'x2';
+
+	export let years10 = {
+		'1-2': '12',
+		'2-3': '23',
+		'3-4': '34',
+		'5': '5',
+		'6-7': '67',
+		'7-8': '78',
+		'8-9': '89'
+	};
+
+	export let years20 = {
+		'11-12': '1',
+		'12-13': '2',
+		'13-14': '1',
+		'15': '1',
+		'16-17': '1',
+		'17-18': '1',
+		'18-19': '1'
+	};
+
+	export let years30 = {
+		'21-22': '1',
+		'22-23': '2',
+		'23-24': '1',
+		'25': '1',
+		'26-27': '1',
+		'27-28': '1',
+		'28-29': '1'
+	};
+
+	export let years40 = {
+		'31-32': '1',
+		'32-33': '2',
+		'33-34': '1',
+		'35': '1',
+		'36-37': '1',
+		'37-38': '1',
+		'38-39': '1'
+	};
+
+	export let years50 = {
+		'41-42': '1',
+		'42-43': '2',
+		'43-44': '1',
+		'45': '1',
+		'46-47': '1',
+		'47-48': '1',
+		'48-49': '1'
+	};
+
+	export let years60 = {
+		'51-52': '1',
+		'52-53': '2',
+		'53-54': '1',
+		'55': '1',
+		'56-57': '1',
+		'57-58': '1',
+		'58-59': '1'
+	};
+
+	export let years70 = {
+		'61-62': '1',
+		'62-63': '2',
+		'63-64': '1',
+		'65': '1',
+		'66-67': '1',
+		'67-68': '1',
+		'68-69': '1'
+	};
+
+	export let years80 = {
+		'71-72': '1',
+		'72-73': '2',
+		'73-74': '1',
+		'75': '1',
+		'76-77': '1',
+		'77-78': '1',
+		'78-79': '1'
+	};
 </script>
 
 <svg
@@ -1800,18 +1880,18 @@
 				<tspan x="118.097" y="713.636"> &#x440;&#x43e;&#x43a;&#x456;&#x432; </tspan>
 			</text>
 		</g>
-		<g id="left-top-nums">
+		<g id="years10">
 			<text id="5_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="31.1328" y="365.318"> 5 </tspan>
+				<tspan x="31.1328" y="365.318"> {years10['1-2']} </tspan>
 			</text>
 			<text id="2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="43.1562" y="335.318"> 2 </tspan>
+				<tspan x="43.1562" y="335.318"> {years10['2-3']} </tspan>
 			</text>
 			<text id="4_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="55.3672" y="305.318"> 4 </tspan>
+				<tspan x="55.3672" y="305.318"> {years10['3-4']} </tspan>
 			</text>
 			<text
 				id="11_3"
@@ -1821,77 +1901,41 @@
 				font-weight="bold"
 				letter-spacing="0em"
 			>
-				<tspan x="64.1719" y="277.318"> 11 </tspan>
+				<tspan x="64.1719" y="277.318"> {years10['5']} </tspan>
 			</text>
 			<text id="14" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="75.1484" y="249.318"> 14 </tspan>
+				<tspan x="75.1484" y="249.318"> {years10['6-7']} </tspan>
 			</text>
 			<text id="22" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="86.3125" y="219.318"> 22 </tspan>
+				<tspan x="86.3125" y="219.318"> {years10['7-8']} </tspan>
 			</text>
 			<text id="12" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="99.4375" y="189.318"> 12 </tspan>
+				<tspan x="99.4375" y="189.318"> {years10['8-9']} </tspan>
 			</text>
 		</g>
-		<g id="top-right-nums">
-			<text id="11_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="461.062" y="43.3182"> 11 </tspan>
-			</text>
-			<text id="11_5" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="488.062" y="56.3182"> 11 </tspan>
-			</text>
-			<text id="5_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="517.133" y="68.3182"> 5 </tspan>
-			</text>
-			<text
-				id="11_6"
-				fill="black"
-				style="whiteSpace: 'pre'"
-				font-size="16"
-				font-weight="bold"
-				letter-spacing="0em"
-			>
-				<tspan x="544.172" y="76.3182"> 11 </tspan>
-			</text>
-			<text id="11_7" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="574.062" y="90.3182"> 11 </tspan>
-			</text>
-			<text id="11_8" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="601.062" y="102.318"> 11 </tspan>
-			</text>
-			<text id="11_9" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="631.062" y="114.318"> 11 </tspan>
-			</text>
-		</g>
-		<g id="top-left-nums">
+		<g id="years20">
 			<text id="12_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="178.438" y="114.318"> 14 </tspan>
+				<tspan x="178.438" y="114.318"> {years20['11-12']}</tspan>
 			</text>
 			<text id="4_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="242.367" y="90.3182"> 4 </tspan>
+				<tspan x="242.367" y="90.3182"> {years20['13-14']} </tspan>
 			</text>
 			<text id="21" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="293.438" y="68.3182"> 21 </tspan>
+				<tspan x="293.438" y="68.3182"> {years20['16-17']} </tspan>
 			</text>
 			<text id="14_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="323.148" y="56.3182"> 14 </tspan>
+				<tspan x="323.148" y="56.3182"> {years20['17-18']}</tspan>
 			</text>
 			<text id="10_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="353.281" y="43.3182"> 10 </tspan>
+				<tspan x="353.281" y="43.3182"> {years20['18-19']} </tspan>
 			</text>
 			<text
 				id="15_2"
@@ -1901,120 +1945,50 @@
 				font-weight="bold"
 				letter-spacing="0em"
 			>
-				<tspan x="265.43" y="76.3182"> 15 </tspan>
+				<tspan x="265.43" y="76.3182"> {years20['15']} </tspan>
 			</text>
 			<text id="6" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="212.008" y="102.318"> 6 </tspan>
+				<tspan x="212.008" y="102.318"> {years20['12-13']} </tspan>
 			</text>
 		</g>
-		<g id="right-bottom-nums">
+		<g id="years30">
+			<text id="11_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="461.062" y="43.3182"> {years30['21-22']} </tspan>
+			</text>
+			<text id="11_5" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="488.062" y="56.3182"> {years30['22-23']} </tspan>
+			</text>
+			<text id="5_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="517.133" y="68.3182"> {years30['23-24']} </tspan>
+			</text>
 			<text
-				id="16"
+				id="11_6"
 				fill="black"
 				style="whiteSpace: 'pre'"
 				font-size="16"
 				font-weight="bold"
 				letter-spacing="0em"
 			>
-				<tspan x="750.305" y="553.318"> 16 </tspan>
+				<tspan x="544.172" y="76.3182"> {years30['25']} </tspan>
 			</text>
-			<text id="5_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+			<text id="11_7" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="785.133" y="467.318"> 5 </tspan>
+				<tspan x="574.062" y="90.3182"> {years30['26-27']} </tspan>
 			</text>
-			<text id="2_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+			<text id="11_8" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="773.156" y="497.318"> 2 </tspan>
+				<tspan x="601.062" y="102.318"> {years30['27-28']} </tspan>
 			</text>
-			<text id="14_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+			<text id="11_9" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="758.148" y="527.318"> 14 </tspan>
-			</text>
-			<text id="6_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="738.008" y="579.318"> 6 </tspan>
-			</text>
-			<text id="1" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="728.281" y="609.318"> 1 </tspan>
-			</text>
-			<text id="11_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="715.062" y="639.318"> 11 </tspan>
+				<tspan x="631.062" y="114.318"> {years30['28-29']} </tspan>
 			</text>
 		</g>
-		<g id="left-bottom-nums">
-			<text
-				id="11_11"
-				fill="black"
-				style="whiteSpace: 'pre'"
-				font-size="16"
-				font-weight="bold"
-				letter-spacing="0em"
-			>
-				<tspan x="61.1719" y="560.318"> 11 </tspan>
-			</text>
-			<text id="12_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="97.4375" y="648.318"> 12 </tspan>
-			</text>
-			<text id="8_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="88.0703" y="618.318"> 8 </tspan>
-			</text>
-			<text id="12_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="71.4375" y="588.318"> 12 </tspan>
-			</text>
-			<text id="4_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="52.3672" y="532.318"> 4 </tspan>
-			</text>
-			<text id="12_5" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="37.4375" y="502.318"> 12 </tspan>
-			</text>
-			<text id="2_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="30.1562" y="472.318"> 2 </tspan>
-			</text>
-		</g>
-		<g id="bottom-left-nums">
-			<text
-				id="11_12"
-				fill="black"
-				style="whiteSpace: 'pre'"
-				font-size="16"
-				font-weight="bold"
-				letter-spacing="0em"
-			>
-				<tspan x="259.172" y="760.318"> 11 </tspan>
-			</text>
-			<text id="12_6" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="233.438" y="748.318"> 12 </tspan>
-			</text>
-			<text id="12_7" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="204.438" y="737.318"> 12 </tspan>
-			</text>
-			<text id="20_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="173.156" y="725.318"> 20 </tspan>
-			</text>
-			<text id="12_8" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="312.438" y="780.318"> 12 </tspan>
-			</text>
-			<text id="12_9" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
-				>"
-				<tspan x="283.438" y="768.318"> 12 </tspan>
-			</text>
-			<text id="12_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="341.438" y="792.318"> 12 </tspan>
-			</text>
-		</g>
-		<g id="right-top-nums">
+		<g id="years40">
 			<text
 				id="11_13"
 				fill="black"
@@ -2023,32 +1997,67 @@
 				font-weight="bold"
 				letter-spacing="0em"
 			>
-				<tspan x="754.172" y="285.318"> 11 </tspan>
+				<tspan x="754.172" y="285.318"> {years40['35']} </tspan>
 			</text>
 			<text id="1_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="717.281" y="197.318"> 1 </tspan>
+				<tspan x="717.281" y="197.318"> {years40['31-32']} </tspan>
 			</text>
 			<text id="2_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="727.156" y="227.318"> 2 </tspan>
+				<tspan x="727.156" y="227.318"> {years40['32-33']} </tspan>
 			</text>
 			<text id="12_11" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="739.438" y="257.318"> 12 </tspan>
+				<tspan x="739.438" y="257.318"> {years40['33-34']} </tspan>
 			</text>
 			<text id="12_12" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="761.438" y="313.318"> 12 </tspan>
+				<tspan x="761.438" y="313.318"> {years40['36-37']} </tspan>
 			</text>
 			<text id="7" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="774.43" y="341.318"> 7 </tspan>
+				<tspan x="774.43" y="341.318"> {years40['37-38']} </tspan>
 			</text>
 			<text id="5_11" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
 				>"
-				<tspan x="786.133" y="369.318"> 5 </tspan>
+				<tspan x="786.133" y="369.318"> {years40['38-39']} </tspan>
 			</text>
 		</g>
-		<g id="bottom-right-nums">
+		<g id="years50">
+			<text
+				id="16"
+				fill="black"
+				style="whiteSpace: 'pre'"
+				font-size="16"
+				font-weight="bold"
+				letter-spacing="0em"
+			>
+				<tspan x="750.305" y="553.318"> {years50['45']}</tspan>
+			</text>
+			<text id="5_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="785.133" y="467.318"> {years50['41-42']} </tspan>
+			</text>
+			<text id="2_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="773.156" y="497.318"> {years50['42-43']} </tspan>
+			</text>
+			<text id="14_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="758.148" y="527.318"> {years50['43-44']} </tspan>
+			</text>
+			<text id="6_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="738.008" y="579.318"> {years50['46-47']} </tspan>
+			</text>
+			<text id="1" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="728.281" y="609.318"> {years50['47-48']} </tspan>
+			</text>
+			<text id="11_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
+				<tspan x="715.062" y="639.318"> {years50['48-49']} </tspan>
+			</text>
+		</g>
+		<g id="years60">
 			<text
 				id="15_3"
 				fill="black"
@@ -2057,25 +2066,98 @@
 				font-weight="bold"
 				letter-spacing="0em"
 			>
-				<tspan x="541.43" y="761.318"> 15 </tspan>
+				<tspan x="541.43" y="761.318"> {years60['55']} </tspan>
 			</text>
 			<text id="12_13" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="596.438" y="736.318"> 12 </tspan>
+				<tspan x="596.438" y="736.318"> {years60['52-53']} </tspan>
 			</text>
 			<text id="12_14" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="567.438" y="750.318"> 12 </tspan>
+				<tspan x="567.438" y="750.318"> {years60['53-54']} </tspan>
 			</text>
 			<text id="12_15" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="515.438" y="771.318"> 12 </tspan>
+				<tspan x="515.438" y="771.318"> {years60['56-57']} </tspan>
 			</text>
 			<text id="12_16" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="486.438" y="784.318"> 12 </tspan>
+				<tspan x="486.438" y="784.318"> {years60['57-58']} </tspan>
 			</text>
 			<text id="12_17" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="457.438" y="796.318"> 12 </tspan>
+				<tspan x="457.438" y="796.318"> {years60['58-59']} </tspan>
 			</text>
 			<text id="11_14" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
-				<tspan x="625.062" y="725.318"> 11 </tspan>
+				<tspan x="625.062" y="725.318"> {years60['51-52']} </tspan>
+			</text>
+		</g>
+
+		<g id="years70">
+			<text
+				id="11_12"
+				fill="black"
+				style="whiteSpace: 'pre'"
+				font-size="16"
+				font-weight="bold"
+				letter-spacing="0em"
+			>
+				<tspan x="259.172" y="760.318"> {years70['65']} </tspan>
+			</text>
+			<text id="12_6" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="233.438" y="748.318"> {years70['66-67']} </tspan>
+			</text>
+			<text id="12_7" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="204.438" y="737.318"> {years70['67-68']} </tspan>
+			</text>
+			<text id="20_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="173.156" y="725.318"> {years70['68-69']} </tspan>
+			</text>
+			<text id="12_8" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="312.438" y="780.318"> {years70['62-63']} </tspan>
+			</text>
+			<text id="12_9" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="283.438" y="768.318"> {years70['63-64']} </tspan>
+			</text>
+			<text id="12_10" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em">
+				<tspan x="341.438" y="792.318"> {years70['61-62']} </tspan>
+			</text>
+		</g>
+
+		<g id="years80">
+			<text
+				id="11_11"
+				fill="black"
+				style="whiteSpace: 'pre'"
+				font-size="16"
+				font-weight="bold"
+				letter-spacing="0em"
+			>
+				<tspan x="61.1719" y="560.318"> {years80['75']} </tspan>
+			</text>
+			<text id="12_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="97.4375" y="648.318"> {years80['71-72']} </tspan>
+			</text>
+			<text id="8_2" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="88.0703" y="618.318"> {years80['72-73']} </tspan>
+			</text>
+			<text id="12_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="71.4375" y="588.318"> {years80['73-74']} </tspan>
+			</text>
+			<text id="4_4" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="52.3672" y="532.318"> {years80['76-77']} </tspan>
+			</text>
+			<text id="12_5" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="37.4375" y="502.318"> {years80['77-78']} </tspan>
+			</text>
+			<text id="2_3" fill="black" style="whiteSpace: 'pre'" font-size="16" letter-spacing="0em"
+				>"
+				<tspan x="30.1562" y="472.318"> {years80['78-79']} </tspan>
 			</text>
 		</g>
 		<g id="Frame_2">

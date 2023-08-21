@@ -17,44 +17,7 @@
 </svelte:head>
 
 <section>
-	<Datepicker datepickerFormat="dd/mm/yyyy" datepickerTitle="Дата народження" $$restProps="dasd" />
-	<div id="exampleWrapper" class="grid gap-6 items-end w-full md:grid-cols-3">
-		<FloatingLabelInput
-			style="filled"
-			id="floating_filled"
-			name="floating_filled"
-			type="text"
-			label="Floating filled"
-		/>
-		<FloatingLabelInput
-			style="outlined"
-			id="floating_outlined"
-			name="floating_outlined"
-			type="text"
-			label="Floating outlined"
-		/>
-		<FloatingLabelInput
-			id="floating_standard"
-			name="floating_standard"
-			type="text"
-			label="Floating standard"
-		/>
-	</div>
-
-	<h1>
-		<span class="welcome">
-			<picture>
-				<source srcset={welcome} type="image/webp" />
-				<img src={welcome_fallback} alt="Welcome" />
-			</picture>
-		</span>
-
-		to your new<br />SvelteKit app
-	</h1>
-
-	<h2 class="text-6xl">
-		try editing <strong>src/routes/+page.svelte</strong>
-	</h2>
+	<!-- <Datepicker datepickerFormat="dd/mm/yyyy" datepickerTitle="Дата народження" $$restProps="dasd" /> -->
 
 	<Counter />
 	<Matrix />
