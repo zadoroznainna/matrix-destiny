@@ -119,7 +119,66 @@
 		'77-78': '1',
 		'78-79': '1'
 	};
+
+	let birthdate = '';
+
+	const calcNumber = (number) => {
+		if (number > 22) {
+			const res = String(number).split('');
+			let sum = 0;
+			res.forEach((elem) => {
+				sum += Number(elem);
+			});
+			return calcNumber(sum);
+		} else {
+			return number;
+		}
+	};
+
+	const handleSubmit = () => {
+		const [year, month, day] = birthdate.split('-');
+		a = calcNumber(Number(day));
+		b = calcNumber(Number(month));
+		c = calcNumber(Number(year));
+		d = calcNumber(a + b + c);
+		e = calcNumber(a + b + c + d);
+		a1 = calcNumber(a + e);
+		a2 = calcNumber(a + a1);
+		b1 = calcNumber(b + e);
+		b2 = calcNumber(b + b1);
+		c1 = calcNumber(c + e);
+		c2 = calcNumber(c + c1);
+		d1 = calcNumber(d + e);
+		d2 = calcNumber(d + d1);
+		f = calcNumber(a + b);
+		g = calcNumber(b + c);
+		y = calcNumber(c + d);
+		k = calcNumber(d + a);
+		s1 = calcNumber(f + e);
+		s2 = calcNumber(f + s1);
+		p1 = calcNumber(g + e);
+		p2 = calcNumber(g + p1);
+		s4 = calcNumber(y + e);
+		s3 = calcNumber(y + s4);
+		p3 = calcNumber(k + e);
+		p4 = calcNumber(k + p3);
+		e1 = calcNumber(f + g + y + k);
+		e2 = calcNumber(e1 + e);
+		x = calcNumber(d1 + c1);
+		x1 = calcNumber(d1 + x);
+		x2 = calcNumber(c1 + x);
+		a3 = calcNumber(a1 + e);
+		b3 = calcNumber(b1 + e);
+
+		// years10["5"] = calcNumber(a + f)
+		// years20["15"] = calcNumber(f + b)
+	};
 </script>
+
+<form on:submit={handleSubmit}>
+	<input type="date" bind:value={birthdate} />
+	<button type="sumbit">Count</button>
+</form>
 
 <svg
 	width="100%"
