@@ -171,76 +171,76 @@
 		b3 = calcNumber(b1 + e);
 
 		// from 0 years to 10 years
-		years10["5"] = calcNumber(a + f)
-		years10["2-3"] = calcNumber(a + years10["5"])
-		years10["1-2"] = calcNumber(a + years10["2-3"])
-		years10["3-4"] = calcNumber(years10["2-3"] + years10["5"])
-		years10["7-8"] = calcNumber(years10["5"] + f)
-		years10["6-7"] = calcNumber(years10["7-8"] + years10["5"])
-		years10["8-9"] = calcNumber(years10["7-8"] + f)
+		years10['5'] = calcNumber(a + f);
+		years10['2-3'] = calcNumber(a + years10['5']);
+		years10['1-2'] = calcNumber(a + years10['2-3']);
+		years10['3-4'] = calcNumber(years10['2-3'] + years10['5']);
+		years10['7-8'] = calcNumber(years10['5'] + f);
+		years10['6-7'] = calcNumber(years10['7-8'] + years10['5']);
+		years10['8-9'] = calcNumber(years10['7-8'] + f);
 
 		// from 10 years to 20 years
-		years20["15"] = calcNumber(f + b)
-		years20["12-13"] = calcNumber(f + years20["15"])
-		years20["13-14"] = calcNumber(years20["12-13"] + years20["15"])
-		years20["11-12"] = calcNumber(f + years20["12-13"])
-		years20["17-18"] = calcNumber(b + years20["15"])
-		years20["16-17"] = calcNumber(years20["17-18"] + years20["15"])
-		years20["18-19"] = calcNumber(years20["17-18"] + b)
+		years20['15'] = calcNumber(f + b);
+		years20['12-13'] = calcNumber(f + years20['15']);
+		years20['13-14'] = calcNumber(years20['12-13'] + years20['15']);
+		years20['11-12'] = calcNumber(f + years20['12-13']);
+		years20['17-18'] = calcNumber(b + years20['15']);
+		years20['16-17'] = calcNumber(years20['17-18'] + years20['15']);
+		years20['18-19'] = calcNumber(years20['17-18'] + b);
 
 		// from 20 years to 30 years
-		years30["25"] = calcNumber(b + g)
-		years30["22-23"] = calcNumber(b + years30["25"])
-		years30["21-22"] = calcNumber(b + years30["22-23"])
-		years30["23-24"] = calcNumber(years30["22-23"] + years30["25"])
-		years30["27-28"] = calcNumber(g + years30["25"])
-		years30["26-27"] = calcNumber(years30["27-28"] + years30["25"])
-		years30["28-29"] = calcNumber(g + years30["27-28"])
+		years30['25'] = calcNumber(b + g);
+		years30['22-23'] = calcNumber(b + years30['25']);
+		years30['21-22'] = calcNumber(b + years30['22-23']);
+		years30['23-24'] = calcNumber(years30['22-23'] + years30['25']);
+		years30['27-28'] = calcNumber(g + years30['25']);
+		years30['26-27'] = calcNumber(years30['27-28'] + years30['25']);
+		years30['28-29'] = calcNumber(g + years30['27-28']);
 
 		// from 30 years to 40 years
-		years40["35"] = calcNumber(g + c)
-		years40["32-33"] = calcNumber(g + years40["35"])
-		years40["31-32"] = calcNumber(g + years40["32-33"])
-		years40["33-34"] = calcNumber(years40["35"] + years40["32-33"])
-		years40["37-38"] = calcNumber(c + years40["35"])
-		years40["36-37"] = calcNumber(years40["37-38"] + years40["35"])
-		years40["38-39"] = calcNumber(c + years40["37-38"])
+		years40['35'] = calcNumber(g + c);
+		years40['32-33'] = calcNumber(g + years40['35']);
+		years40['31-32'] = calcNumber(g + years40['32-33']);
+		years40['33-34'] = calcNumber(years40['35'] + years40['32-33']);
+		years40['37-38'] = calcNumber(c + years40['35']);
+		years40['36-37'] = calcNumber(years40['37-38'] + years40['35']);
+		years40['38-39'] = calcNumber(c + years40['37-38']);
 
 		// from 40 years to 50 years
-		years50["45"] = calcNumber(c + y)
-		years50["42-43"] = calcNumber(c + years50["45"])
-		years50["41-42"] = calcNumber(years50["42-43"] + c)
-		years50["43-44"] = calcNumber(years50["45"] + years50["42-43"])
-		years50["47-48"] = calcNumber(years50["45"] + y)
-		years50["46-47"] = calcNumber(years50["45"] + years50["47-48"])
-		years50["48-49"] = calcNumber(years50["47-48"] + y)
+		years50['45'] = calcNumber(c + y);
+		years50['42-43'] = calcNumber(c + years50['45']);
+		years50['41-42'] = calcNumber(years50['42-43'] + c);
+		years50['43-44'] = calcNumber(years50['45'] + years50['42-43']);
+		years50['47-48'] = calcNumber(years50['45'] + y);
+		years50['46-47'] = calcNumber(years50['45'] + years50['47-48']);
+		years50['48-49'] = calcNumber(years50['47-48'] + y);
 
 		// from 50 years to 60 years
-		years60["55"] = calcNumber(y + d)
-		years60["52-53"] = calcNumber(y + years60["55"])
-		years60["51-52"] = calcNumber(y + years60["52-53"])
-		years60["53-54"] = calcNumber(years60["52-53"] + years60["55"])
-		years60["57-58"] = calcNumber(d + years60["55"])
-		years60["56-57"] = calcNumber(years60["57-58"] + years60["55"])
-		years60["58-59"] = calcNumber(d + years60["57-58"])
+		years60['55'] = calcNumber(y + d);
+		years60['52-53'] = calcNumber(y + years60['55']);
+		years60['51-52'] = calcNumber(y + years60['52-53']);
+		years60['53-54'] = calcNumber(years60['52-53'] + years60['55']);
+		years60['57-58'] = calcNumber(d + years60['55']);
+		years60['56-57'] = calcNumber(years60['57-58'] + years60['55']);
+		years60['58-59'] = calcNumber(d + years60['57-58']);
 
 		// from 60 years to 70 years
-		years70["65"] = calcNumber(d + k)
-		years70["62-63"] = calcNumber(d + years70["65"])
-		years70["61-62"] = calcNumber(d + years70["62-63"])
-		years70["63-64"] = calcNumber(years70["62-63"] + years70["65"])
-		years70["67-68"] = calcNumber(k + years70["65"])
-		years70["66-67"] = calcNumber(years70["67-68"] + years70["65"])
-		years70["68-69"] = calcNumber(k + years70["67-68"])
+		years70['65'] = calcNumber(d + k);
+		years70['62-63'] = calcNumber(d + years70['65']);
+		years70['61-62'] = calcNumber(d + years70['62-63']);
+		years70['63-64'] = calcNumber(years70['62-63'] + years70['65']);
+		years70['67-68'] = calcNumber(k + years70['65']);
+		years70['66-67'] = calcNumber(years70['67-68'] + years70['65']);
+		years70['68-69'] = calcNumber(k + years70['67-68']);
 
 		// from 70 years to 0 years
-		years80["75"] = calcNumber(k + a)
-		years80["72-73"] = calcNumber(k + years80["75"])
-		years80["71-72"] = calcNumber(k + years80["72-73"])
-		years80["73-74"] = calcNumber(years80["75"] + years80["72-73"])
-		years80["77-78"] = calcNumber(a + years80["75"])
-		years80["76-77"] = calcNumber(years80["77-78"] + years80["75"])
-		years80["78-79"] = calcNumber(years80["77-78"] + a)
+		years80['75'] = calcNumber(k + a);
+		years80['72-73'] = calcNumber(k + years80['75']);
+		years80['71-72'] = calcNumber(k + years80['72-73']);
+		years80['73-74'] = calcNumber(years80['75'] + years80['72-73']);
+		years80['77-78'] = calcNumber(a + years80['75']);
+		years80['76-77'] = calcNumber(years80['77-78'] + years80['75']);
+		years80['78-79'] = calcNumber(years80['77-78'] + a);
 	};
 </script>
 
@@ -1853,6 +1853,28 @@
 			>
 				<tspan x="715.207" y="545.864"> 45 </tspan>
 			</text>
+		</g>
+
+		<g id="0years">
+			<text
+				id="0"
+				fill="black"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-size="16"
+				font-weight="bold"
+				letter-spacing="0em"><tspan x="12.4922" y="419.318">0</tspan></text
+			>
+			<text
+				id="&#209;&#128;&#208;&#190;&#208;&#186;&#209;&#150;&#208;&#178;_8"
+				fill="black"
+				xml:space="preserve"
+				style="white-space: pre"
+				font-size="10"
+				font-weight="bold"
+				letter-spacing="0em"
+				><tspan x="5.09668" y="432.636">&#x440;&#x43e;&#x43a;&#x456;&#x432;</tspan></text
+			>
 		</g>
 		<g id="10years">
 			<text
