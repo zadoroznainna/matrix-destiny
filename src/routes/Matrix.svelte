@@ -120,6 +120,44 @@
 		'78-79': '1'
 	};
 
+	// table health
+	export let t1 = "t1";
+	export let t2 = "t2";
+	export let t3 = "t3";
+	export let t4 = "t4";
+	export let t5 = "t5";
+	export let t6 = "t6";
+	export let t7 = "t7";
+
+	// table health sum
+	export let ts1 = "ts1";
+	export let ts2 = "ts2";
+	export let ts3 = "ts3";
+
+	// birth programs
+	export let m1 = "m1";
+	export let w1 = "w1";
+
+	// Пошук себе
+	export let n1 = "n1";
+	export let n2 = "n2";
+	export let n3 = "n3";
+
+	// Соціалізація
+	export let c4 = "c4";
+	export let c5 = "c5";
+	export let c6 = "c6";
+
+	// Духовна грамотність
+	export let d3 = "d3";
+
+	// Планетарна грамотність
+	export let p5 = "p5";
+
+	// TODO: у пустому вигляді, що показуємо у матриці та таблиці - нулі чи нічого?
+	// TODO: додатковий квадрат у матриці - додаємо чи залишаємо без нього?
+
+
 	let birthdate = '';
 
 	const calcNumber = (number) => {
@@ -241,12 +279,41 @@
 		years80['77-78'] = calcNumber(a + years80['75']);
 		years80['76-77'] = calcNumber(years80['77-78'] + years80['75']);
 		years80['78-79'] = calcNumber(years80['77-78'] + a);
+
+		// table health
+		t1 = calcNumber(a + b);
+		t2 = calcNumber(a2 + b2);
+		t3 = calcNumber(a1 + b1);
+		t4 = calcNumber(a3 + b3);
+		t5 = calcNumber(e + e);
+		t6 = calcNumber(c1 + d1);
+		t7 = calcNumber(c + d);
+
+		// table health sum
+		ts1 = calcNumber(a + a2 + a1 + a3 + e + c1 + c);
+		ts2 = calcNumber(b + b2 + b1 + b3 + e + d1 + d);
+		ts3 = calcNumber(t1 + t2 + t3 + t4 + t5 + t6 + t7);
+
+		// birth programs
+		m1 = calcNumber(f + y)
+		w1 = calcNumber(g + k)
+
+		n1 = calcNumber(b + d)
+		n2 = calcNumber(a + c)
+		n3 = calcNumber(n1 + n2)
+
+		c4 = calcNumber(f + y)
+		c5 = calcNumber(g + k)
+		c6 = calcNumber(c4 + c5)
+
+		d3 = calcNumber(n3 + c6)
+		p5 = calcNumber(c6 + d3)
 	};
 </script>
 
-<form on:submit={handleSubmit}>
+<form on:submit={handleSubmit} class="flex justify-center m-6">
 	<input type="date" bind:value={birthdate} />
-	<button type="sumbit">Count</button>
+	<button type="sumbit" class="ml-3 uppercase font-bold">Count</button>
 </form>
 
 <svg
@@ -2423,3 +2490,183 @@
 		</filter>
 	</defs>
 </svg>
+
+<!-- Розрахунок карти здоров’я -->
+<div class="w-full bg-[#F8FAFC] border-4 border-[#CBD5E1] py-9 my-8 rounded-3xl">
+	<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Розрахунок карти здоров’я</h2>
+	<div class="flex flex-col">
+		<div class="overflow-x-auto">
+		  <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+			<div class="overflow-hidden">
+			  <table class="min-w-full text-left text-sm font-light">
+				<thead class="border-b font-medium dark:border-neutral-500">
+				  <tr>
+					<th scope="col" class="px-6 py-4">Назва чакри</th>
+					<th scope="col" class="px-6 py-4 text-center">Фізика</th>
+					<th scope="col" class="px-6 py-4 text-center">Енергія</th>
+					<th scope="col" class="px-6 py-4 text-center">Емоції</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-fuchsia-700">Сахасрара-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{a}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{b}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t1}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-indigo-700">Аджа-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{a2}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{b2}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t2}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-cyan-500">Вішудха-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{a1}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{b1}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t3}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-green-500">Анахата-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{a3}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{b3}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t4}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-yellow-300">Маніпура-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t5}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-orange-400">Свадхістана-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{c1}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{d1}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t6}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">Муладхара-чакра</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{c}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{d}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{t7}</td>
+				  </tr>
+				  <tr class="border-b dark:border-neutral-500">
+					<td class="whitespace-nowrap px-6 py-4 font-medium text-zinc-500">Сума</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{ts1}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{ts2}</td>
+					<td class="whitespace-nowrap px-6 py-4 text-center">{ts3}</td>
+				  </tr>
+				</tbody>
+			  </table>
+			</div>
+		  </div>
+		</div>
+	  </div>
+</div>
+
+<!-- Розрахунок родових програм -->
+<div class="w-full bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 my-8 rounded-3xl">
+	<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Розрахунок родових програм</h2>
+	<div class="flex justify-center items-center mb-3">
+		<p class="w-2/3">Родові програми по чоловічій лінії</p>
+		<ul class="flex justify-start items-center gap-10 w-1/3">
+			<li>{f}</li>
+			<li>{y}</li>
+			<li>{m1}</li>
+		</ul>
+	</div>
+	<div class="flex justify-center items-center mb-3">
+		<p class="w-2/3">Родові програми по жіночій лінії</p>
+		<ul class="flex justify-start items-center gap-10 w-1/3">
+			<li>{g}</li>
+			<li>{k}</li>
+			<li>{w1}</li>
+		</ul>
+	</div>
+	<div class="flex justify-center items-center mb-3">
+		<p class="w-2/3">Код внутрішньої сили</p>
+		<ul class="flex justify-start items-center gap-10 w-1/3">
+			<li>{e}</li>
+			<li>{e1}</li>
+			<li>{e2}</li>
+		</ul>
+	</div>
+	<div class="flex justify-start items-center">
+		<p class="w-2/3">Сила роду</p>
+		<span>{e1}</span>
+	</div>
+</div>
+
+<!-- Розрахунок призначення -->
+<div class="flex flex-wrap grow gap-8">
+	<!-- Пошук себе -->
+	<div class="grow bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
+		<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Пошук себе</h2>
+		<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+			<div class="w-6/12">
+				<div class="flex items-center justify-between mb-4">
+					<p>Лінія Неба:</p>
+					<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+						<span class="font-bold">{n1}</span>
+					</div>
+				</div>
+				<div class="flex items-center justify-between">
+					<p>Лінія Землі:</p>
+					<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+						<span class="font-bold">{n2}</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+				<span class="font-bold">{n3}</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Соціалізація -->
+	<div class="basis-6/12 bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
+		<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Соціалізація</h2>
+		<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+			<div class="w-6/12">
+				<div class="flex items-center justify-between mb-4">
+					<p>Ч:</p>
+					<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+						<span class="font-bold">{c4}</span>
+					</div>
+				</div>
+				<div class="flex items-center justify-between">
+					<p>Ж:</p>
+					<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+						<span class="font-bold">{c5}</span>
+					</div>
+				</div>
+			</div>
+			
+			<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+				<span class="font-bold">{c6}</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Духовна грамотність -->
+	<div class="grow bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
+		<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Духовна грамотність</h2>
+		<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+			<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+				<span class="font-bold">{d3}</span>
+			</div>
+		</div>
+	</div>
+
+	<!-- Планетарна грамотність -->
+	<div class="basis-6/12 bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
+		<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Планетарна грамотність</h2>
+		<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+			<div class="bg-white border-2 border-[#CBD5E1] p-3 px-4 rounded-full">
+				<span class="font-bold">{p5}</span>
+			</div>
+		</div>
+	</div>
+</div>
+
