@@ -1,27 +1,40 @@
 <script>
-	import { page } from '$app/stores';
-	import logo from '$lib/images/svelte-logo.svg';
-	import github from '$lib/images/github.svg';
+	import logo from '$lib/images/logo.svg';
 </script>
 
 <header>
-	<!-- <nav>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L1,2 C1.5,3 1.5,3 2,3 L2,0 Z" />
-		</svg>
-		<ul>
-			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-				<a href="/">Home</a>
-			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
-			</li>
-			<li aria-current={$page.url.pathname.startsWith('/sverdle') ? 'page' : undefined}>
-				<a href="/sverdle">Sverdle</a>
-			</li>
-		</ul>
-		<svg viewBox="0 0 2 3" aria-hidden="true">
-			<path d="M0,0 L0,3 C0.5,3 0.5,3 1,2 L2,0 Z" />
-		</svg>
-	</nav> -->
+	<div class="container mx-auto px-4">
+		<div class="flex justify-between items-center py-3">
+			<div>
+				<a href="/">
+					<img src={logo} height="70" width="70" alt="Logo"/>
+				</a>
+			</div>
+			<nav>
+				<ul class="flex">
+					<li>
+						<a href="/" class="px-4">Про мене</a>
+					</li>
+					<li>
+						<a href="#" class="px-4">Статистика</a>
+					</li>
+					<li>
+						<a href="#" class="px-4">Про Матрицю</a>
+					</li>
+					<li>
+						<a href="#" class="px-4">Тарифи</a>
+					</li>
+					<li>
+						<a href="#" class="px-4">Етапи роботи</a>
+					</li>
+					<li>
+						<a href="#" class="px-4">Контакти</a>
+					</li>
+				</ul>
+			</nav>
+			<div>
+				<button class="px-7 py-2 bg-amber-600 text-lg text-white rounded-lg">Зв'язатись</button>
+			</div>
+		</div>
+	</div>
 </header>
