@@ -7,6 +7,7 @@
 	import AboutMatrix from "./aboutMatrix/+page.svelte";
 	import ZoneMatrix from "./ZoneMatrix/+page.svelte";
 	import Testimonials from "./testimonials/+page.svelte";
+	import Subscription from "./subscription/+page.svelte";
 	
 	// import { Dropdown, DropdownItem, DropdownDivider, DropdownHeader } from 'flowbite-svelte';
 </script>
@@ -24,6 +25,7 @@
 	<AboutMatrix/>
 	<ZoneMatrix/>
 	<Steps/>
+	<Subscription/>
 	<Testimonials/>
 	<Matrix />
 
