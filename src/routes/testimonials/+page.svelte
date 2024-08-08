@@ -1,0 +1,124 @@
+<script>
+	const testimonialsData = [
+	{
+		text: "Інночка, дякую велике тобі за розбір матриці долі😊 У мене з'явилась шалена мотивація, після того як ти розповіла, яке у мене призначення в житті😍 У глибині душі я завжди відчувала, що я не на своєму місці і не могла зрозуміти чим займатися по життю🤔 Але завдяки тобі я почала розбиратися в собі, прислухатися до тих знаків долі, про які ти мені розповідала і вони насправді мені допомагають у повсякденному житті та у планах на майбутнє💕",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Привіт🙌 Хочу поділитися своїми враженнями після розбору. Мені дуже сподобалось! Так багато деталей, як з минулого, які я вже пропрацювала (та про них завжди потрібно пам'ятати), ті, над котрими я працюю у даний момент, так і те, на що ще потрібно звернути увагу. За останні 2 роки я точно впевнена, що просуваюсь у правильному напрямку, а матриця це підтвердила. Це стосується як і професійної сфери, творчості, так і відносин. Також сподобався формат, у якому подається інформація. Інна по кожній окремій тематиці записує на голосові. Це досить зручно, так як я завжди маю народу повернутись та прослухати те, що мені потрібно. Не меньш важливим є текстовий фінальний документ, який залишається з вами, де все детально описується. Там є і афірмації, і рекомендації, як потрібно діяти в критичних ситуаціях, коли стоїте перед вибором. Після прослухування всього матеріалу ми мали нагоду ще поспілкуватись та приділити увагу найбільш важливим темам для мене. Було так легко і приємно. Мені здається кожна з нас отримала багато мотивації одна від одної Це прям дуже круто!",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Інна привіт! Дякую тобі за розбір! Мені було дуже цікаво дізнатися більше і про себе і про свого чоловіка. Тепер деякі речі розумію більше. Цікаво те, що у кожної людини свій не схожий опис і прям так, як є насправді. І класно було поспілкуватися з тобою після того, як ти скинула розбір у телеграм, там я для себе ще більше важливих речей знайшла і ти відповіда на всі мої питання)))",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Дуже велике дякую за розбір моєї матриці! Насправді замовила з цікавості і не знала як саме вона працює, та коли отримала розбір то багато чого збагнула, переконалася в тих речах про які здогадувалася, здивувалася тим про які не знала і не замислювалася раніше! 😅Іна ти проробила велику працю дякую тобі за це велике🪷 Тепер буду проробляти усі недоліки😇😉 Ты молодчинка в тому що ти робиш і я бажаю тобі рухатися в тому ж напрямку🤩",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Добрий день Інна! Дуже хочеться тобі подякувати за розбір моєї матриці долі. Сподобалось абсолютно все!!! Не зважаючи на те, що по більшості енергій я в мінусі, але я тепер знаю над чим працювати і на що звернути увагу. Ще раз дякую тобі, було дуже цікаво!!!!",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Добрий день, хочу подякувати вам за розбір та консультацію яку ви мені провели. Я у великому задоволенні, наскільки інформація надана просто і чітко. Окремо мені дуже приємно з вами було поспілкуватися, ви відповіли на багато моїх запитань, надали вагомі поради, тому я буду 100% вас рекомендувати знайомим, я у захваті, бажаю вам натхнення і всього самого найкращого ❤️",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Иночко дуже дякую тобі, за розбір матриць все дуже точно, 100% попадання. Ти мені підсвітила, те що я відчувала, і це дає змогу зрозуміти, що з цим робити далі. І в взагалі я тепер знаю про себе набагато більше і знаю, що в мене все вийде і я з усім впораюсь, та що я на правильном шляху💪. І навіть врятувала в тяжкій ситуації. ❤️",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Насправді перша ж наша зустріч була як вибух енергії. Пам'ятаю, як мене шарахнуло від усвідомлено при першому розборі. Вважаю найціннішим те, як ти вмієш відчути джерело запиту по матриці і одразу підсвітити головне. Аналіз матриці допоміг мені пригадати свої сильні сторони і зосередитись на ключових діях. Відчуваю свій потенціал, силу і бажання іти далі до вершин 🙏 Щиро дякую і бажаю процвітання та радості в процесі 🫶🤍",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+
+	{
+		text: "Дякую Вам Інночка за мою матрицю! Тепер я точно знаю що і за що я проходжу....дякуючи Вашим консультаціям я знаю як та куди мені йти далі та як мені це пройти... все стало на свої місця! Та трансформація триває i це прекрасно! Це як корпус моїх дій та перевтілень! Дякую Вам щиро від всього серця!❤️❤️❤️🙌🥰🙏🙏🙏",
+		image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80",
+		name: "Leslie Alexander",
+		social: "@lesliealexander",
+		isExpanded: false
+	},
+];
+
+function toggleExpandText(index) {
+    testimonialsData[index].isExpanded = !testimonialsData[index].isExpanded;
+}
+
+
+  function truncatedText(text, maxChars) {
+    return text.length > maxChars ? text.slice(0, maxChars) + '...' : text;
+  }
+</script>
+<svelte:head>
+	<title>About</title>
+	<meta name="description" content="About this app" />
+</svelte:head>
+
+<section class="py-16">
+	<div class="container mx-auto px-4">
+		<h2 class="text-3xl font-bold uppercase text-center mb-10">Відгуки</h2>
+		<div class="mx-auto max-w-xl text-center"></div>
+		  <div class="mx-auto mt-16 mb-8 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
+			<div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
+				{#each testimonialsData as item, index (item)}
+				<div class="pt-8 sm:inline-block sm:w-full sm:px-4">
+					<figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
+					  <blockquote class="text-gray-900">
+						<svg class="inline-block text-zinc-200" xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" viewBox="0 0 24 24" {...$$props}><path d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z" fill="currentColor"/></svg>
+						<p class="inline-block">{item.isExpanded ? item.text : truncatedText(item.text, 320)}</p>
+						{#if item.text.length > 320}
+						    <button class="text-orange-500" on:click={() => toggleExpandText(index)}>
+							   {item.isExpanded ? 'Приховати' : 'Читати повністю'}
+						    </button>
+						{/if}
+					  </blockquote>
+					  <figcaption class="mt-6 flex items-center gap-x-4">
+						<img class="h-10 w-10 rounded-full bg-gray-50" src={item.image} alt={item.name}>
+						<div>
+						  <div class="font-semibold text-gray-900">{item.name}</div>
+						  <div class="text-gray-600">{item.social}</div>
+						</div>
+					  </figcaption>
+					</figure>
+				  </div>
+				{/each}
+			</div>
+		</div>
+		<div class="flex justify-center">
+			<button class="py-3 bg-orange-400 px-7 text-orange-50 mx-auto rounded-md">Більше відгуків</button>
+		</div>
+	</div>
+</section>

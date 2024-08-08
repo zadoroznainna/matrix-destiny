@@ -34,7 +34,6 @@ p {
 }
 
 a {
-	color: var(--color-theme-1);
 	text-decoration: none;
 }
 
@@ -97,4 +96,17 @@ button:focus:not(:focus-visible) {
 	position: absolute;
 	width: 1px;
 	white-space: nowrap;
+}
+
+.carousel-bg {
+    background: linear-gradient(to right,rgba(255,255,255,0) 30%,rgba(255,255,255,1) 100%)
+}
+
+/* add classes */
+/* Colors :⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣⁣
+416D6D • C86F43 • C5D0D3 • 608E8E */
+
+
+.arrow-link:hover .arrow path {
+	stroke: #f8fafc;
 }
