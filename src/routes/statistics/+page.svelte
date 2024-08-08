@@ -1,7 +1,7 @@
 <script>
-	import peopleIcon from "$lib/icons/people.png";
-	import successIcon from "$lib/icons/success.png";
-	import likeIcon from "$lib/icons/like.png";
+	import peopleIcon from '$lib/icons/people.png';
+	import successIcon from '$lib/icons/success.png';
+	import likeIcon from '$lib/icons/like.png';
 </script>
 
 <svelte:head>
@@ -14,24 +14,24 @@
 		<ul class="flex justify-between place-items-center">
 			<li class="basis-4/12">
 				<div class="flex items-center justify-center mb-2">
-					<img src={peopleIcon} alt="Photo about" height="50" width="50"/>
+					<img src={peopleIcon} alt="Photo about" height="50" width="50" />
 				</div>
-				<h3 class="text-4xl text-amber-600 fw-bold text-center mb-2">100+</h3>
-				<p class="text-center">проведених особистих консультацій</p>
+				<h3 class="text-6xl text-amber-600 fw-bold text-center mb-2">100+</h3>
+				<p class="text-center text-amber-500">Проведених особистих консультацій</p>
 			</li>
 			<li class="basis-4/12">
 				<div class="flex items-center justify-center mb-2">
-					<img src={likeIcon} alt="Photo about" height="50" width="50"/>
+					<img src={likeIcon} alt="Photo about" height="50" width="50" />
 				</div>
-				<h3 class="text-4xl text-amber-600 fw-bold text-center mb-2">3+</h3>
-				<p class="text-center">років в нумеролії</p>
+				<h3 class="text-6xl text-amber-600 fw-bold text-center mb-2">3+</h3>
+				<p class="text-center text-amber-500">Років в нумеролії</p>
 			</li>
 			<li class="basis-4/12">
 				<div class="flex items-center justify-center mb-2">
-					<img src={successIcon} alt="Photo about" height="50" width="50"/>
+					<img src={successIcon} alt="Photo about" height="50" width="50" />
 				</div>
-				<h3 class="text-4xl text-amber-600 fw-bold text-center mb-2">95%</h3>
-				<p class="text-center">клієнтів знайшли відповіді на свої питання</p>
+				<h3 class="text-6xl text-amber-600 fw-bold text-center mb-2">95%</h3>
+				<p class="text-center text-amber-500">Клієнтів знайшли відповіді на свої питання</p>
 			</li>
 		</ul>
 	</div>
