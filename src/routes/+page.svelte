@@ -24,6 +24,7 @@
 	<ZoneMatrix />
 	<Steps />
 	<Subscription />
+	<Tariff />
 	<Testimonials />
 	<Matrix />
 </div>

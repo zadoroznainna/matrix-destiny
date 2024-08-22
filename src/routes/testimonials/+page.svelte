@@ -118,7 +118,8 @@ function toggleExpandText(index) {
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<button class="py-3 bg-orange-400 px-7 text-orange-50 mx-auto rounded-md">Більше відгуків</button>
+			<button class="py-3 bg-orange-400 px-7 text-orange-50 mx-auto rounded-md">
+				Більше відгуків</button>
 		</div>
 	</div>
 </section>

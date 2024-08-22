@@ -1,3 +1,100 @@
+<script>
+	import Portrait from "../icones/zones/Portrait.svelte";
+	import Talents from "../icones/zones/Talents.svelte";
+	import ComfortZone from "../icones/zones/ComfortZone.svelte";
+	import Material from "../icones/zones/Material.svelte";
+	import Money from "../icones/zones/Money.svelte";
+	import Karma from "../icones/zones/Karma.svelte";
+	import FamilyPrograms from "../icones/zones/FamilyPrograms.svelte";
+	import ChildParent from "../icones/zones/ChildParent.svelte";
+	import Relations from "../icones/zones/Relations.svelte";
+	import Appointment from "../icones/zones/Appointment.svelte";
+
+	const zoneData = [
+		{
+			icon: Portrait,
+			backgroundClass: "bg-red-100",
+			title: "Портрет",
+			description: "Візитна картка, найяскравіша енергія, яка показує, якою/яким Ви є. Коли важко, коли потрібна підтримка – у вас завжди є ресурс."
+		},
+
+		{
+			icon: Talents,
+			backgroundClass: "bg-cyan-100",
+			title: "Таланти",
+			description: "Те що дано вам вищими силами і пов'язаний із підсвідомістю, світогляд, самовираження."
+		},
+
+		{
+			icon: ComfortZone,
+			backgroundClass: "bg-orange-100",
+			title: "Зона комфорту",
+			description: "Ця енергія допоможе зрозуміти, як Ви проявляєтеся в соціумі. Показує соціальні завдання та вчинки, які ви маєте зробити для людей."
+		},
+
+		{
+			icon: Material,
+			backgroundClass: "bg-lime-100",
+			title: "Матеріальна карма",
+			description: "Що сприяє матеріальному достатку та фізичному здоров’ю? Ця енергія покаже, що може заважати вам отримувати матеріальні блага в житті."
+		},
+
+		{
+			icon: Money,
+			backgroundClass: "bg-green-100",
+			title: "«Грошовий канал»",
+			description: "Ця енергія покаже через що до вас будуть приходити гроші, вказуючи на стан, поведінку та дії, що допомагають розкрити енергію грошового каналу."
+		},
+
+		{
+			icon: Karma,
+			backgroundClass: "bg-indigo-100",
+			title: "Кармічний хвіст",
+			description: "Це задачі котрі ми повинні виконати в цьому втіленні. Пропрацювавши кармічний хвіст, ми збудуємо міцний фундамент для нашого життя."
+		},
+
+		{
+			icon: FamilyPrograms,
+			backgroundClass: "bg-neutral-100",
+			title: "Родові програми",
+			description: "У матриці є лінія чоловічого роду та лінія жіночого роду. Якщо ці лінії не опрацьовані, то у вас можуть виникати проблеми з фінансами, відносинами."
+		},
+
+		{
+			icon: ChildParent,
+			backgroundClass: "bg-sky-100",
+			title: "Дитячо-батьківська зона",
+			description: "Образи на батьків, чого навчатимуть вас ваші діти."
+		},
+
+		{
+			icon: Relations,
+			backgroundClass: "bg-rose-100",
+			title: "Канал відносин",
+			description: "Що блокує вам гармонійну побудову нових міжособистих відносин та сприяє конфліктам у вже існуючих відносинах?"
+		},
+
+		{
+			icon: Appointment,
+			backgroundClass: "bg-amber-100",
+			title: "Призначення",
+			description: "Особисте, соціальне та духовне."
+		},
+	];
+
+	let visibleCount = 7;
+	let showingAll = false;
+
+	function toggleItems() {
+		if (showingAll) {
+			visibleCount = 7;
+		} else {
+			visibleCount = zoneData.length;
+		}
+		showingAll = !showingAll;
+	}
+</script>
+
 <svelte:head>
 	<title>About</title>
 	<meta name="description" content="About this app" />
@@ -5,8 +102,8 @@
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl font-bold uppercase text-center mb-10">Зони в матриці долі</h2>
-		<div class="relative">
+		<!-- <h2 class="text-3xl font-bold uppercase text-center mb-10">Зони в матриці долі</h2> -->
+		<!-- <div class="relative">
 			<div class="flex gap-6 carousel py-6">
 				<div class="carousel-item">
 					<div class="w-80 shadow-xl flex flex-col items-center gap-6 px-5 py-7 rounded-xl">
@@ -275,6 +372,42 @@
 			</div>
 
 			<div class="carousel-bg absolute top-0 right-0 h-full w-12" />
+		</div> -->
+
+		<div class="grid grid-cols-3 gap-10">
+			<div class="row-start-1 row-end-3 flex flex-col justify-center">
+				<h2 class="text-3xl font-bold uppercase mb-10">Зони в матриці долі</h2>
+				<div class="flex flex-col gap-9 pr-10">
+					<p class="text-xl text-slate-400">
+						Зони в матриці долі відображають ключові аспекти життя, що допомагають зрозуміти
+						внутрішні потенціали та життєві виклики.
+					</p>
+					<p class="text-xl text-slate-400">
+						Вони слугують орієнтиром для саморозвитку,
+						дозволяючи краще усвідомити свою роль і призначення.
+					</p>
+				</div>
+			</div>
+
+			{#each zoneData.slice(0, visibleCount) as item, index (item)}
+			<div class="shadow-xl flex flex-col gap-6 p-10 rounded-xl h-full">
+				<div class="flex items-center gap-4">
+					<div class="flex items-center justify-center">
+						<div class={`flex rounded-full h-16 w-16 ${item.backgroundClass} items-center justify-center`}>
+							<svelte:component this={item.icon} />
+						</div>
+					</div>
+					<h4 class="text-xl font-bold">{item.title}</h4>
+				</div>
+				<p>{item.description}</p>
+			</div>
+			{/each}
+		</div>
+
+		<div class="flex justify-center mt-10">
+			<button on:click={toggleItems} class="py-3 border border-orange-400 px-7 text-orange-400 mx-auto rounded-md">
+				{showingAll ? "Приховати" : "Переглянути всі"}
+			</button>
 		</div>
 	</div>
 </section>
