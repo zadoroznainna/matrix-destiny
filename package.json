@@ -12,30 +12,26 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@fontsource/fira-mono": "^4.5.10",
-		"@neoconfetti/svelte": "^1.0.0",
 		"@playwright/test": "^1.28.1",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
+		"@sveltejs/adapter-auto": "^3.2.4",
+		"@sveltejs/kit": "^2.5.24",
+		"@sveltejs/vite-plugin-svelte": "^3.1.2",
 		"autoprefixer": "^10.4.14",
 		"daisyui": "^4.12.10",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
+		"eslint": "^9.9.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-svelte": "^2.43.0",
 		"postcss": "^8.4.24",
-		"postcss-load-config": "^4.0.1",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
+		"postcss-load-config": "^6.0.1",
+		"prettier": "^3.3.3",
+		"prettier-plugin-svelte": "^3.2.6",
 		"svelte": "^4.0.5",
 		"tailwindcss": "^3.3.2",
-		"vite": "^4.4.2",
-		"vitest": "^0.32.2"
+		"vite": "^5.4.2",
+		"vitest": "^2.0.5"
 	},
 	"type": "module",
 	"dependencies": {
-		"@floating-ui/dom": "^1.5.1",
-		"flowbite": "^1.8.1",
-		"flowbite-svelte": "^0.43.1",
-		"tailwind-merge": "^1.14.0"
+		"tailwind-merge": "^2.5.2"
 	}
 }

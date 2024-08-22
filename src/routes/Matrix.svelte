@@ -1,6 +1,5 @@
 <script>
 	import { scale } from 'svelte/transition';
-	import { clickoutside } from '@svelte-put/clickoutside';
 
 	export let a = 'a';
 	export let a1 = 'a1';

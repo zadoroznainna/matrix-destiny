@@ -1,5 +1,4 @@
 <script>
-	import { confetti } from '@neoconfetti/svelte';
 	import { enhance } from '$app/forms';
 
 	import { reduced_motion } from './reduced-motion';
@@ -56,7 +55,7 @@
 	 */
 	function update(event) {
 		const guess = data.guesses[i];
-		const key = (event.target).getAttribute('data-key');
+		const key = event.target.getAttribute('data-key');
 
 		if (key === 'backspace') {
 			data.guesses[i] = guess.slice(0, -1);
@@ -178,16 +177,7 @@
 </form>
 
 {#if won}
-	<div
-		style="position: absolute; left: 50%; top: 30%"
-		use:confetti={{
-			particleCount: $reduced_motion ? 0 : undefined,
-			force: 0.7,
-			stageWidth: window.innerWidth,
-			stageHeight: window.innerHeight,
-			colors: ['#ff3e00', '#40b3ff', '#676778']
-		}}
-	/>
+	<div style="position: absolute; left: 50%; top: 30%" />
 {/if}
 
 <style>
