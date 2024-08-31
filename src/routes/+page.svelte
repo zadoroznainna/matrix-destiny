@@ -1,5 +1,6 @@
 <script>
 	import Matrix from './Matrix.svelte';
+	import Tariff from './tariff/+page.svelte';
 	import About from './about/+page.svelte';
 	import Statistics from './statistics/+page.svelte';
 	import Hero from './hero/+page.svelte';

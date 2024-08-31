@@ -6,28 +6,13 @@
 <section>
 	<!-- <div class="container mx-auto px-4"> -->
 		<div class="">
-			<div class="px-6 pb-96 pt-24 text-center sm:pt-32 lg:px-8 bg-blue-100">
-			  <div class="mx-auto max-w-4xl">
-				<h2 class="text-base font-semibold leading-7 text-indigo-400">Pricing</h2>
-				<p class="mt-2 text-4xl font-bold tracking-tight text-black sm:text-5xl">The right price for you, <br class="hidden sm:inline lg:hidden">whoever you are</p>
-			  </div>
-			  <div class="relative mt-6">
-				<p class="mx-auto max-w-2xl text-lg leading-8 text-black/60">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit numquam eligendi quos odit doloribus molestiae voluptatum.</p>
-				<svg viewBox="0 0 1208 1024" class="absolute -top-10 left-1/2 -z-10 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0">
-				  <ellipse cx="604" cy="512" fill="url(#1A5572-0dd1-437e-93fa-59d316231eb0)" rx="604" ry="512" />
-				  <defs>
-					<radialGradient id="6d1bd035-0dd1-437e-93fa-59d316231eb0">
-					  <stop stop-color="#6A9DD4" />
-					  <stop offset="1" stop-color="#7B7C79" />
-					</radialGradient>
-				  </defs>
-				</svg>
-			  </div>
+			<div class="px-6 pb-96 pt-20 text-center bg-blue-100">
+				<h2 class="text-3xl font-bold uppercase text-center mb-10">Тарифи</h2>
 			</div>
 			<div class="flow-root bg-white pb-24 sm:pb-32">
 			  <div class="-mt-80">
 				<div class="mx-auto max-w-7xl px-6 lg:px-8">
-				  <div class="mx-auto grid max-w-md grid-cols-1 gap-8 lg:max-w-4xl lg:grid-cols-3">
+				  <div class="mx-auto max-w-6xl grid grid-cols-3 gap-8">
 					<div class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10">
 					  <div>
 						<h3 id="tier-hobby" class="text-base font-semibold leading-7 text-indigo-600">Hobby</h3>
