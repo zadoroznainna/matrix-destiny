@@ -1,5 +1,5 @@
 <script>
-	import photoHero from '$lib/images/photoHero.png';
+	import photoHero from '$lib/images/photoHero.jpeg';
 	import toDoIcon from '$lib/icons/toDo.svg';
 </script>
 
