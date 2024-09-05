@@ -1,12 +1,12 @@
 <script>
 	import { scale } from 'svelte/transition';
-	import Muladhara from '$lib/chakras/Muladhara.svelte';
-	import Swadhistana from '$lib/chakras/Swadhistana.svelte';
-	import Manipura from '$lib/chakras/Manipura.svelte';
-	import Anahata from '$lib/chakras/Anahata.svelte';
-	import Vishudha from '$lib/chakras/Vishudha.svelte';
-	import Ajna from '$lib/chakras/Ajna.svelte';
-	import Sahasrara from '$lib/chakras/Sahasrara.svelte';
+	import Muladhara from '$lib/components/chakras/Muladhara.svelte';
+	import Swadhistana from '$lib/components/chakras/Swadhistana.svelte';
+	import Manipura from '$lib/components/chakras/Manipura.svelte';
+	import Anahata from '$lib/components/chakras/Anahata.svelte';
+	import Vishudha from '$lib/components/chakras/Vishudha.svelte';
+	import Ajna from '$lib/components/chakras/Ajna.svelte';
+	import Sahasrara from '$lib/components/chakras/Sahasrara.svelte';
 
 	export let chakra;
 	export let close;

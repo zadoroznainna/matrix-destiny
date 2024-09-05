@@ -1,8 +1,6 @@
 <script>
 	import Tooltip from './Tooltip.svelte';
 
-	import { scale } from 'svelte/transition';
-
 	export let a = 'a';
 	export let a1 = 'a1';
 	export let a2 = 'a2';
