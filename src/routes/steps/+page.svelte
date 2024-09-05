@@ -63,7 +63,7 @@
 					<li>Запит з яким ви йдете на консультацію</li>
 				</ul>
 				<div class="absolute top-1/3 max-w-5xl 2xl:max-w-7xl rounded-2xl right-0 px-12 2xl:px-12 py-16 2xl:py-10 bg-slate-50 bg-opacity-90">
-					<ul class="steps w-full 2xl:py-10">
+					<!-- <ul class="steps w-full 2xl:py-10">
 						<li class="step step-primary after:!w-10 after:!h-10 after:text-3xl after:!bg-[#6A9DD4]">
 							<div class="h-full mt-20 px-3">
 								<h4 class="text-xl font-bold">Вибір тарифу</h4>
@@ -91,6 +91,50 @@
 						<li class="step step-primary after:!w-10 after:!h-10 after:text-3xl after:!bg-[#6A9DD4] before:!h-1 before:!bg-[#6A9DD4]">
 							<div class="h-full mt-20 px-3">
 								<h4 class="text-xl font-bold">Оплата</h4>
+								<p>Здійснюєте або повну оплату, або 50 на 50 з бронюванням дати.</p>
+							</div>
+						</li>
+					</ul> -->
+					<ul class="grid grid-cols-5 gap-4 w-full 2xl:py-10">
+						<!-- <li class="h-full">
+							<div class="relative h-full flex flex-col gap-4 justify-between">
+								<div class="absolute bottom-0 right-0 z-1 text-[240px] leading-[140px] text-[#6A9DD4] text-opacity-30">1</div>
+								<h4 class="text-xl font-bold">Вибір тарифу</h4>
+								<p>Обираєте для себе підходящий тариф (консультацію) або зверніться до мене для підбору.</p>
+							</div>
+						</li> -->
+						<li class="relative flex flex-col gap-4 justify-between h-[270px]">
+							<div class="absolute bottom-0 right-0 z-1 text-[180px] leading-[180px] text-[#6A9DD4] text-opacity-30">1</div>
+							<div class="h-full px-3">
+								<h4 class="text-xl font-bold mb-10">Вибір тарифу</h4>
+								<p>Обираєте для себе підходящий тариф (консультацію) або зверніться до мене для підбору.</p>
+							</div>
+						</li>
+						<li class="relative flex flex-col gap-4 justify-between h-[270px]">
+							<div class="absolute bottom-0 right-0 z-1 text-[180px] leading-[180px] text-[#6A9DD4] text-opacity-30">2</div>
+							<div class="h-full px-3">
+								<h4 class="text-xl font-bold mb-10">Призначення дати</h4>
+								<p>Запропоную вам найближчу вільну дату і повідомлю про дату розбору.</p>
+							</div>
+						</li>
+						<li class="relative flex flex-col gap-4 justify-between h-[270px]">
+							<div class="absolute bottom-0 right-0 z-1 text-[180px] leading-[180px] text-[#6A9DD4] text-opacity-30">3</div>
+							<div class="h-full px-3">
+								<h4 class="text-xl font-bold mb-10">Розбір</h4>
+								<p>У зазначений день надсилаю ваш розбір у Telegram, включаючи голосове повідомлення та PDF файл з розбором.</p>
+							</div>
+						</li>
+						<li class="relative flex flex-col gap-4 justify-between h-[270px]">
+							<div class="absolute bottom-0 right-0 z-1 text-[180px] leading-[180px] text-[#6A9DD4] text-opacity-30">4</div>
+							<div class="h-full px-3">
+								<h4 class="text-xl font-bold mb-10">Ваші питання</h4>
+								<p>Залишаюсь на зв'язку після консультації чи розбору для вашої підтримки та відповіді на питання.</p>
+							</div>
+						</li>
+						<li class="relative flex flex-col gap-4 justify-between h-[270px]">
+							<div class="absolute bottom-0 right-0 z-1 text-[180px] leading-[180px] text-[#6A9DD4] text-opacity-30">5</div>
+							<div class="h-full px-3">
+								<h4 class="text-xl font-bold mb-10">Оплата</h4>
 								<p>Здійснюєте або повну оплату, або 50 на 50 з бронюванням дати.</p>
 							</div>
 						</li>
