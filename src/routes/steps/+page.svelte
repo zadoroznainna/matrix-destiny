@@ -138,7 +138,7 @@
 				<ul class="flex flex-col gap-8">
 					{#each stepsData as step, index (step)}
 						<li class="flex justify-between items-center gap-8">
-							<div class="text-9xl text-[#6A9DD4] text-opacity-30">
+							<div class="text-9xl text-[#6A9DD4] text-opacity-30 hover:text-opacity-80">
 								{index + 1}
 							</div>
 							<div class="px-3">
@@ -164,7 +164,7 @@
 					</div>
 					<button
 						type="button"
-						class="rounded-full bg-white px-4 py-2.5 text-xl text-neutral-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
+						class="rounded-full bg-white px-4 py-2.5 text-xl text-[#6A9DD4] shadow-sm ring-1 ring-inset ring-[#6A9DD4] hover:bg-gray-50"
 						>Дізнатися більше</button
 					>
 				</div>
