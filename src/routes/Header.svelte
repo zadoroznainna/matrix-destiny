@@ -1,21 +1,31 @@
 <script>
 	import Logo from '$lib/components/Logo.svelte';
+	import AboutMeIcon from '$lib/components/menuIcons/AboutMe.svelte';
+	import AboutMatrix from '$lib/components/menuIcons/AboutMatrix.svelte';
+	import Satistics from '$lib/components/menuIcons/Statistics.svelte';
+	import Tariffs from '$lib/components/menuIcons/Tariffs.svelte';
+	import Work from '$lib/components/menuIcons/Work.svelte';
 
 	const menuItems = [
 		{
-			title: 'Про мене'
+			title: 'Про мене',
+			icon: AboutMeIcon
 		},
 		{
-			title: 'Статистика'
+			title: 'Статистика',
+			icon: Satistics
 		},
 		{
-			title: 'Про Матрицю'
+			title: 'Про Матрицю',
+			icon: AboutMatrix
 		},
 		{
-			title: 'Тарифи'
+			title: 'Тарифи',
+			icon: Tariffs
 		},
 		{
-			title: 'Етапи роботи'
+			title: 'Етапи роботи',
+			icon: Work
 		}
 	];
 
@@ -415,25 +425,7 @@
 									<div
 										class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
 									>
-										<svg
-											class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
-											fill="none"
-											viewBox="0 0 24 24"
-											stroke-width="1.5"
-											stroke="currentColor"
-											aria-hidden="true"
-										>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z"
-											/>
-											<path
-												stroke-linecap="round"
-												stroke-linejoin="round"
-												d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z"
-											/>
-										</svg>
+										<svelte:component this={item.icon} />
 									</div>
 									{item.title}
 								</a>
