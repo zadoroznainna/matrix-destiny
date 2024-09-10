@@ -9,6 +9,7 @@
 	import ChildParent from "../icones/zones/ChildParent.svelte";
 	import Relations from "../icones/zones/Relations.svelte";
 	import Appointment from "../icones/zones/Appointment.svelte";
+	import zones from '$lib/images/zones_m.jpeg';
 
 	const zoneData = [
 		{
@@ -375,17 +376,18 @@
 		</div> -->
 
 		<div class="grid grid-cols-3 gap-10">
-			<div class="row-start-1 row-end-3 flex flex-col justify-center">
-				<h2 class="text-3xl font-bold uppercase mb-10">Зони в матриці долі</h2>
-				<div class="flex flex-col gap-9 pr-10">
-					<p class="text-xl text-slate-400">
+			<div class="row-start-1 row-end-3 flex flex-col justify-between">
+				<h2 class="text-3xl font-bold uppercase">Зони в матриці долі</h2>
+				<div class="flex flex-col gap-9">
+					<!-- <p class="text-xl text-slate-400">
 						Зони в матриці долі відображають ключові аспекти життя, що допомагають зрозуміти
-						внутрішні потенціали та життєві виклики.
-					</p>
+						внутрішні потенціали та життєві виклики. -->
+					<!-- </p>
 					<p class="text-xl text-slate-400">
 						Вони слугують орієнтиром для саморозвитку,
 						дозволяючи краще усвідомити свою роль і призначення.
-					</p>
+					</p> -->
+					<img src={zones} class="rounded-3xl h-full object-cover" alt="Zones matrix">
 				</div>
 			</div>
 
