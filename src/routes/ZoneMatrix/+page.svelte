@@ -392,7 +392,7 @@
 			</div>
 
 			{#each zoneData.slice(0, visibleCount) as item, index (item)}
-			<div class="shadow-xl flex flex-col gap-6 p-10 rounded-xl h-full">
+			<div class="shadow-xl flex flex-col gap-6 p-10 rounded-xl h-full transition hover:scale-105 duration-300">
 				<div class="flex items-center gap-4">
 					<div class="flex items-center justify-center">
 						<div class={`flex rounded-full h-16 w-16 ${item.backgroundClass} items-center justify-center`}>

@@ -23,8 +23,8 @@
 	<About />
 	<AboutMatrix />
 	<ZoneMatrix />
-	<Steps />
 	<Subscription />
+	<Steps />
 	<Tariff />
 	<Testimonials />
 	<Matrix />
