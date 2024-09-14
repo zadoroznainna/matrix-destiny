@@ -9,6 +9,7 @@
 	import ZoneMatrix from './ZoneMatrix/+page.svelte';
 	import Testimonials from './testimonials/+page.svelte';
 	import Subscription from './subscription/+page.svelte';
+	import Faq from "./faq/+page.svelte";
 </script>
 
 <svelte:head>
@@ -27,5 +28,6 @@
 	<Steps />
 	<Tariff />
 	<Testimonials />
+	<Faq/>
 	<Matrix />
 </div>
