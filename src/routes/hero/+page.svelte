@@ -13,7 +13,7 @@
 	<div class="mx-auto px-4 px-8 max-w-7xl">
 		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10">
 			<div class="basis-1/2 rounded-3xl flex flex-col justify-center">
-				<h1 class="text-7xl text-start font-extrabold mb-10">Інна Задорожна</h1>
+				<h1 class="text-7xl text-start font-bold mb-10">Інна Задорожна</h1>
 				<p class="text-2xl tracking-wide leading-8">
 					Cпеціаліст з матриці долі та майстриня з трансформації вашого життя
 				</p>

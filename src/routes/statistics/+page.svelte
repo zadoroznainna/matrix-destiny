@@ -34,7 +34,7 @@
 </svelte:head>
 
 <section class="py-32 bg-slate-50 border">
-	<div class="container mx-auto px-8 max-w-7xl">
+	<div class="mx-auto px-8 max-w-7xl">
 		<ul class="flex flex-col space-y-16 justify-between items-center md:flex-row md:space-y-0">
 			{#each items as item}
 				<li class="flex flex-col items-center">

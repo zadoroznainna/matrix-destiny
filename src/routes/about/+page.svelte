@@ -8,10 +8,13 @@
 </svelte:head>
 
 <section class="py-16">
-	<div class="container mx-auto px-4">
-		<div class="flex justify-between place-items-center">
-			<div class="basis-1/2 pr-10">
-				<h2 class="text-3xl font-bold uppercase mb-8">Про мене</h2>
+	<div class="mx-auto px-8 max-w-7xl">
+		<div class="flex flex-col justify-between place-items-center md:flex-row md:space-x-8">
+			<div class="basis-1/2 shrink-0">
+				<img src={photoAbout} alt="Photo about" class="rounded-3xl w-full" />
+			</div>
+			<div class="basis-1/2 mt-16 md:mt-0">
+				<h2 class="text-4xl font-bold uppercase mb-8">Про мене</h2>
 				<p class="mb-5 leading-8">
 					Мене звати Інна, мені 32 роки я спеціаліст з матриці долі. Кожна людина приходить в цей
 					світ в певний день, де закладенно її призначення та задачі на це втілення. Матриця долі -
@@ -22,19 +25,29 @@
 					«Ким я хочу бути?». Я завжди відчувала в собі потяг до всього таємничого і цей потяг
 					познайомив мене з матрицею долі, котра дала мені краще зрозуміти себе та світ навколо.
 				</p>
-				<div>
-					<h4 class="text-lg text-amber-600 font-extrabold">Напрями роботи:</h4>
-					<div class="flex gap-2 mt-4">
-						<div class="badge bg-teal-400 text-teal-50 py-3 px-4">Матриця долі</div>
-						<div class="badge bg-amber-400 text-amber-50 py-3 px-4">Нумерологія</div>
-						<div class="badge bg-purple-400 text-purple-50 py-3 px-4">Енергії</div>
-						<div class="badge bg-blue-400 text-blue-50 py-3 px-4">Призначення</div>
-						<div class="badge bg-green-400 text-green-50 py-3 px-4">Фінанси</div>
-					</div>
+				<h4 class="text-lg font-extrabold">Напрями роботи:</h4>
+				<div class="flex flex-wrap gap-2 mt-4">
+					<span
+						class="text-nowrap items-center rounded-full bg-yellow-100 px-2 py-1 text-xs font-medium text-yellow-800"
+						>Матриця долі</span
+					>
+					<span
+						class="inline-flex items-center rounded-full bg-cyan-100 px-2 py-1 text-xs font-medium text-cyan-600"
+						>Енергії</span
+					>
+					<span
+						class="inline-flex items-center rounded-full bg-red-100 px-2 py-1 text-xs font-medium text-red-700"
+						>Нумерологія</span
+					>
+					<span
+						class="inline-flex items-center rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-700"
+						>Фінанси</span
+					>
+					<span
+						class="inline-flex items-center rounded-full bg-purple-100 px-2 py-1 text-xs font-medium text-purple-700"
+						>Призначення</span
+					>
 				</div>
-			</div>
-			<div class="basis-1/2">
-				<img src={photoAbout} alt="Photo about" class="rounded-3xl" height="500" />
 			</div>
 		</div>
 	</div>

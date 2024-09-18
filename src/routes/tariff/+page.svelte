@@ -182,28 +182,29 @@
 							>
 						</div>
 
-						<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-3">Ви завжди можете окремо обрати та замовити будь-яку послугу</h3>
+						<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-3">
+							Ви завжди можете окремо обрати та замовити будь-яку послугу
+						</h3>
 						<div
 							class="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-3 lg:items-center"
 						>
 							{#each extraTariffData as extraTariff}
-							<div class="w-full flex items-start gap-8">
-								<div class="lg:min-w-0 lg:flex-1">
-									<h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-										{extraTariff.title}
-									</h3>
-									<p class="mt-1 text-sm leading-7 text-gray-600">
-										{extraTariff.description}
-									</p>
+								<div class="w-full flex items-start gap-8">
+									<div class="lg:min-w-0 lg:flex-1">
+										<h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
+											{extraTariff.title}
+										</h3>
+										<p class="mt-1 text-sm leading-7 text-gray-600">
+											{extraTariff.description}
+										</p>
+									</div>
+									<p class="text-2xl font-bold">{extraTariff.price} грн</p>
+									<a
+										href="#"
+										class="flex rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+										>Замовити послугу <ArrowRight />
+									</a>
 								</div>
-								<p class="text-2xl font-bold">{extraTariff.price} грн</p>
-								<a
-									href="#"
-									class="flex rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-									>Замовити послугу <ArrowRight />
-								</a>
-							</div>
-								
 							{/each}
 						</div>
 					</div>
