@@ -10,6 +10,7 @@
 	import Testimonials from './testimonials/+page.svelte';
 	import Subscription from './subscription/+page.svelte';
 	import Faq from "./faq/+page.svelte";
+	import Footer from "./footer/+page.svelte";
 </script>
 
 <svelte:head>
@@ -30,4 +31,5 @@
 	<Testimonials />
 	<Faq/>
 	<Matrix />
+	<Footer/>
 </div>

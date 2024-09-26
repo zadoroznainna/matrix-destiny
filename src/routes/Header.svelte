@@ -43,7 +43,7 @@
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
 				<span class="sr-only">Your Company</span>
-				<Logo />
+				<Logo rectClass="stroke-slate-600" letterClass="fill-slate-600" svgClass="w-14 h-14"/>
 			</a>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">

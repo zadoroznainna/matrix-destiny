@@ -1,7 +1,7 @@
 <script>
-	export let rectClass = 'stroke-slate-600';
-	export let letterClass = 'fill-slate-600';
-	export let svgClass = 'w-14 h-14';
+	export let rectClass;
+	export let letterClass;
+	export let svgClass;
 </script>
 
 <svg class={svgClass} viewBox="0 0 265 265" fill="none" xmlns="http://www.w3.org/2000/svg">

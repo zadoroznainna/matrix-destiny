@@ -60,7 +60,7 @@
 					<div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
 						<dl class="space-y-6 divide-y divide-gray-900/10">
 							{#each faqData as faq, index}
-								<div class="{index === 0 ? "pt-0" : "pt-6"}">
+								<div class={index === 0 ? 'pt-0' : 'pt-6'}>
 									<dt>
 										<button
 											type="button"
@@ -69,8 +69,8 @@
 											aria-expanded={activeQuestion === index}
 											on:click={() => toggleQuestion(index)}
 										>
-											<span class="text-base font-semibold leading-7">{faq.title}</span>
-											<span class="ml-6 flex h-7 items-center">
+											<p class="text-base font-semibold leading-7 mb-0">{index + 1}. {faq.title}</p>
+											<span class="ml-6 flex items-center p-1 border border-gray-300 rounded-lg">
 												<ChevronUp classes={activeQuestion !== index ? 'hidden' : ''} />
 												<ChevronDown classes={activeQuestion === index ? 'hidden' : ''} />
 											</span>
