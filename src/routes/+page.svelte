@@ -11,6 +11,7 @@
 	import Subscription from './subscription/+page.svelte';
 	import Faq from "./faq/+page.svelte";
 	import Footer from "./footer/+page.svelte";
+	import Services from "./services/+page.svelte";
 </script>
 
 <svelte:head>
@@ -26,6 +27,7 @@
 	<AboutMatrix />
 	<ZoneMatrix />
 	<Subscription />
+	<Services/>
 	<Steps />
 	<Tariff />
 	<Testimonials />
