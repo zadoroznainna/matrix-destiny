@@ -1,22 +1,27 @@
 <script>
 	import photoAbout from '$lib/images/photoAbout.jpeg';
-</script>
 
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
+	const birthDate = new Date('1990-10-05');
+	const today = new Date();
+
+	$: age =
+		today.getFullYear() -
+		birthDate.getFullYear() -
+		(today < new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate()) ? 1 : 0);
+
+	console.log('today', birthDate.getFullYear());
+</script>
 
 <section class="py-16">
 	<div class="mx-auto px-8 max-w-7xl">
 		<div class="flex flex-col justify-between place-items-center md:flex-row md:space-x-8">
 			<div class="basis-1/2 shrink-0">
-				<img src={photoAbout} alt="Photo about" class="rounded-3xl w-full" />
+				<img src={photoAbout} alt="Моє Задорожної Інни" class="rounded-3xl w-full" />
 			</div>
 			<div class="basis-1/2 mt-16 md:mt-0">
 				<h2 class="text-4xl font-bold uppercase mb-8">Про мене</h2>
 				<p class="mb-5 leading-8">
-					Мене звати Інна, мені 32 роки я спеціаліст з матриці долі. Кожна людина приходить в цей
+					Мене звати Інна, мені {age} роки я спеціаліст з матриці долі. Кожна людина приходить в цей
 					світ в певний день, де закладенно її призначення та задачі на це втілення. Матриця долі -
 					це ключ до вашого самопізнання та розуміння себе.
 				</p>
