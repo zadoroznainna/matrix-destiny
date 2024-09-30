@@ -379,20 +379,12 @@
 			<div class="row-start-1 row-end-3 flex flex-col justify-between">
 				<h2 class="text-3xl font-bold uppercase">Зони в матриці долі</h2>
 				<div class="flex flex-col gap-9">
-					<!-- <p class="text-xl text-slate-400">
-						Зони в матриці долі відображають ключові аспекти життя, що допомагають зрозуміти
-						внутрішні потенціали та життєві виклики. -->
-					<!-- </p>
-					<p class="text-xl text-slate-400">
-						Вони слугують орієнтиром для саморозвитку,
-						дозволяючи краще усвідомити свою роль і призначення.
-					</p> -->
 					<img src={zones} class="rounded-3xl h-full object-cover" alt="Zones matrix">
 				</div>
 			</div>
 
 			{#each zoneData.slice(0, visibleCount) as item, index (item)}
-			<div class="shadow-xl flex flex-col gap-6 p-10 rounded-xl h-full transition hover:scale-105 duration-300">
+			<div class="shadow-xl flex flex-col gap-6 p-10 rounded-xl h-full transition hover:scale-105 duration-300 cursor-pointer">
 				<div class="flex items-center gap-4">
 					<div class="flex items-center justify-center">
 						<div class={`flex rounded-full h-16 w-16 ${item.backgroundClass} items-center justify-center`}>
