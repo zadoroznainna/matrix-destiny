@@ -6,6 +6,10 @@
 	import Phone from '$lib/components/socialIcons/Phone.svelte';
 	import Logo from '$lib/components/Logo.svelte';
 
+	let currentYear = new Date().getFullYear();
+	let nextYear = currentYear + 1;
+	let isNextYear = new Date().getMonth() === 0 && new Date().getDate() === 1;
+
 	const socialsMedia = [
 		{
 			title: 'Instagram',
@@ -137,7 +141,7 @@
 		<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
 			<div class="flex justify-between">
 				<p class="text-xs leading-5 text-gray-400">
-					Copyright &copy; 2024 zadoroznainna.com | Всі права захищені
+					Copyright &copy; {isNextYear ? currentYear + ' - ' + nextYear : currentYear} zadoroznainna.com | Всі права захищені
 				</p>
 				<p class="text-xs text-gray-400">
 					Website design and development by

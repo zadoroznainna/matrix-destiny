@@ -58,7 +58,7 @@
 
 	<div class="isolate overflow-hidden bg-gray-900">
 		<div class="mx-auto max-w-7xl px-6 pb-96 pt-10 text-center sm:pt-20 lg:px-8">
-			<h2 class="text-3xl text-white font-bold uppercase text-center mb-3">Тарифи</h2>
+			<h2 class="text-3xl text-white font-bold uppercase text-center mb-3">Формати роботи і вартість</h2>
 			<div class="relative mt-6">
 				<svg
 					viewBox="0 0 1208 1024"

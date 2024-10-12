@@ -3,6 +3,10 @@
 	import CalendarIcon from '$lib/components/statisticsIcons/CalendarIcon.svelte';
 	import SuccessIcon from '$lib/components/statisticsIcons/SuccessIcon.svelte';
 
+	let startYear = 2021;
+	let currentYear = new Date().getFullYear();
+	let years = currentYear - startYear;
+
 	const items = [
 		{
 			count: '100+',
@@ -12,7 +16,7 @@
 			iconColor: 'text-rose-500'
 		},
 		{
-			count: '3+',
+			count: `${years}+`,
 			name: 'Років в нумеролії',
 			icon: CalendarIcon,
 			gradient: 'from-blue-500 via-sky-400 to-blue-500',

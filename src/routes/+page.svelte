@@ -13,6 +13,7 @@
 	import Footer from "./footer/+page.svelte";
 	import Services from "./services/+page.svelte";
 	import Education from "./education/+page.svelte";
+	import Contacts from "./contacts/+page.svelte";
 </script>
 
 <svelte:head>
@@ -35,5 +36,6 @@
 	<Education/>
 	<Faq/>
 	<Matrix />
+	<Contacts/>
 	<Footer/>
 </div>
