@@ -207,8 +207,8 @@
 									<p class="text-2xl font-bold">{extraTariff.price} грн</p>
 									<a
 										href="#"
-										class="flex rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-										>Замовити послугу <ArrowRight />
+										class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+										>Замовити послугу <ArrowRight classes="w-8 h-8 ml-2" />
 									</a>
 								</div>
 							{/each}

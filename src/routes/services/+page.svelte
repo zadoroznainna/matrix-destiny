@@ -24,8 +24,8 @@
 								м'язове та емоційне напруження. Ця техніка сприяє глибокій релаксації, зміцненню
 								духу та розвитку сили волі.
 							</p>
-							<div class="flex justify-end">
-								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight /> </a>
+							<div class="flex justify-end items-center">
+								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight classes="w-6 h-6" /> </a>
 							</div>
 						</div>
 					</div>
@@ -43,8 +43,8 @@
 								випробування у майбутньому. Аналіз матриці допомагає краще зрозуміти своє
 								призначення і шлях до гармонії.
 							</p>
-							<div class="flex justify-end">
-								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight /></a>
+							<div class="flex justify-end items-center">
+								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight classes="w-6 h-6"/></a>
 							</div>
 						</div>
 					</div>
@@ -62,8 +62,8 @@
 								допомагає підготуватися до змін і прийняти обґрунтовані рішення на основі аналізу
 								ситуації.
 							</p>
-							<div class="flex justify-end">
-								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight /></a>
+							<div class="flex justify-end items-center">
+								<a class="flex gap-1 text-slate-50" href="#">Детальніше<ArrowRight classes="w-6 h-6"/></a>
 							</div>
 						</div>
 					</div>
