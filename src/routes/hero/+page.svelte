@@ -103,7 +103,7 @@
 				<button
 					type="button"
 					class="rounded-full bg-white px-4 py-2.5 text-xl text-neutral-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-					>Дізнатися більше</button
+					>Перейти до послуг</button
 				>
 			</div>
 			<div class="basis-1/2">

@@ -10,7 +10,10 @@ const config = {
 		extend: {}
 	},
 
-	plugins: [require('daisyui')]
+	plugins: [
+		require('daisyui'),
+		require('@tailwindcss/forms')
+	  ],
 };
 
 module.exports = config;
