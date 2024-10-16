@@ -14,6 +14,7 @@
 	import Services from "./services/+page.svelte";
 	import Education from "./education/+page.svelte";
 	import Contacts from "./contacts/+page.svelte";
+	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
 </script>
 
 <svelte:head>
@@ -38,4 +39,5 @@
 	<Matrix />
 	<Contacts/>
 	<Footer/>
+	<ScrollToTopButton/>
 </div>
