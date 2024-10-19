@@ -42,7 +42,8 @@
 
 		{
 			title: 'Цвяхостояння',
-			description: 'Пропрацюємо ваше м\'язове та емоційне напруження, що зміцнить ваш дух та допоможе досягти релаксації.',
+			description:
+				"Пропрацюємо ваше м'язове та емоційне напруження, що зміцнить ваш дух та допоможе досягти релаксації.",
 			price: 350
 		}
 	];
@@ -53,165 +54,190 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section>
-	<!-- <div class="container mx-auto px-4"> -->
-
-	<div class="isolate overflow-hidden bg-gray-900">
-		<div class="mx-auto max-w-7xl px-6 pb-96 pt-10 text-center sm:pt-20 lg:px-8">
-			<h2 class="text-3xl text-white font-bold uppercase text-center mb-3">Формати роботи і вартість</h2>
-			<div class="relative mt-6">
-				<svg
-					viewBox="0 0 1208 1024"
-					class="absolute -top-10 left-1/2 -z-10 h-[64rem] -translate-x-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] sm:-top-12 md:-top-20 lg:-top-12 xl:top-0"
+<section class="py-16">
+	<div class="isolate overflow-hidden">
+		<div class="flow-root bg-gray-900 pb-16 pt-24 sm:pt-32 lg:pb-0">
+			<div class="mx-auto max-w-7xl px-6 lg:px-8">
+				<div class="relative z-10">
+					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-white">
+						Формати роботи і вартість
+					</h2>
+					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-white/60">
+						Пропоную такі варіанти взаємодії
+					</p>
+				</div>
+				<div
+					class="relative mx-auto mt-10 grid max-w-md grid-cols-1 gap-y-8 lg:mx-0 lg:-mb-14 lg:max-w-none lg:grid-cols-3"
 				>
-					<ellipse cx="604" cy="512" fill="#1A5572" rx="604" ry="512" />
-					<defs>
-						<radialGradient id="6d1bd035-0dd1-437e-93fa-59d316231eb0">
-							<stop stop-color="#6A9DD4" />
-							<stop offset="1" stop-color="#E7E4D8" />
-						</radialGradient>
-					</defs>
-				</svg>
-			</div>
-		</div>
-		<div class="flow-root bg-white pb-24 sm:pb-32">
-			<div class="-mt-80">
-				<div class="mx-auto px-6 lg:px-8">
-					<div class="mx-auto grid max-w-6xl grid-cols-1 gap-8 lg:grid-cols-3">
-						<div
-							class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10"
-						>
-							<div>
-								<h3 id="tier-hobby" class="text-base font-semibold leading-7 text-sky-600">
-									Базовий
-								</h3>
-								<div class="mt-4 flex items-baseline gap-x-2">
-									<span class="text-5xl font-bold tracking-tight text-gray-900">1 000 грн</span>
+					<svg
+						viewBox="0 0 1208 1024"
+						aria-hidden="true"
+						class="absolute -bottom-48 left-1/2 h-[64rem] -translate-x-1/2 translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)] lg:-top-48 lg:bottom-auto lg:translate-y-0"
+					>
+						<ellipse
+							cx="604"
+							cy="512"
+							fill="url(#d25c25d4-6d43-4bf9-b9ac-1842a30a4867)"
+							rx="604"
+							ry="512"
+						/>
+						<defs>
+							<radialGradient id="d25c25d4-6d43-4bf9-b9ac-1842a30a4867">
+								<stop stop-color="#7775D6" />
+								<stop offset="1" stop-color="#E935C1" />
+							</radialGradient>
+						</defs>
+					</svg>
+					<div
+						class="hidden lg:absolute lg:inset-x-px lg:bottom-0 lg:top-4 lg:block lg:rounded-t-2xl lg:bg-gray-800/80 lg:ring-1 lg:ring-white/10"
+						aria-hidden="true"
+					></div>
+					<div
+						class="relative rounded-2xl bg-gray-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0"
+					>
+						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
+							<h3 id="tier-starter" class="text-sm font-semibold leading-6 text-white">Базовий</h3>
+							<div
+								class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
+							>
+								<div class="mt-2 flex items-center gap-x-4">
+									<!-- Price, update based on frequency toggle state -->
+									<p class="text-4xl font-bold tracking-tight text-white">₴1 000</p>
+									<div class="text-sm leading-5">
+										<p class="text-white">ГРН</p>
+										<!-- Payment frequency, update based on frequency toggle state -->
+										<p class="text-gray-400"></p>
+									</div>
 								</div>
-								<p class="mt-6 text-base leading-7 text-gray-600">
+								<p class="hidden lg:inline-block text-base text-gray-400">
 									"Основи Долі" - базовий тариф, який містить початковий аналіз матриці долі та
 									загальні рекомендації.
 								</p>
-								<ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+								<a
+									href="#"
+									aria-describedby="tier-starter"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 hover:bg-white/20 focus-visible:outline-white"
+									>Замовити</a
+								>
+							</div>
+							<div class="mt-8 flow-root sm:mt-10">
+								<ul
+									role="list"
+									class="-my-2 divide-y border-t text-sm leading-6 lg:border-t-0 divide-white/5 border-white/5 text-white"
+								>
 									{#each firstTariffsData as firstTarrif}
-										<li class="flex gap-x-3">
+										<li class="flex gap-x-3 py-2">
 											<Check />
 											{firstTarrif}
 										</li>
 									{/each}
 								</ul>
 							</div>
-							<a
-								href="#"
-								aria-describedby="tier-hobby"
-								class="mt-8 block rounded-md bg-sky-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-								>Обрати</a
-							>
 						</div>
-						<div
-							class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10"
-						>
-							<div>
-								<div class="flex items-center justify-between gap-x-4">
-									<h3 id="tier-team" class="text-base font-semibold leading-7 text-sky-600">
-										Середній
-									</h3>
-									<p
-										class="rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-sky-600"
-									>
-										Популярний
-									</p>
+					</div>
+					<div class="relative rounded-2xl z-10 bg-white shadow-xl ring-1 ring-gray-900/10">
+						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
+							<div class="flex justify-between">
+								<h3 id="tier-scale" class="text-sm font-semibold leading-6 text-gray-900">
+									Середній
+								</h3>
+								<p
+									class="rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold text-sky-600"
+								>
+									Популярний
+								</p>
+							</div>
+							<div
+								class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
+							>
+								<div class="mt-2 flex items-center gap-x-4">
+									<!-- Price, update based on frequency toggle state -->
+									<p class="text-4xl font-bold tracking-tight text-gray-900">₴1 500</p>
+									<div class="text-sm leading-5">
+										<p class="text-gray-900">ГРН</p>
+										<!-- Payment frequency, update based on frequency toggle state -->
+										<p class="text-gray-500"></p>
+									</div>
 								</div>
-								<div class="mt-4 flex items-baseline gap-x-2">
-									<span class="text-5xl font-bold tracking-tight text-gray-900">1 500 грн</span>
-								</div>
-								<p class="mt-6 text-base leading-7 text-gray-600">
+								<p class="hidden lg:inline-block text-base text-gray-700">
 									"Розкриття Шляху" - середній тариф, що включає детальніше дослідження та
 									індивідуальні поради.
 								</p>
-								<ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+								<a
+									href="#"
+									aria-describedby="tier-scale"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600"
+									>Замовити</a
+								>
+							</div>
+							<div class="mt-8 flow-root sm:mt-10">
+								<ul
+									role="list"
+									class="-my-2 divide-y border-t text-sm leading-6 lg:border-t-0 divide-gray-900/5 border-gray-900/5 text-gray-600"
+								>
 									{#each secondTariffsData as secondTarrif}
-										<li class="flex gap-x-3">
+										<li class="flex gap-x-3 py-2">
 											<Check />
 											{secondTarrif}
 										</li>
 									{/each}
 								</ul>
 							</div>
-							<a
-								href="#"
-								aria-describedby="tier-team"
-								class="mt-8 block rounded-md bg-sky-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-								>Обрати</a
-							>
 						</div>
-						<div
-							class="flex flex-col justify-between rounded-3xl bg-white p-8 shadow-xl ring-1 ring-gray-900/10 sm:p-10"
-						>
-							<div>
-								<div class="flex items-center justify-between gap-x-4">
-									<h3 id="tier-team" class="text-base font-semibold leading-7 text-sky-600">
-										Повний
-									</h3>
-									<p
-										class="flex items-center gap-2 rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-sky-600"
-									>
-										<Gift />
-										<span>Бонус</span>
-									</p>
+					</div>
+					<div
+						class="relative rounded-2xl bg-gray-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0"
+					>
+						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
+							<div class="flex justify-between">
+								<h3 id="tier-growth" class="text-sm font-semibold leading-6 text-white">Повний</h3>
+								<p
+									class="flex items-center gap-2 rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-sky-600"
+								>
+									<Gift />
+									<span>Бонус</span>
+								</p>
+							</div>
+							<div
+								class="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between lg:flex-col lg:items-stretch"
+							>
+								<div class="mt-2 flex items-center gap-x-4">
+									<!-- Price, update based on frequency toggle state -->
+									<p class="text-4xl font-bold tracking-tight text-white">₴2 500</p>
+									<div class="text-sm leading-5">
+										<p class="text-white">ГРН</p>
+										<!-- Payment frequency, update based on frequency toggle state -->
+										<p class="text-gray-400"></p>
+									</div>
 								</div>
-								<div class="mt-4 flex items-baseline gap-x-2">
-									<span class="text-5xl font-bold tracking-tight text-gray-900">2 500 грн</span>
-								</div>
-								<p class="mt-6 text-base leading-7 text-gray-600">
+								<p class="hidden lg:inline-block text-base text-gray-400">
 									"Гармонія Долі" - повний тариф із поглибленим аналізом, консультацією та
 									персональними рекомендаціями.
 								</p>
-								<ul role="list" class="mt-10 space-y-4 text-sm leading-6 text-gray-600">
+								<a
+									href="#"
+									aria-describedby="tier-growth"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 hover:bg-white/20 focus-visible:outline-white"
+									>Замовити</a
+								>
+							</div>
+							<div class="mt-8 flow-root sm:mt-10">
+								<ul
+									role="list"
+									class="-my-2 divide-y border-t text-sm leading-6 lg:border-t-0 divide-white/5 border-white/5 text-white"
+								>
 									{#each thirdTariffsData as thirdTarrif}
-										<li class="flex gap-x-3">
+										<li class="flex gap-x-3 py-2">
 											<Check />
 											{thirdTarrif}
 										</li>
 									{/each}
-									<li class="flex gap-x-3">
+									<li class="flex gap-x-3 py-2">
 										<Gift />
 										Бонус - прогноз на найближчий рік
 									</li>
 								</ul>
 							</div>
-							<a
-								href="#"
-								aria-describedby="tier-team"
-								class="mt-8 block rounded-md bg-sky-600 px-3.5 py-2 text-center text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-								>Обрати</a
-							>
-						</div>
-
-						<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-3">
-							Ви завжди можете окремо обрати та замовити будь-яку послугу
-						</h3>
-						<div
-							class="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-3 lg:items-center"
-						>
-							{#each extraTariffData as extraTariff}
-								<div class="w-full flex items-start gap-8">
-									<div class="lg:min-w-0 lg:flex-1">
-										<h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-											{extraTariff.title}
-										</h3>
-										<p class="mt-1 text-sm leading-7 text-gray-600">
-											{extraTariff.description}
-										</p>
-									</div>
-									<p class="text-2xl font-bold">{extraTariff.price} грн</p>
-									<a
-										href="#"
-										class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-										>Замовити послугу <ArrowRight classes="w-8 h-8 ml-2" />
-									</a>
-								</div>
-							{/each}
 						</div>
 					</div>
 				</div>
@@ -219,5 +245,29 @@
 		</div>
 	</div>
 
-	<!-- </div> -->
+	<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-16">
+		Ви завжди можете окремо обрати та замовити будь-яку послугу
+	</h3>
+	<div
+		class="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-3 lg:items-center"
+	>
+		{#each extraTariffData as extraTariff}
+			<div class="w-full flex items-start gap-8">
+				<div class="lg:min-w-0 lg:flex-1">
+					<h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
+						{extraTariff.title}
+					</h3>
+					<p class="mt-1 text-sm leading-7 text-gray-600">
+						{extraTariff.description}
+					</p>
+				</div>
+				<p class="text-2xl font-bold">{extraTariff.price} грн</p>
+				<a
+					href="#"
+					class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+					>Замовити послугу <ArrowRight classes="w-8 h-8 ml-2" />
+				</a>
+			</div>
+		{/each}
+	</div>
 </section>

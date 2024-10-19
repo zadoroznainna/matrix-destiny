@@ -7,11 +7,19 @@
 	<div class="container mx-auto px-4">
 		<div class="max-w-3xl mx-auto">
 			<div class="flex flex-col place-items-center">
-				<h2 class="text-3xl font-bold text-slate-50 uppercase mb-5">Підписуйся на мій Instagram</h2>
-				<p class="text-lg text-[#6A9DD4] text-center mb-10">Отримайте відео-урок + методичку у подарунок просто приєднавшись до моєї сторінки!</p>
+				<h2 class="text-3xl text-center font-bold text-slate-50 uppercase mb-5">
+					Підписуйся на мій Instagram
+				</h2>
+				<p class="text-lg text-[#6A9DD4] text-center mb-10">
+					Отримайте відео-урок + методичку у подарунок просто приєднавшись до моєї сторінки!
+				</p>
 				<div>
 					<div class="border border-[#6A9DD4] rounded-md">
-						<a href="#" target="_blank" class="w-full h-full flex justify-center items-center gap-3 py-3 px-5 hover:text-white hover:no-underline">
+						<a
+							href="#"
+							target="_blank"
+							class="w-full h-full flex justify-center items-center gap-3 py-3 px-5 hover:text-white hover:no-underline"
+						>
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								width="1em"
