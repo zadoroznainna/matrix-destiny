@@ -43,12 +43,16 @@
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
 				<span class="sr-only">Your Company</span>
-				<Logo rectClass="stroke-slate-600" letterClass="fill-slate-600" svgClass="w-14 h-14"/>
+				<Logo rectClass="stroke-slate-600" letterClass="fill-slate-600" svgClass="w-16 h-16" />
 			</a>
 		</div>
 		<div class="hidden lg:flex lg:gap-x-12">
 			{#each menuItems as item}
-				<a href="#" class="text-sm font-semibold leading-6 text-gray-900">{item.title}</a>
+				<a
+					href="#"
+					class="text-sm font-semibold leading-6 text-gray-900 transition-all duration-400 hover:text-orange-400"
+					>{item.title}</a
+				>
 			{/each}
 
 			<!-- Flyout menu HIDDEN for now -->
@@ -354,9 +358,17 @@
 			</div>
 		</div>
 		<div class="hidden sm:flex sm:flex-1 sm:justify-end">
-			<button class="px-7 py-2 bg-amber-500 text-lg text-white rounded-lg hover:bg-amber-400"
-				>Зв'язатись</button
-			>
+			<button
+					href="#_"
+					class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
+					text-white rounded-md border border-orange-400 bg-orange-400 focus:shadow-custom group"
+				>
+					<span
+						class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"
+					></span>
+					<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
+					<span class="relative transition-all duration-300 group-hover:text-orange-400">Зв'язатись</span>
+				</button>
 		</div>
 
 		<div class="flex ml-5 lg:hidden">

@@ -418,9 +418,17 @@
 			<div class="flex justify-center mt-10">
 				<button
 					on:click={toggleItems}
-					class="py-3 border border-orange-400 px-7 text-orange-400 mx-auto rounded-md"
+					href="#_"
+					class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
+					text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group"
 				>
-					{showingAll ? 'Приховати' : 'Переглянути всі'}
+					<span
+						class="absolute w-0 h-0 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-56 group-hover:h-56"
+					></span>
+					<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
+					<span class="relative transition-all duration-300 group-hover:text-white"
+						>{showingAll ? 'Приховати' : 'Переглянути всі'}</span
+					>
 				</button>
 			</div>
 		</div>

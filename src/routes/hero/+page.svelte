@@ -1,7 +1,5 @@
 <script>
 	import photoHero from '$lib/images/photoHero.jpeg';
-	import toDoIcon from '$lib/icons/toDo.svg';
-	import Relations from '../icones/zones/Relations.svelte';
 </script>
 
 <svelte:head>
@@ -38,15 +36,15 @@
 						</div>
 						<p>Як побудувати гармонійні відносини</p>
 					</li>
-					<li class="flex items-center bg-cyan-100 p-2 rounded-full">
-						<div class="p-2 bg-cyan-200 rounded-full mr-3">
+					<li class="flex items-center bg-blue-100 p-2 rounded-full">
+						<div class="p-2 bg-blue-200 rounded-full mr-3">
 							<svg
 								xmlns="http://www.w3.org/2000/svg"
 								fill="none"
 								viewBox="0 0 24 24"
 								stroke-width="1.5"
 								stroke="currentColor"
-								class="w-5 h-5 text-cyan-500"
+								class="w-5 h-5 text-blue-500"
 							>
 								<path
 									stroke-linecap="round"
@@ -94,17 +92,12 @@
 						<p>Що може блокувати ваші фінанси</p>
 					</li>
 				</ul>
-
-				<!-- <button
-					class="self-start text-xl border-2 border-solid border-yellow-400 text-yellow-400 py-3 px-6 rounded-md"
-					>Дізнатися більше</button
-				> -->
-
-				<button
-					type="button"
-					class="rounded-full bg-white px-4 py-2.5 text-xl text-neutral-800 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50"
-					>Перейти до послуг</button
-				>
+				<button class="group w-full lg:w-1/2 relative rounded-2xl inline-block overflow-hidden border border-[#1A5572] px-8 py-3 font-xl 
+				text-purple-600">
+					<span class="absolute left-0 top-0 mb-0 flex h-full w-0 translate-x-0 transform bg-[#1A5572] opacity-90 transition-all 
+					duration-500 ease-out group-hover:w-full"></span>
+					<span class="relative text-[#1A5572] transition-all duration-500 group-hover:text-white">Перейти до послуг</span>
+				</button>
 			</div>
 			<div class="basis-1/2">
 				<img src={photoHero} alt="Photo about" class="w-full rounded-3xl h-full object-cover" />

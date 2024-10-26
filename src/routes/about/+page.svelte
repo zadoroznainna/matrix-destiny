@@ -1,5 +1,7 @@
 <script>
 	import photoAbout from '$lib/images/photoAbout.jpeg';
+	import Instagram from '$lib/components/socialIcons/Instagram.svelte';
+	import Telegram from '$lib/components/socialIcons/Telegram.svelte';
 
 	const birthDate = new Date('1990-10-05');
 	const today = new Date();
@@ -33,25 +35,33 @@
 				<h4 class="text-lg font-extrabold">Напрями роботи:</h4>
 				<div class="flex flex-wrap gap-2 mt-4">
 					<span
-						class="text-nowrap items-center rounded-full bg-yellow-100 px-2 py-1 text-xs font-medium text-yellow-800"
+						class="text-nowrap items-center rounded-full bg-orange-100 px-2 py-1 text-xs font-medium text-orange-600"
 						>Матриця долі</span
 					>
 					<span
-						class="inline-flex items-center rounded-full bg-cyan-100 px-2 py-1 text-xs font-medium text-cyan-600"
+						class="inline-flex items-center rounded-full bg-blue-100 px-2 py-1 text-xs font-medium text-blue-600"
 						>Енергії</span
 					>
 					<span
-						class="inline-flex items-center rounded-full bg-red-100 px-2 py-1 text-xs font-medium text-red-700"
+						class="inline-flex items-center rounded-full bg-red-100 px-2 py-1 text-xs font-medium text-red-600"
 						>Нумерологія</span
 					>
 					<span
-						class="inline-flex items-center rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-700"
+						class="inline-flex items-center rounded-full bg-green-100 px-2 py-1 text-xs font-medium text-green-600"
 						>Фінанси</span
 					>
 					<span
 						class="inline-flex items-center rounded-full bg-purple-100 px-2 py-1 text-xs font-medium text-purple-700"
 						>Призначення</span
 					>
+				</div>
+				<div class="flex items-center gap-3 mt-7 text-slate-700">
+					<a href="#" class="transition duration-300 hover:scale-125 hover:text-blue-500">
+						<Instagram colorFill="currentColor" classes="w-7 h-7"/>
+					</a>
+					<a href="#" class="transition duration-300 hover:scale-125 hover:text-blue-500">
+						<Telegram colorFill="currentColor" classes="w-7 h-7"/>
+					</a>
 				</div>
 			</div>
 		</div>

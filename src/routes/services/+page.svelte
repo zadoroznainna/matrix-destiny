@@ -17,7 +17,7 @@
 						alt="Service stud"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
-						<div class="w-full p-2 lg:p-5 rounded-xl bg-slate-500 bg-opacity-85">
+						<div class="w-full p-2 lg:p-5 rounded-xl bg-gray-500 bg-opacity-85">
 							<h3 class="text-xs lg:text-xl font-semibold text-slate-50 lg:mb-5">Цвяхостояння</h3>
 							<p class="hidden lg:inline-block text-base text-slate-50 mb-5">
 								Давня практика стояння на спеціальних цвяхових платформах, яка допомагає зняти
@@ -26,7 +26,9 @@
 							</p>
 							<div class="hidden lg:flex justify-end items-center">
 								<a class="flex gap-1 text-slate-50" href="#"
-									>Детальніше<ArrowRight classes="w-6 h-6" />
+									><span class="transition-all duration-500 group-hover:pr-3 group-hover:font-bold"
+										>Детальніше</span
+									><ArrowRight classes="w-6 h-6" />
 								</a>
 							</div>
 						</div>
@@ -42,8 +44,8 @@
 						alt="Service stud"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
-						<div class="w-full p-2 lg:p-5 rounded-xl bg-sky-500 bg-opacity-85">
-							<h3 class="text-xs font-semibold text-slate-50 lg:text-xl lg:mb-5">
+						<div class="w-full p-2 lg:p-5 rounded-xl bg-gray-500 bg-opacity-85">
+							<h3 class="text-xs font-semibold text-gray-50 lg:text-xl lg:mb-5">
 								Розбір матриці долі
 							</h3>
 							<p class="hidden lg:inline-block text-base text-slate-50 mb-5">
@@ -53,7 +55,10 @@
 							</p>
 							<div class="hidden lg:flex justify-end items-center">
 								<a class="flex gap-1 text-slate-50" href="#"
-									>Детальніше<ArrowRight classes="w-6 h-6" /></a
+									><span class="transition-all duration-500 group-hover:pr-3 group-hover:font-bold"
+										>Детальніше</span
+									>
+									<ArrowRight classes="w-6 h-6" /></a
 								>
 							</div>
 						</div>
@@ -69,7 +74,7 @@
 						alt="Service prognosis"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
-						<div class="w-full p-2 lg:p-5 rounded-xl bg-amber-500 bg-opacity-85">
+						<div class="w-full p-2 lg:p-5 rounded-xl bg-gray-500 bg-opacity-85">
 							<h3 class="text-xs font-semibold text-slate-50 lg:text-xl lg:mb-5">
 								Прогностика на рік
 							</h3>
@@ -80,7 +85,9 @@
 							</p>
 							<div class="hidden lg:flex justify-end items-center">
 								<a class="flex gap-1 text-slate-50" href="#"
-									>Детальніше<ArrowRight classes="w-6 h-6" /></a
+									><span class="transition-all duration-500 group-hover:pr-3 group-hover:font-bold"
+										>Детальніше</span
+									><ArrowRight classes="w-6 h-6" /></a
 								>
 							</div>
 						</div>

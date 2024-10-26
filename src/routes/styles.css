@@ -49,3 +49,7 @@ button:focus:not(:focus-visible) {
 .arrow-link:hover .arrow path {
 	stroke: #f8fafc;
 }
+
+.arrow-link:hover p {
+	color: #f8fafc;
+}
