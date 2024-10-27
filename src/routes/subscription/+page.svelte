@@ -2,7 +2,7 @@
 	import Instagram from '$lib/components/socialIcons/Instagram.svelte';
 </script>
 
-<section class="py-16 bg-[#1A5572]">
+<section class="py-16 bg-[#1A5572] bg-opacity-75 rounded-3xl">
 	<div class="container mx-auto px-4">
 		<div class="max-w-3xl mx-auto">
 			<div class="flex flex-col place-items-center">

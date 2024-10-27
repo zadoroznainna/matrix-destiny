@@ -56,10 +56,10 @@
 					>
 				</div>
 				<div class="flex items-center gap-3 mt-7 text-slate-700">
-					<a href="#" class="transition duration-300 hover:scale-125 hover:text-blue-500">
+					<a href="https://www.instagram.com/zadoroznainna/" target="_blank" class="transition duration-300 hover:scale-125 hover:text-blue-500">
 						<Instagram colorFill="currentColor" classes="w-7 h-7"/>
 					</a>
-					<a href="#" class="transition duration-300 hover:scale-125 hover:text-blue-500">
+					<a href="#" target="_blank" class="transition duration-300 hover:scale-125 hover:text-blue-500">
 						<Telegram colorFill="currentColor" classes="w-7 h-7"/>
 					</a>
 				</div>

@@ -1,5 +1,6 @@
 <script>
 	import photoHero from '$lib/images/photoHero.jpeg';
+	import ArrowRightCircle from '../icones/ArrowRightCircle.svelte';
 </script>
 
 <svelte:head>
@@ -92,12 +93,20 @@
 						<p>Що може блокувати ваші фінанси</p>
 					</li>
 				</ul>
-				<button class="group w-full lg:w-1/2 relative rounded-2xl inline-block overflow-hidden border border-[#1A5572] px-8 py-3 font-xl 
-				text-purple-600">
-					<span class="absolute left-0 top-0 mb-0 flex h-full w-0 translate-x-0 transform bg-[#1A5572] opacity-90 transition-all 
-					duration-500 ease-out group-hover:w-full"></span>
-					<span class="relative text-[#1A5572] transition-all duration-500 group-hover:text-white">Перейти до послуг</span>
-				</button>
+				<div class="group w-full lg:w-1/2">
+					<a
+					href="#_"
+					class="flex justify-between items-center w-full relative rounded-full overflow-hidden ring-1 ring-slate-500 transition-all duration-500 group-hover:ring-2 px-5 py-3 font-xl
+				text-slate-500"
+				>
+					<span
+						class="relative text-slate-60 font-medium transition-all duration-500 group-hover:font-bold"
+						>Перейти до послуг</span
+					>
+					<ArrowRightCircle classes="w-8 h-8 transition-transform duration-500 group-hover:translate-x-[7px]" />
+				</a>
+				</div>
+				
 			</div>
 			<div class="basis-1/2">
 				<img src={photoHero} alt="Photo about" class="w-full rounded-3xl h-full object-cover" />

@@ -28,10 +28,11 @@
 	<div class="group">
 		<button
 			on:click={scrollToTop}
-			class="fixed right-[2%] bottom-[4%] drop-shadow flex bg-white border border-slate-400 rounded-2xl justify-center items-center p-3 z-20 transition duration-300 ease-in-out hover:border-orange-400 active:ring-2 active:ring-orange-400 active:bg-orange-100"
+			class="fixed right-[2%] bottom-[4%] flex bg-orange-100 rounded-2xl justify-center items-center p-3 z-20 
+			transition duration-300 ease-in-out border border-transparent hover:border-orange-500 focus:shadow-custom focus:bg-orange-50"
 		>
 			<ChevronUp
-				classes="w-8 h-8 text-slate-400 transition duration-300 ease-in-out group-hover:text-orange-400 active:text-orange-400"
+				classes="w-8 h-8 text-orange-500 font-bold transition duration-300 ease-in-out"
 			/>
 		</button>
 	</div>
