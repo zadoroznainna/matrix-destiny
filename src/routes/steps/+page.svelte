@@ -39,13 +39,15 @@
 			<div class="basis-1/2">
 				<ul class="flex flex-col gap-8">
 					{#each stepsData as step, index (step)}
-						<li class="flex justify-between items-center gap-8">
-							<div
-								class="text-9xl text-[#6A9DD4] transition duration-300 text-opacity-30 hover:text-opacity-80"
-							>
-								{index + 1}
+						<li class="flex justify-start items-center gap-4">
+							<div class="flex-shrink-0 w-28">
+								<div
+									class="w-full text-9xl text-[#6A9DD4] text-center transition duration-300 text-opacity-30 hover:text-opacity-80"
+								>
+									{index + 1}
+								</div>
 							</div>
-							<div class="px-3">
+							<div class="flex-grow px-3">
 								<h4 class="text-xl font-bold mb-4">{step.title}</h4>
 								<p>{step.description}</p>
 							</div>
