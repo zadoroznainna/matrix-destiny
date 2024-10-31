@@ -10,8 +10,6 @@
 		today.getFullYear() -
 		birthDate.getFullYear() -
 		(today < new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate()) ? 1 : 0);
-
-	console.log('today', birthDate.getFullYear());
 </script>
 
 <section class="py-16">
@@ -24,8 +22,8 @@
 				<h2 class="text-4xl font-bold uppercase mb-8">Про мене</h2>
 				<p class="mb-5 leading-8">
 					Мене звати Інна, мені {age} роки я спеціаліст з матриці долі. Кожна людина приходить в цей
-					світ в певний день, де закладенно її призначення та задачі на це втілення. Матриця долі -
-					це ключ до вашого самопізнання та розуміння себе.
+					світ в певний день, де закладенно її призначення та задачі на це втілення. Матриця долі - це
+					ключ до вашого самопізнання та розуміння себе.
 				</p>
 				<p class="mb-5 leading-8">
 					В певний період мого життя мене почали турбувати питання «Хто я?», «Яке моє призначення»,
@@ -56,11 +54,19 @@
 					>
 				</div>
 				<div class="flex items-center gap-3 mt-7 text-slate-700">
-					<a href="https://www.instagram.com/zadoroznainna/" target="_blank" class="transition duration-300 hover:scale-125 hover:text-blue-500">
-						<Instagram colorFill="currentColor" classes="w-7 h-7"/>
+					<a
+						href="https://www.instagram.com/zadoroznainna/"
+						target="_blank"
+						class="transition duration-300 hover:scale-125 hover:text-blue-500"
+					>
+						<Instagram colorFill="currentColor" classes="w-7 h-7" />
 					</a>
-					<a href="#" target="_blank" class="transition duration-300 hover:scale-125 hover:text-blue-500">
-						<Telegram colorFill="currentColor" classes="w-7 h-7"/>
+					<a
+						href="#"
+						target="_blank"
+						class="transition duration-300 hover:scale-125 hover:text-blue-500"
+					>
+						<Telegram colorFill="currentColor" classes="w-7 h-7" />
 					</a>
 				</div>
 			</div>

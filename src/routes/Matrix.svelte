@@ -168,6 +168,8 @@
 	// TODO: у пустому вигляді, що показуємо у матриці та таблиці - нулі чи нічого?
 
 	let birthdate = '';
+	let age = null;
+	let errors = {};
 
 	const calcNumber = (number) => {
 		if (number > 22) {
@@ -182,10 +184,33 @@
 		}
 	};
 
+	function calculateAge(birthDate) {
+		const today = new Date();
+		const birth = new Date(birthDate);
+
+		let age = today.getFullYear() - birth.getFullYear();
+		const monthDifference = today.getMonth() - birth.getMonth();
+
+		if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+			age--;
+		}
+
+		return age;
+	}
+
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
+		if (birthdate === '') {
+			errors = { birthdate: 'Будь ласка оберіть вашу дату народження' };
+
+			return;
+		}
+
 		const [year, month, day] = birthdate.split('-');
+
+		age = calculateAge(birthdate);
+
 		a = calcNumber(Number(day));
 		b = calcNumber(Number(month));
 		c = calcNumber(Number(year));
@@ -319,6 +344,7 @@
 
 		d3 = calcNumber(n3 + c6);
 		p5 = calcNumber(c6 + d3);
+		errors = {};
 	};
 
 	let tooltip = null;
@@ -335,10 +361,10 @@
 <section class="pt-8 pb-16">
 	<h2 class="text-3xl font-bold text-center uppercase mb-10">Розрахунок матриці долі</h2>
 	<div class="mx-auto px-4 px-xl-8 max-w-7xl">
-		<div class="">
+		<div>
 			<div class="mb-12">
-				<form on:submit={handleSubmit} class="flex justify-center gap-4">
-					<div class="relative w-64">
+				<form on:submit={handleSubmit} class="flex flex-col sm:flex-row justify-center gap-4">
+					<div class="relative w-full sm:w-64">
 						<label
 							for="name"
 							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
@@ -348,12 +374,12 @@
 							type="text"
 							name="name"
 							id="name"
-							class="block w-full h-full rounded-l-2xl rounded-r-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
+							class="block w-full h-full rounded-md sm:rounded-l-2xl sm:rounded-r-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							placeholder="Катерина"
 						/>
 					</div>
 
-					<div class="relative w-64">
+					<div class="relative sm:w-64">
 						<label
 							for="date birth"
 							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
@@ -366,32 +392,26 @@
 							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							bind:value={birthdate}
 						/>
-					</div>
 
-					<div class="relative w-64">
-						<label
-							for="age"
-							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
-							>Ваш вік</label
-						>
-						<input
-							type="number"
-							name="age"
-							id="age"
-							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
-							placeholder="25"
-							disabled
-						/>
+						{#if errors.birthdate}
+							<p class="absolute text-red-400 text-xs text-light">{errors.birthdate}</p>
+						{/if}
 					</div>
 					<button
 						type="submit"
-						class="w-64 uppercase font-bold bg-orange-500 text-slate-50 px-7 py-4 rounded-r-2xl rounded-l-md"
+						class="mt-4 sm:mt-0 sm:w-64 uppercase font-bold bg-orange-500 text-slate-50 px-7 py-4 rounded-md sm:rounded-r-2xl sm:rounded-l-md"
 						>Розрахувати</button
 					>
 				</form>
+
+				{#if age}
+					<div class="mt-4 text-center">
+						<h4>Ваш вік: <span class="font-semibold">{age}</span></h4>
+					</div>
+				{/if}
 			</div>
 
-			<div class="relative w-2/3 mx-auto">
+			<div class="relative w-full md:w-2/3 mx-auto">
 				{#if tooltip == 'material'}
 					<Tooltip
 						chakra={'Muladhara'}
@@ -3212,16 +3232,16 @@
 			</div>
 
 			<!-- Розрахунок карти здоров’я -->
-			<div class="w-full bg-[#F8FAFC] border-4 border-[#CBD5E1] py-9 my-8 rounded-3xl">
-				<h2 class="text-2xl tracking-wider font-thin text-center mb-6">
+			<div class="w-full border border-slate-300 py-9 my-8 rounded-3xl">
+				<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
 					Розрахунок карти здоров’я
 				</h2>
-				<div class="flex flex-col">
+				<div class="mt-16 flex flex-col">
 					<div class="overflow-x-auto">
 						<div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
 							<div class="overflow-hidden">
 								<table class="min-w-full text-left text-sm font-light">
-									<thead class="border-b font-medium dark:border-neutral-500">
+									<thead class="border-b font-medium border-slate-300">
 										<tr>
 											<th scope="col" class="px-6 py-4">Назва чакри</th>
 											<th scope="col" class="px-6 py-4 text-center">Фізика</th>
@@ -3230,91 +3250,106 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-fuchsia-700">
 												<div class="flex items-center gap-3">
 													<Sahasrara classes="w-8 h-8 fill-fuchsia-700" />
 													Сахасрара-чакра
-													<InformationTooltip classes="w-4 h-4">Духовність, просвітлення, з’єднання з вищим, мудрість, єдність</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Духовність, просвітлення, з’єднання з вищим, мудрість, єдність</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{a}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{b}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t1}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-indigo-700">
 												<div class="flex items-center gap-3">
 													<Ajna classes="w-8 h-8 fill-indigo-700" />
 													Аджа-чакра
-													<InformationTooltip classes="w-4 h-4">Інтуїція, ясність, уява, внутрішнє бачення, інтелект</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Інтуїція, ясність, уява, внутрішнє бачення, інтелект</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{a2}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{b2}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t2}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-cyan-500">
 												<div class="flex items-center gap-3">
 													<Vishudha classes="w-8 h-8 fill-cyan-700" />
 													Вішудха-чакра
-													<InformationTooltip classes="w-4 h-4">Спілкування, самовираження, правда, творчість, переконання</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Спілкування, самовираження, правда, творчість, переконання</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{a1}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{b1}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t3}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-green-500">
 												<div class="flex items-center gap-3">
 													<Anahata classes="w-8 h-8 fill-green-700" />
 													Анахата-чакра
-													<InformationTooltip classes="w-4 h-4">Стосунки, співчуття, гармонія, прийняття, емоційний баланс</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Стосунки, співчуття, гармонія, прийняття, емоційний баланс</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{a3}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{b3}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t4}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-yellow-400">
 												<div class="flex items-center gap-3">
 													<Manipura classes="w-8 h-8 fill-yellow-400" />
 													Маніпура-чакра
-													<InformationTooltip classes="w-4 h-4">Самовпевненість, самоконтроль, гроші, сила, амбіції</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Самовпевненість, самоконтроль, гроші, сила, амбіції</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t5}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-orange-400">
 												<div class="flex items-center gap-3">
 													<Swadhistana classes="w-8 h-8 fill-orange-700" />
 													Свадхістана-чакра
-													<InformationTooltip classes="w-4 h-4">Емоції, творчість, сексуальність, задоволення, інтуїція</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Емоції, творчість, сексуальність, задоволення, інтуїція</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{c1}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{d1}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t6}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">
 												<div class="flex items-center gap-3">
 													<Muladhara classes="w-8 h-8 fill-red-700" />
 													Муладхара-чакра
-													<InformationTooltip classes="w-4 h-4">Безпека, доровʼя, закріплення у матеріальному світі, стабільність, звʼязок з родом</InformationTooltip>
+													<InformationTooltip classes="w-4 h-4"
+														>Безпека, доровʼя, закріплення у матеріальному світі, стабільність,
+														звʼязок з родом</InformationTooltip
+													>
 												</div>
 											</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{c}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{d}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{t7}</td>
 										</tr>
-										<tr class="border-b dark:border-neutral-500">
+										<tr class="border-b border-slate-300">
 											<td class="whitespace-nowrap px-6 py-4 font-medium text-zinc-500">Сума</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{ts1}</td>
 											<td class="whitespace-nowrap px-6 py-4 text-center">{ts2}</td>
@@ -3329,25 +3364,25 @@
 			</div>
 
 			<!-- Розрахунок родових програм -->
-			<div class="w-full bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 my-8 rounded-3xl">
-				<h2 class="text-2xl tracking-wider font-thin text-center mb-6">
+			<div class="w-full border border-slate-300 p-9 my-8 rounded-3xl">
+				<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
 					Розрахунок родових програм
 				</h2>
-				<div class="flex justify-center items-center mb-3">
+				<div class="mt-16 flex justify-center items-center mb-3">
 					<p class="w-2/3">Родові програми по чоловічій лінії</p>
 					<ul class="flex justify-start items-center gap-10 w-1/3">
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{f}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{y}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{m1}</span>
 						</li>
@@ -3357,17 +3392,17 @@
 					<p class="w-2/3">Родові програми по жіночій лінії</p>
 					<ul class="flex justify-start items-center gap-10 w-1/3">
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{g}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{k}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{w1}</span>
 						</li>
@@ -3377,17 +3412,17 @@
 					<p class="w-2/3">Код внутрішньої сили</p>
 					<ul class="flex justify-start items-center gap-10 w-1/3">
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{e}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{e1}</span>
 						</li>
 						<li
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{e2}</span>
 						</li>
@@ -3396,7 +3431,7 @@
 				<div class="flex justify-start items-center">
 					<p class="w-2/3">Сила роду</p>
 					<div
-						class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+						class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 					>
 						<span class="font-bold">{e1}</span>
 					</div>
@@ -3406,14 +3441,16 @@
 			<!-- Розрахунок призначення -->
 			<div class="flex flex-wrap grow gap-8">
 				<!-- Пошук себе -->
-				<div class="grow bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
-					<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Пошук себе</h2>
-					<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+				<div class="grow border border-slate-300 p-9 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+						Пошук себе
+					</h2>
+					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
 						<div class="w-6/12">
 							<div class="flex items-center justify-between mb-4">
 								<p>Лінія Неба:</p>
 								<div
-									class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 								>
 									<span class="font-bold">{n1}</span>
 								</div>
@@ -3421,7 +3458,7 @@
 							<div class="flex items-center justify-between">
 								<p>Лінія Землі:</p>
 								<div
-									class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 								>
 									<span class="font-bold">{n2}</span>
 								</div>
@@ -3429,7 +3466,7 @@
 						</div>
 						<ChevronDown classes="-rotate-90 w-9 h-9" />
 						<div
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{n3}</span>
 						</div>
@@ -3437,14 +3474,16 @@
 				</div>
 
 				<!-- Соціалізація -->
-				<div class="basis-6/12 bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
-					<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Соціалізація</h2>
-					<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+				<div class="basis-6/12 border border-slate-300 p-9 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+						Соціалізація
+					</h2>
+					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
 						<div class="w-6/12">
 							<div class="flex items-center justify-between mb-4">
 								<p>Чол:</p>
 								<div
-									class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 								>
 									<span class="font-bold">{c4}</span>
 								</div>
@@ -3452,7 +3491,7 @@
 							<div class="flex items-center justify-between">
 								<p>Жін:</p>
 								<div
-									class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 								>
 									<span class="font-bold">{c5}</span>
 								</div>
@@ -3460,7 +3499,7 @@
 						</div>
 						<ChevronDown classes="-rotate-90 w-9 h-9" />
 						<div
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{c6}</span>
 						</div>
@@ -3468,11 +3507,13 @@
 				</div>
 
 				<!-- Духовна грамотність -->
-				<div class="grow bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
-					<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Духовна грамотність</h2>
-					<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+				<div class="grow border border-slate-300 p-9 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+						Духовна грамотність
+					</h2>
+					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
 						<div
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{d3}</span>
 						</div>
@@ -3480,11 +3521,13 @@
 				</div>
 
 				<!-- Планетарна грамотність -->
-				<div class="basis-6/12 bg-[#F8FAFC] border-4 border-[#CBD5E1] p-9 rounded-3xl">
-					<h2 class="text-2xl tracking-wider font-thin text-center mb-6">Планетарна грамотність</h2>
-					<div class="flex items-center justify-around text-lg w-10/12 mx-auto">
+				<div class="basis-6/12 border border-slate-300 p-9 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+						Планетарна грамотність
+					</h2>
+					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
 						<div
-							class="bg-white border-2 border-[#CBD5E1] p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{p5}</span>
 						</div>
