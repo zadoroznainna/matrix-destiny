@@ -13,164 +13,165 @@
 	import Whirlpool from '$lib/components/patterns/Whirlpool.svelte';
 	import Loop from '$lib/components/patterns/Loop.svelte';
 	import Star from '$lib/components/patterns/Star.svelte';
+	import Parallel from '$lib/components/patterns/Parallel.svelte';
 
 	import InformationTooltip from '$lib/components/InformationTooltip.svelte';
 	import ChevronDown from '../routes/icones/ChevronDown.svelte';
 
-	export let a = 'a';
-	export let a1 = 'a1';
-	export let a2 = 'a2';
-	export let a3 = 'a3';
+	export let a = '0';
+	export let a1 = '0';
+	export let a2 = '0';
+	export let a3 = '0';
 
-	export let b = 'b';
-	export let b1 = 'b1';
-	export let b2 = 'b2';
-	export let b3 = 'b3';
+	export let b = '0';
+	export let b1 = '0';
+	export let b2 = '0';
+	export let b3 = '0';
 
-	export let c = 'c';
-	export let c1 = 'c1';
-	export let c2 = 'c2';
+	export let c = '0';
+	export let c1 = '0';
+	export let c2 = '0';
 
-	export let d = 'd';
-	export let d1 = 'd1';
-	export let d2 = 'd2';
+	export let d = '0';
+	export let d1 = '0';
+	export let d2 = '0';
 
-	export let e = 'e';
-	export let e1 = 'e1';
-	export let e2 = 'e2';
+	export let e = '0';
+	export let e1 = '0';
+	export let e2 = '0';
 
-	export let f = 'f';
-	export let g = 'g';
-	export let y = 'y';
-	export let k = 'k';
+	export let f = '0';
+	export let g = '0';
+	export let y = '0';
+	export let k = '0';
 
-	export let s1 = 's1';
-	export let s2 = 's2';
-	export let s3 = 's3';
-	export let s4 = 's4';
+	export let s1 = '0';
+	export let s2 = '0';
+	export let s3 = '0';
+	export let s4 = '0';
 
-	export let p1 = 'p1';
-	export let p2 = 'p2';
-	export let p3 = 'p3';
-	export let p4 = 'p4';
+	export let p1 = '0';
+	export let p2 = '0';
+	export let p3 = '0';
+	export let p4 = '0';
 
-	export let x = 'x';
-	export let x1 = 'x1';
-	export let x2 = 'x2';
+	export let x = '0';
+	export let x1 = '0';
+	export let x2 = '0';
 
 	export let years10 = {
-		'1-2': '12',
-		'2-3': '23',
-		'3-4': '34',
-		'5': '5',
-		'6-7': '67',
-		'7-8': '78',
-		'8-9': '89'
+		'1-2': '0',
+		'2-3': '0',
+		'3-4': '0',
+		'5': '0',
+		'6-7': '0',
+		'7-8': '0',
+		'8-9': '0'
 	};
 
 	export let years20 = {
-		'11-12': '1',
-		'12-13': '2',
-		'13-14': '1',
-		'15': '1',
-		'16-17': '1',
-		'17-18': '1',
-		'18-19': '1'
+		'11-12': '0',
+		'12-13': '0',
+		'13-14': '0',
+		'15': '0',
+		'16-17': '0',
+		'17-18': '0',
+		'18-19': '0'
 	};
 
 	export let years30 = {
-		'21-22': '1',
-		'22-23': '2',
-		'23-24': '1',
-		'25': '1',
-		'26-27': '1',
-		'27-28': '1',
-		'28-29': '1'
+		'21-22': '0',
+		'22-23': '0',
+		'23-24': '0',
+		'25': '0',
+		'26-27': '0',
+		'27-28': '0',
+		'28-29': '0'
 	};
 
 	export let years40 = {
-		'31-32': '1',
-		'32-33': '2',
-		'33-34': '1',
-		'35': '1',
-		'36-37': '1',
-		'37-38': '1',
-		'38-39': '1'
+		'31-32': '0',
+		'32-33': '0',
+		'33-34': '0',
+		'35': '0',
+		'36-37': '0',
+		'37-38': '0',
+		'38-39': '0'
 	};
 
 	export let years50 = {
-		'41-42': '1',
-		'42-43': '2',
-		'43-44': '1',
-		'45': '1',
-		'46-47': '1',
-		'47-48': '1',
-		'48-49': '1'
+		'41-42': '0',
+		'42-43': '0',
+		'43-44': '0',
+		'45': '0',
+		'46-47': '0',
+		'47-48': '0',
+		'48-49': '0'
 	};
 
 	export let years60 = {
-		'51-52': '1',
-		'52-53': '2',
-		'53-54': '1',
-		'55': '1',
-		'56-57': '1',
-		'57-58': '1',
-		'58-59': '1'
+		'51-52': '0',
+		'52-53': '0',
+		'53-54': '0',
+		'55': '0',
+		'56-57': '0',
+		'57-58': '0',
+		'58-59': '0'
 	};
 
 	export let years70 = {
-		'61-62': '1',
-		'62-63': '2',
-		'63-64': '1',
-		'65': '1',
-		'66-67': '1',
-		'67-68': '1',
-		'68-69': '1'
+		'61-62': '0',
+		'62-63': '0',
+		'63-64': '0',
+		'65': '0',
+		'66-67': '0',
+		'67-68': '0',
+		'68-69': '0'
 	};
 
 	export let years80 = {
-		'71-72': '1',
-		'72-73': '2',
-		'73-74': '1',
-		'75': '1',
-		'76-77': '1',
-		'77-78': '1',
-		'78-79': '1'
+		'71-72': '0',
+		'72-73': '0',
+		'73-74': '0',
+		'75': '0',
+		'76-77': '0',
+		'77-78': '0',
+		'78-79': '0'
 	};
 
 	// table health
-	export let t1 = 't1';
-	export let t2 = 't2';
-	export let t3 = 't3';
-	export let t4 = 't4';
-	export let t5 = 't5';
-	export let t6 = 't6';
-	export let t7 = 't7';
+	export let t1 = '0';
+	export let t2 = '0';
+	export let t3 = '0';
+	export let t4 = '0';
+	export let t5 = '0';
+	export let t6 = '0';
+	export let t7 = '0';
 
 	// table health sum
-	export let ts1 = 'ts1';
-	export let ts2 = 'ts2';
-	export let ts3 = 'ts3';
+	export let ts1 = '0';
+	export let ts2 = '0';
+	export let ts3 = '0';
 
 	// birth programs
-	export let m1 = 'm1';
-	export let w1 = 'w1';
+	export let m1 = '0';
+	export let w1 = '0';
 
 	// Пошук себе
-	export let n1 = 'n1';
-	export let n2 = 'n2';
-	export let n3 = 'n3';
+	export let n1 = '0';
+	export let n2 = '0';
+	export let n3 = '0';
 
 	// Соціалізація
-	export let c4 = 'c4';
-	export let c5 = 'c5';
-	export let c6 = 'c6';
+	export let c4 = '0';
+	export let c5 = '0';
+	export let c6 = '0';
 
 	// Духовна грамотність
-	export let d3 = 'd3';
+	export let d3 = '0';
 
 	// Планетарна грамотність
-	export let p5 = 'p5';
+	export let p5 = '0';
 
 	// TODO: у пустому вигляді, що показуємо у матриці та таблиці - нулі чи нічого?
 
