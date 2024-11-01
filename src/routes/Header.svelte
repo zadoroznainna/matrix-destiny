@@ -42,7 +42,7 @@
 	>
 		<div class="flex lg:flex-1">
 			<a href="#" class="-m-1.5 p-1.5">
-				<span class="sr-only">Your Company</span>
+				<span class="sr-only">Inna Zadorozhna</span>
 				<Logo rectClass="stroke-slate-600" letterClass="fill-slate-600" svgClass="w-16 h-16" />
 			</a>
 		</div>
@@ -359,16 +359,18 @@
 		</div>
 		<div class="hidden sm:flex sm:flex-1 sm:justify-end">
 			<button
-					href="#_"
-					class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
+				href="#_"
+				class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
 					text-white rounded-md border border-orange-400 bg-orange-400 focus:shadow-custom group"
+			>
+				<span
+					class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"
+				></span>
+				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
+				<span class="relative transition-all duration-300 group-hover:text-orange-400"
+					>Зв'язатись</span
 				>
-					<span
-						class="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-56 group-hover:h-56"
-					></span>
-					<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
-					<span class="relative transition-all duration-300 group-hover:text-orange-400">Зв'язатись</span>
-				</button>
+			</button>
 		</div>
 
 		<div class="flex ml-5 lg:hidden">

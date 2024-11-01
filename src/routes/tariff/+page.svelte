@@ -56,13 +56,15 @@
 
 <section class="py-16">
 	<div class="isolate overflow-hidden">
-		<div class="flow-root bg-gray-900 pb-16 pt-24 sm:pt-32 lg:pb-0">
+		<div class="rounded-t-3xl flow-root bg-slate-200 pb-16 pt-24 sm:pt-32 lg:pb-0">
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">
-					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-white">
+					<h2
+						class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight text-slate-600"
+					>
 						Формати роботи і вартість
 					</h2>
-					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-white/60">
+					<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-slate-500">
 						Пропоную такі варіанти взаємодії
 					</p>
 				</div>
@@ -83,8 +85,8 @@
 						/>
 						<defs>
 							<radialGradient id="d25c25d4-6d43-4bf9-b9ac-1842a30a4867">
-								<stop stop-color="#7775D6" />
-								<stop offset="1" stop-color="#E935C1" />
+								<stop stop-color="#ffedd5" />
+								<stop offset="1" stop-color="#ffedd5" />
 							</radialGradient>
 						</defs>
 					</svg>
@@ -245,29 +247,36 @@
 		</div>
 	</div>
 
-	<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-16">
-		Ви завжди можете окремо обрати та замовити будь-яку послугу
-	</h3>
-	<div
-		class="flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-3 lg:items-center"
-	>
-		{#each extraTariffData as extraTariff}
-			<div class="w-full flex items-start gap-8">
-				<div class="lg:min-w-0 lg:flex-1">
-					<h3 class="text-lg font-semibold leading-8 tracking-tight text-indigo-600">
-						{extraTariff.title}
-					</h3>
-					<p class="mt-1 text-sm leading-7 text-gray-600">
-						{extraTariff.description}
+	<div class="container mx-auto px-4">
+		<h3 class="col-span-3 text-xl font-bold uppercase text-center mb-2 mt-16">
+			Ви завжди можете окремо обрати та замовити будь-яку послугу
+		</h3>
+		<div
+			class="mt-4 flex flex-col items-start gap-x-8 gap-y-6 rounded-3xl p-8 ring-1 ring-gray-900/10 sm:gap-y-10 sm:p-10 lg:col-span-3 lg:items-center"
+		>
+			{#each extraTariffData as extraTariff}
+				<div class="w-full flex items-center gap-8">
+					<div class="lg:min-w-0 lg:flex-1">
+						<h3 class="leading-6 text-lg font-semibold sm:leading-8 tracking-tight text-indigo-600">
+							{extraTariff.title}
+						</h3>
+						<p class="mt-1 text-xs leading-4 sm:text-sm sm:leading-7 text-gray-600">
+							{extraTariff.description}
+						</p>
+					</div>
+					<p class="text-xl flex-1 lg:flex-initial md:text-2xl font-bold">
+						{extraTariff.price} грн
 					</p>
+					<div class="flex-1 lg:flex-initial">
+						<a
+							href="#"
+							class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							>Замовити<span class="hidden md:inline">&nbsp;послугу</span>
+							<ArrowRight classes="w-8 h-8 ml-2" />
+						</a>
+					</div>
 				</div>
-				<p class="text-2xl font-bold">{extraTariff.price} грн</p>
-				<a
-					href="#"
-					class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-					>Замовити послугу <ArrowRight classes="w-8 h-8 ml-2" />
-				</a>
-			</div>
-		{/each}
+			{/each}
+		</div>
 	</div>
 </section>

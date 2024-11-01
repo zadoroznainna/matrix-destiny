@@ -7,6 +7,13 @@
 	import Sahasrara from '$lib/components/chakras/Sahasrara.svelte';
 	import Swadhistana from '$lib/components/chakras/Swadhistana.svelte';
 	import Vishudha from '$lib/components/chakras/Vishudha.svelte';
+
+	import Sphere from '$lib/components/patterns/Sphere.svelte';
+	import Box from '$lib/components/patterns/Box.svelte';
+	import Whirlpool from '$lib/components/patterns/Whirlpool.svelte';
+	import Loop from '$lib/components/patterns/Loop.svelte';
+	import Star from '$lib/components/patterns/Star.svelte';
+
 	import InformationTooltip from '$lib/components/InformationTooltip.svelte';
 	import ChevronDown from '../routes/icones/ChevronDown.svelte';
 
@@ -3231,309 +3238,323 @@
 				</svg>
 			</div>
 
-			<!-- Розрахунок карти здоров’я -->
-			<div class="w-full border border-slate-300 py-9 my-8 rounded-3xl">
-				<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
-					Розрахунок карти здоров’я
-				</h2>
-				<div class="mt-16 flex flex-col">
-					<div class="overflow-x-auto">
-						<div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
-							<div class="overflow-hidden">
-								<table class="min-w-full text-left text-sm font-light">
-									<thead class="border-b font-medium border-slate-300">
-										<tr>
-											<th scope="col" class="px-6 py-4">Назва чакри</th>
-											<th scope="col" class="px-6 py-4 text-center">Фізика</th>
-											<th scope="col" class="px-6 py-4 text-center">Енергія</th>
-											<th scope="col" class="px-6 py-4 text-center">Емоції</th>
-										</tr>
-									</thead>
-									<tbody>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-fuchsia-700">
-												<div class="flex items-center gap-3">
-													<Sahasrara classes="w-8 h-8 fill-fuchsia-700" />
-													Сахасрара-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Духовність, просвітлення, з’єднання з вищим, мудрість, єдність</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{a}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{b}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t1}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-indigo-700">
-												<div class="flex items-center gap-3">
-													<Ajna classes="w-8 h-8 fill-indigo-700" />
-													Аджа-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Інтуїція, ясність, уява, внутрішнє бачення, інтелект</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{a2}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{b2}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t2}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-cyan-500">
-												<div class="flex items-center gap-3">
-													<Vishudha classes="w-8 h-8 fill-cyan-700" />
-													Вішудха-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Спілкування, самовираження, правда, творчість, переконання</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{a1}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{b1}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t3}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-green-500">
-												<div class="flex items-center gap-3">
-													<Anahata classes="w-8 h-8 fill-green-700" />
-													Анахата-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Стосунки, співчуття, гармонія, прийняття, емоційний баланс</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{a3}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{b3}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t4}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-yellow-400">
-												<div class="flex items-center gap-3">
-													<Manipura classes="w-8 h-8 fill-yellow-400" />
-													Маніпура-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Самовпевненість, самоконтроль, гроші, сила, амбіції</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t5}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-orange-400">
-												<div class="flex items-center gap-3">
-													<Swadhistana classes="w-8 h-8 fill-orange-700" />
-													Свадхістана-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Емоції, творчість, сексуальність, задоволення, інтуїція</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{c1}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{d1}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t6}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">
-												<div class="flex items-center gap-3">
-													<Muladhara classes="w-8 h-8 fill-red-700" />
-													Муладхара-чакра
-													<InformationTooltip classes="w-4 h-4"
-														>Безпека, доровʼя, закріплення у матеріальному світі, стабільність,
-														звʼязок з родом</InformationTooltip
-													>
-												</div>
-											</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{c}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{d}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{t7}</td>
-										</tr>
-										<tr class="border-b border-slate-300">
-											<td class="whitespace-nowrap px-6 py-4 font-medium text-zinc-500">Сума</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{ts1}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{ts2}</td>
-											<td class="whitespace-nowrap px-6 py-4 text-center">{ts3}</td>
-										</tr>
-									</tbody>
-								</table>
+			{#if age}
+				<!-- Розрахунок карти здоров’я -->
+				<div class="w-full border border-slate-300 py-9 my-8 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
+						Розрахунок карти здоров’я
+					</h2>
+					<div class="mt-16 flex flex-col">
+						<div class="overflow-x-auto">
+							<div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+								<div class="overflow-hidden">
+									<table class="min-w-full text-left text-sm font-light">
+										<thead class="border-b font-medium border-slate-300">
+											<tr>
+												<th scope="col" class="px-6 py-4">Назва чакри</th>
+												<th scope="col" class="px-6 py-4 text-center">Фізика</th>
+												<th scope="col" class="px-6 py-4 text-center">Енергія</th>
+												<th scope="col" class="px-6 py-4 text-center">Емоції</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-fuchsia-700">
+													<div class="flex items-center gap-3">
+														<Sahasrara classes="w-8 h-8 fill-fuchsia-700" />
+														Сахасрара-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Духовність, просвітлення, з’єднання з вищим, мудрість, єдність</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{a}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{b}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t1}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-indigo-700">
+													<div class="flex items-center gap-3">
+														<Ajna classes="w-8 h-8 fill-indigo-700" />
+														Аджа-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Інтуїція, ясність, уява, внутрішнє бачення, інтелект</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{a2}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{b2}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t2}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-cyan-500">
+													<div class="flex items-center gap-3">
+														<Vishudha classes="w-8 h-8 fill-cyan-700" />
+														Вішудха-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Спілкування, самовираження, правда, творчість, переконання</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{a1}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{b1}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t3}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-green-500">
+													<div class="flex items-center gap-3">
+														<Anahata classes="w-8 h-8 fill-green-700" />
+														Анахата-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Стосунки, співчуття, гармонія, прийняття, емоційний баланс</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{a3}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{b3}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t4}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-yellow-400">
+													<div class="flex items-center gap-3">
+														<Manipura classes="w-8 h-8 fill-yellow-400" />
+														Маніпура-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Самовпевненість, самоконтроль, гроші, сила, амбіції</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{e}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t5}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-orange-400">
+													<div class="flex items-center gap-3">
+														<Swadhistana classes="w-8 h-8 fill-orange-700" />
+														Свадхістана-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Емоції, творчість, сексуальність, задоволення, інтуїція</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{c1}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{d1}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t6}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-red-500">
+													<div class="flex items-center gap-3">
+														<Muladhara classes="w-8 h-8 fill-red-700" />
+														Муладхара-чакра
+														<InformationTooltip classes="w-4 h-4"
+															>Безпека, доровʼя, закріплення у матеріальному світі, стабільність,
+															звʼязок з родом</InformationTooltip
+														>
+													</div>
+												</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{c}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{d}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{t7}</td>
+											</tr>
+											<tr class="border-b border-slate-300">
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-zinc-500">Сума</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{ts1}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{ts2}</td>
+												<td class="whitespace-nowrap px-6 py-4 text-center">{ts3}</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-			</div>
 
-			<!-- Розрахунок родових програм -->
-			<div class="w-full border border-slate-300 p-9 my-8 rounded-3xl">
-				<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
-					Розрахунок родових програм
-				</h2>
-				<div class="mt-16 flex justify-center items-center mb-3">
-					<p class="w-2/3">Родові програми по чоловічій лінії</p>
-					<ul class="flex justify-start items-center gap-10 w-1/3">
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{f}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{y}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{m1}</span>
-						</li>
-					</ul>
-				</div>
-				<div class="flex justify-center items-center mb-3">
-					<p class="w-2/3">Родові програми по жіночій лінії</p>
-					<ul class="flex justify-start items-center gap-10 w-1/3">
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{g}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{k}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{w1}</span>
-						</li>
-					</ul>
-				</div>
-				<div class="flex justify-center items-center mb-3">
-					<p class="w-2/3">Код внутрішньої сили</p>
-					<ul class="flex justify-start items-center gap-10 w-1/3">
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{e}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+				<!-- Розрахунок родових програм -->
+				<div class="w-full border border-slate-300 p-9 my-8 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
+						Розрахунок родових програм
+					</h2>
+					<div class="mt-16 flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base md:w-2/3">Родові програми по чоловічій лінії</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{f}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{y}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{m1}</span>
+							</li>
+						</ul>
+					</div>
+					<div class="flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base md:w-2/3">Родові програми по жіночій лінії</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{g}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{k}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{w1}</span>
+							</li>
+						</ul>
+					</div>
+					<div class="flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base md:w-2/3">Код внутрішньої сили</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{e}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{e1}</span>
+							</li>
+							<li
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{e2}</span>
+							</li>
+						</ul>
+					</div>
+					<div class="flex flex-col space-y-3 justify-start items-center md:flex-row">
+						<p class="text-sm md:text-base md:w-2/3">Сила роду</p>
+						<div
+							class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
 							<span class="font-bold">{e1}</span>
-						</li>
-						<li
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{e2}</span>
-						</li>
-					</ul>
-				</div>
-				<div class="flex justify-start items-center">
-					<p class="w-2/3">Сила роду</p>
-					<div
-						class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-					>
-						<span class="font-bold">{e1}</span>
-					</div>
-				</div>
-			</div>
-
-			<!-- Розрахунок призначення -->
-			<div class="flex flex-wrap grow gap-8">
-				<!-- Пошук себе -->
-				<div class="grow border border-slate-300 p-9 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
-						Пошук себе
-					</h2>
-					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
-						<div class="w-6/12">
-							<div class="flex items-center justify-between mb-4">
-								<p>Лінія Неба:</p>
-								<div
-									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-								>
-									<span class="font-bold">{n1}</span>
-								</div>
-							</div>
-							<div class="flex items-center justify-between">
-								<p>Лінія Землі:</p>
-								<div
-									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-								>
-									<span class="font-bold">{n2}</span>
-								</div>
-							</div>
-						</div>
-						<ChevronDown classes="-rotate-90 w-9 h-9" />
-						<div
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{n3}</span>
 						</div>
 					</div>
 				</div>
 
-				<!-- Соціалізація -->
-				<div class="basis-6/12 border border-slate-300 p-9 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
-						Соціалізація
-					</h2>
-					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
-						<div class="w-6/12">
-							<div class="flex items-center justify-between mb-4">
-								<p>Чол:</p>
-								<div
-									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-								>
-									<span class="font-bold">{c4}</span>
+				<!-- Розрахунок призначення -->
+				<div class="grid md:grid-cols-2 gap-4">
+					<!-- Пошук себе -->
+					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
+						<div class="absolute top-0 left-0 -ml-16 -mt-32 rotate-90">
+							<Loop />
+						</div>
+						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+							Пошук себе
+						</h2>
+						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+							<div class="w-6/12">
+								<div class="flex items-center justify-between mb-4">
+									<p>Лінія Неба:</p>
+									<div
+										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									>
+										<span class="font-bold">{n1}</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between">
+									<p>Лінія Землі:</p>
+									<div
+										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									>
+										<span class="font-bold">{n2}</span>
+									</div>
 								</div>
 							</div>
-							<div class="flex items-center justify-between">
-								<p>Жін:</p>
-								<div
-									class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-								>
-									<span class="font-bold">{c5}</span>
-								</div>
+							<ChevronDown classes="-rotate-90 w-9 h-9" />
+							<div
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{n3}</span>
 							</div>
 						</div>
-						<ChevronDown classes="-rotate-90 w-9 h-9" />
-						<div
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{c6}</span>
-						</div>
 					</div>
-				</div>
 
-				<!-- Духовна грамотність -->
-				<div class="grow border border-slate-300 p-9 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
-						Духовна грамотність
-					</h2>
-					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
-						<div
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{d3}</span>
+					<!-- Соціалізація -->
+					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
+						<div class="absolute top-0 right-0 -mr-16 -mt-32 z-0 opacity-50">
+							<Whirlpool />
+						</div>
+						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight z-30">
+							Соціалізація
+						</h2>
+						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+							<div class="w-6/12">
+								<div class="flex items-center justify-between mb-4">
+									<p>Чол:</p>
+									<div
+										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									>
+										<span class="font-bold">{c4}</span>
+									</div>
+								</div>
+								<div class="flex items-center justify-between">
+									<p>Жін:</p>
+									<div
+										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+									>
+										<span class="font-bold">{c5}</span>
+									</div>
+								</div>
+							</div>
+							<ChevronDown classes="-rotate-90 w-9 h-9" />
+							<div
+								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{c6}</span>
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<!-- Планетарна грамотність -->
-				<div class="basis-6/12 border border-slate-300 p-9 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
-						Планетарна грамотність
-					</h2>
-					<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
-						<div
-							class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
-						>
-							<span class="font-bold">{p5}</span>
+					<!-- Духовна грамотність -->
+					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
+						<div class="absolute bottom-0 left-0 -mb-32 z-0 opacity-50">
+							<Box />
+						</div>
+						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+							Духовна грамотність
+						</h2>
+						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+							<div
+								class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{d3}</span>
+							</div>
+						</div>
+					</div>
+
+					<!-- Планетарна грамотність -->
+					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
+						<div class="absolute bottom-0 right-0 -mr-12 -mb-24 z-0 opacity-50">
+							<Sphere />
+						</div>
+						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+							Планетарна грамотність
+						</h2>
+						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+							<div
+								class="bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
+							>
+								<span class="font-bold">{p5}</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
+			{/if}
 		</div>
 	</div>
 </section>
