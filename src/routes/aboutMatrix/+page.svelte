@@ -3,7 +3,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="py-16 bg-slate-500 rounded-[40px]">
+<section class="py-16 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-400 rounded-[40px]">
 	<div class="container mx-auto px-4">
 		<h2 class="text-3xl font-bold uppercase text-center text-slate-50 mb-10">
 			Що таке матриця долі? Які питання допомогає вирішити?
@@ -31,7 +31,10 @@
 				</p>
 			</div>
 			<div>
-				<a href="#" class="arrow-link flex flex-col items-center transition ease-linear duration-400">
+				<a
+					href="#"
+					class="arrow-link flex flex-col items-center transition ease-linear duration-400"
+				>
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
 						fill="none"

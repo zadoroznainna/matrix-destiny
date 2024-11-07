@@ -55,7 +55,7 @@
 	];
 </script>
 
-<footer class="bg-gray-900" aria-labelledby="footer-heading">
+<footer class="bg-gradient-to-r from-slate-900 to-slate-700" aria-labelledby="footer-heading">
 	<h2 id="footer-heading" class="sr-only">Footer</h2>
 	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
@@ -102,9 +102,14 @@
 							</li>
 						</ul>
 						<h3 class="text-base font-semibold leading-6 text-white mb-5">Технічна підтримка</h3>
-						<p class="text-sm text-gray-300 mb-5">Залиште своє запитання або зверніться за технічною підтримкою, і ми з радістю вам допоможемо.</p>
-						<a class="inline-block text-white rounded-xl bg-orange-500 px-10 py-4" href="mailto:mkovaleva0205@gmail.com">Напишіть нам</a>
-
+						<p class="text-sm text-gray-300 mb-5">
+							Залиште своє запитання або зверніться за технічною підтримкою, і ми з радістю вам
+							допоможемо.
+						</p>
+						<a
+							class="inline-block text-white rounded-xl bg-orange-500 px-10 py-4"
+							href="mailto:mkovaleva0205@gmail.com">Напишіть нам</a
+						>
 					</div>
 				</div>
 				<div class="md:grid md:grid-cols-2 md:gap-8">
@@ -141,7 +146,8 @@
 		<div class="mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
 			<div class="flex justify-between">
 				<p class="text-xs leading-5 text-gray-400">
-					Copyright &copy; {isNextYear ? currentYear + ' - ' + nextYear : currentYear} zadoroznainna.com | Всі права захищені
+					Copyright &copy; {isNextYear ? currentYear + ' - ' + nextYear : currentYear} zadoroznainna.com
+					| Всі права захищені
 				</p>
 				<p class="text-xs text-gray-400">
 					Website design and development by

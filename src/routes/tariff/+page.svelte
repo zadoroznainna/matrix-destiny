@@ -1,5 +1,6 @@
 <script>
 	import Gift from '../icones/Gift.svelte';
+	import Star from '../icones/Star.svelte';
 	import Check from '../icones/Check.svelte';
 	import ArrowRight from '../icones/ArrowRight.svelte';
 
@@ -56,7 +57,9 @@
 
 <section class="py-16">
 	<div class="isolate overflow-hidden">
-		<div class="rounded-t-3xl flow-root bg-slate-200 pb-16 pt-24 sm:pt-32 lg:pb-0">
+		<div
+			class="rounded-t-3xl flow-root bg-gradient-to-r from-slate-400 via-slate-50 to-slate-400 pb-16 pt-24 sm:pt-32 lg:pb-0"
+		>
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">
 					<h2
@@ -85,17 +88,17 @@
 						/>
 						<defs>
 							<radialGradient id="d25c25d4-6d43-4bf9-b9ac-1842a30a4867">
-								<stop stop-color="#ffedd5" />
-								<stop offset="1" stop-color="#ffedd5" />
+								<stop stop-color="#ffffff" />
+								<stop offset="1" stop-color="#ffffff" />
 							</radialGradient>
 						</defs>
 					</svg>
 					<div
-						class="hidden lg:absolute lg:inset-x-px lg:bottom-0 lg:top-4 lg:block lg:rounded-t-2xl lg:bg-gray-800/80 lg:ring-1 lg:ring-white/10"
+						class="hidden lg:absolute lg:inset-x-px lg:bottom-0 lg:top-4 lg:block lg:rounded-t-2xl lg:bg-slate-800/80 lg:ring-1 lg:ring-white/10"
 						aria-hidden="true"
 					></div>
 					<div
-						class="relative rounded-2xl bg-gray-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0"
+						class="relative rounded-2xl bg-slate-800/80 ring-1 ring-white/10 lg:bg-transparent lg:pb-14 lg:ring-0"
 					>
 						<div class="p-8 lg:pt-12 xl:p-10 xl:pt-14">
 							<h3 id="tier-starter" class="text-sm font-semibold leading-6 text-white">Базовий</h3>
@@ -118,7 +121,7 @@
 								<a
 									href="#"
 									aria-describedby="tier-starter"
-									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 hover:bg-white/20 focus-visible:outline-white"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-orange-200/20 hover:bg-white/20 focus-visible:outline-white"
 									>Замовити</a
 								>
 							</div>
@@ -143,10 +146,12 @@
 								<h3 id="tier-scale" class="text-sm font-semibold leading-6 text-gray-900">
 									Середній
 								</h3>
+
 								<p
-									class="rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold text-sky-600"
+									class="flex items-center gap-2 rounded-full bg-orange-600/10 px-2.5 py-1 text-xs font-semibold text-orange-600"
 								>
-									Популярний
+									<Star />
+									<span>Популярний</span>
 								</p>
 							</div>
 							<div
@@ -168,7 +173,7 @@
 								<a
 									href="#"
 									aria-describedby="tier-scale"
-									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-indigo-600 shadow-sm hover:bg-indigo-500 focus-visible:outline-indigo-600"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-orange-500 shadow-sm hover:bg-orange-400 focus-visible:outline-indigo-600"
 									>Замовити</a
 								>
 							</div>
@@ -194,7 +199,7 @@
 							<div class="flex justify-between">
 								<h3 id="tier-growth" class="text-sm font-semibold leading-6 text-white">Повний</h3>
 								<p
-									class="flex items-center gap-2 rounded-full bg-sky-600/10 px-2.5 py-1 text-xs font-semibold leading-5 text-sky-600"
+									class="flex items-center gap-2 rounded-full bg-orange-400/30 px-2.5 py-1 text-xs font-semibold leading-5 text-orange-400"
 								>
 									<Gift />
 									<span>Бонус</span>
@@ -219,7 +224,7 @@
 								<a
 									href="#"
 									aria-describedby="tier-growth"
-									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-white/10 hover:bg-white/20 focus-visible:outline-white"
+									class="rounded-md py-2 px-3 text-center text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 bg-orange-200/20 hover:bg-white/20 focus-visible:outline-white"
 									>Замовити</a
 								>
 							</div>
@@ -234,7 +239,7 @@
 											{thirdTarrif}
 										</li>
 									{/each}
-									<li class="flex gap-x-3 py-2">
+									<li class="flex text-orange-500 gap-x-3 py-2">
 										<Gift />
 										Бонус - прогноз на найближчий рік
 									</li>
@@ -257,10 +262,10 @@
 			{#each extraTariffData as extraTariff}
 				<div class="w-full flex items-center gap-8">
 					<div class="lg:min-w-0 lg:flex-1">
-						<h3 class="leading-6 text-lg font-semibold sm:leading-8 tracking-tight text-indigo-600">
+						<h3 class="leading-6 text-lg font-semibold sm:leading-8 tracking-tight text-slate-600">
 							{extraTariff.title}
 						</h3>
-						<p class="mt-1 text-xs leading-4 sm:text-sm sm:leading-7 text-gray-600">
+						<p class="mt-1 text-xs leading-4 sm:text-sm sm:leading-7 text-slate-600">
 							{extraTariff.description}
 						</p>
 					</div>
@@ -270,7 +275,7 @@
 					<div class="flex-1 lg:flex-initial">
 						<a
 							href="#"
-							class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-indigo-600 ring-1 ring-inset ring-indigo-200 hover:ring-indigo-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+							class="flex items-center rounded-md px-3.5 py-2 text-sm font-semibold leading-6 text-orange-400 ring-1 ring-inset ring-orange-200 hover:ring-orange-300 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-orange-600"
 							>Замовити<span class="hidden md:inline">&nbsp;послугу</span>
 							<ArrowRight classes="w-8 h-8 ml-2" />
 						</a>

@@ -1,5 +1,5 @@
 <svg
-	class="h-6 w-5 flex-none text-sky-600"
+	class="h-6 w-5 flex-none text-orange-600"
 	viewBox="0 0 20 20"
 	fill="currentColor"
 	aria-hidden="true"

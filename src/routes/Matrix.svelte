@@ -3358,8 +3358,8 @@
 												<td class="whitespace-nowrap px-6 py-4 text-center">{d}</td>
 												<td class="whitespace-nowrap px-6 py-4 text-center">{t7}</td>
 											</tr>
-											<tr class="border-b border-slate-300">
-												<td class="whitespace-nowrap px-6 py-4 font-medium text-zinc-500">Сума</td>
+											<tr>
+												<td class="whitespace-nowrap px-6 py-4 font-medium text-slate-500">Сума</td>
 												<td class="whitespace-nowrap px-6 py-4 text-center">{ts1}</td>
 												<td class="whitespace-nowrap px-6 py-4 text-center">{ts2}</td>
 												<td class="whitespace-nowrap px-6 py-4 text-center">{ts3}</td>
@@ -3523,7 +3523,7 @@
 
 					<!-- Духовна грамотність -->
 					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute bottom-0 left-0 -mb-32 z-0 opacity-50">
+						<div class="absolute bottom-0 left-0 -mb-[12rem] -ml-[10rem] z-0 opacity-50">
 							<Box />
 						</div>
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
@@ -3540,7 +3540,7 @@
 
 					<!-- Планетарна грамотність -->
 					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute bottom-0 right-0 -mr-12 -mb-24 z-0 opacity-50">
+						<div class="absolute bottom-0 right-0 -mr-36 -mb-[20rem] rotate-[30deg] z-0 opacity-50">
 							<Sphere />
 						</div>
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">

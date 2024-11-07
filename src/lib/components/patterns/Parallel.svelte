@@ -1,4 +1,4 @@
-<svg class="w-32" viewBox="0 0 627 593" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="w-[40rem]" viewBox="0 0 627 593" fill="none" xmlns="http://www.w3.org/2000/svg">
 	<g clip-path="url(#clip0_0_1)">
 		<path
 			d="M318.205 477.205C53.5639 10.8409 48.9849 -121.622 627.205 168.205"
