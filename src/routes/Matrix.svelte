@@ -176,9 +176,8 @@
 	// Планетарна грамотність
 	export let p5 = '0';
 
-	// TODO: у пустому вигляді, що показуємо у матриці та таблиці - нулі чи нічого?
-
 	let birthdate = '';
+	let name = '';
 	let age = null;
 	let errors = {};
 
@@ -1759,6 +1758,7 @@
 							type="text"
 							name="name"
 							id="name"
+							bind:value={name}
 							class="block w-full h-full rounded-md sm:rounded-l-2xl sm:rounded-r-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							placeholder="Катерина"
 						/>
@@ -1774,21 +1774,22 @@
 							type="date"
 							name="date birth"
 							id="date birth"
-							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
+							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset
+							placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							bind:value={birthdate}
 						/>
 
 						{#if errors.birthdate}
-							<p class="absolute text-red-400 text-xs text-light">{errors.birthdate}</p>
+							<p class="absolute text-red-500 text-xs text-light">{errors.birthdate}</p>
 						{/if}
 					</div>
 					<button
 						type="submit"
-						class="mt-4 sm:mt-0 sm:w-64 uppercase font-bold bg-orange-500 text-slate-50 px-7 py-4 rounded-md sm:rounded-r-2xl sm:rounded-l-md"
+						class="mt-4 sm:mt-0 sm:w-64 uppercase font-bold bg-orange-500 border-2 border-transparent trasition-all duration-500 text-slate-50 px-7 py-4 rounded-md sm:rounded-r-2xl sm:rounded-l-md
+						hover:bg-white hover:text-orange-500 hover:border-2 hover:border-orange-500 focus:shadow-custom"
 						>Розрахувати</button
 					>
 				</form>
-
 				{#if age}
 					<div class="mt-4 text-center">
 						<h4>Ваш вік: <span class="font-semibold">{age}</span></h4>
@@ -1796,7 +1797,7 @@
 				{/if}
 			</div>
 
-			<div class="relative w-full md:w-2/3 mx-auto">
+			<div class="relative w-full md:w-2/3 mx-auto pt-6">
 				{#if tooltip == 'material'}
 					<Tooltip
 						chakra={'Muladhara'}

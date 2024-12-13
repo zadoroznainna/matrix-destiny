@@ -110,6 +110,8 @@
 							class="inline-block text-white rounded-xl bg-orange-500 px-10 py-4"
 							href="mailto:mkovaleva0205@gmail.com">Напишіть нам</a
 						>
+						<p class="text-sm text-gray-300 mb-5">Залиште своє запитання або зверніться за технічною підтримкою, і ми з радістю вам допоможемо.</p>
+						<a class="inline-block text-white rounded-xl bg-orange-500 px-10 py-4" href="mailto:mkovaleva0205@gmail.com">Напишіть нам</a>
 					</div>
 				</div>
 				<div class="md:grid md:grid-cols-2 md:gap-8">

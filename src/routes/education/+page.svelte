@@ -4,7 +4,7 @@
 	import educationThird from '$lib/images/education_3.jpg';
 </script>
 
-<section class="mt-8 pt-8 pb-16 bg-gray-900 bg-opacity-85">
+<section class="pb-16 bg-gray-900 bg-opacity-85">
 	<div class="mx-auto px-4">
 		<h2 class="text-3xl font-bold text-gray-100 text-center uppercase mb-8 pt-10">
 			Мої сертифікати

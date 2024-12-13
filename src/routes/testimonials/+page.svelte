@@ -96,7 +96,7 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section>
+<section class="py-16">
 	<div class="container mx-auto px-4">
 		<h2 class="text-3xl font-bold uppercase text-center mb-10">Відгуки</h2>
 		<div class="mx-auto max-w-xl text-center"></div>
@@ -140,9 +140,19 @@
 			</div>
 		</div>
 		<div class="flex justify-center">
-			<button class="py-3 bg-orange-400 px-7 text-orange-50 mx-auto rounded-md">
-				Більше відгуків</button
+			<a
+				href="https://www.instagram.com/stories/highlights/17966482079238593/"
+				class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
+					text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group"
 			>
+				<span
+					class="absolute w-0 h-0 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-56 group-hover:h-56"
+				></span>
+				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
+				<span class="relative transition-all duration-300 group-hover:text-white"
+					>Більше відгуків</span
+				>
+			</a>
 		</div>
 	</div>
 </section>
