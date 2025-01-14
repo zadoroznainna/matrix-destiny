@@ -58,7 +58,7 @@
 <section class="py-16">
 	<div class="isolate overflow-hidden">
 		<div
-			class="rounded-t-3xl flow-root bg-gradient-to-r from-slate-400 via-slate-50 to-slate-400 pb-16 pt-24 sm:pt-32 lg:pb-0"
+			class="rounded-t-3xl flow-root bg-gradient-to-r from-slate-200 via-slate-50 to-slate-200 pb-16 pt-24 sm:pt-32 lg:pb-0"
 		>
 			<div class="mx-auto max-w-7xl px-6 lg:px-8">
 				<div class="relative z-10">

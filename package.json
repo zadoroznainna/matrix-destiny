@@ -33,6 +33,7 @@
 	"type": "module",
 	"dependencies": {
 		"@tailwindcss/forms": "^0.5.9",
+		"pdfmake": "^0.2.18",
 		"tailwind-merge": "^2.5.2"
 	}
 }

@@ -3,7 +3,9 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="py-16 bg-gradient-to-r from-slate-400 via-slate-500 to-slate-400 rounded-[40px]">
+<section
+	class="py-16 bg-gradient-to-r from-slate-500 from-10% via-slate-400 via-40% to-slate-500 to-90% rounded-[40px]"
+>
 	<div class="container mx-auto px-4">
 		<h2 class="text-3xl font-bold uppercase text-center text-slate-50 mb-10">
 			Що таке матриця долі? Які питання допомогає вирішити?
