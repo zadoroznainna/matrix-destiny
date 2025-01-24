@@ -98,14 +98,14 @@
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl font-bold uppercase text-center mb-10">Відгуки</h2>
+		<h2 class="text-3xl font-bold text-slate-700 uppercase text-center mb-10">Відгуки</h2>
 		<div class="mx-auto max-w-xl text-center"></div>
 		<div class="mx-auto mt-16 mb-8 flow-root max-w-2xl sm:mt-20 lg:mx-0 lg:max-w-none">
 			<div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
 				{#each testimonialsData as item, index (item)}
 					<div class="pt-8 sm:inline-block sm:w-full sm:px-4">
-						<figure class="rounded-2xl bg-gray-50 p-8 text-sm leading-6">
-							<blockquote class="text-gray-900">
+						<figure class="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
+							<blockquote class="text-slate-700">
 								<svg
 									class="inline-block text-zinc-200"
 									xmlns="http://www.w3.org/2000/svg"
@@ -128,10 +128,10 @@
 								{/if}
 							</blockquote>
 							<figcaption class="mt-6 flex items-center gap-x-4">
-								<img class="h-10 w-10 rounded-full bg-gray-50" src={item.image} alt={item.name} />
+								<img class="h-10 w-10 rounded-full bg-slate-50" src={item.image} alt={item.name} />
 								<div>
-									<div class="font-semibold text-gray-900">{item.name}</div>
-									<div class="text-gray-600">{item.social}</div>
+									<div class="font-semibold text-slate-700">{item.name}</div>
+									<div class="text-slate-600">{item.social}</div>
 								</div>
 							</figcaption>
 						</figure>

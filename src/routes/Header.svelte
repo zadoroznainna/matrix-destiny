@@ -50,7 +50,7 @@
 			{#each menuItems as item}
 				<a
 					href="#"
-					class="text-sm font-semibold leading-6 text-gray-900 transition-all duration-400 hover:text-orange-400"
+					class="text-sm font-semibold leading-6 text-slate-700 transition-all duration-400 hover:text-orange-400"
 					>{item.title}</a
 				>
 			{/each}
@@ -434,7 +434,7 @@
 							{#each menuItems as item}
 								<a
 									href="#"
-									class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+									class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-slate-700 hover:bg-gray-50"
 								>
 									<div
 										class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"

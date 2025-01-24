@@ -19,18 +19,18 @@
 				<img src={photoAbout} alt="Моє Задорожної Інни" class="rounded-3xl w-full" />
 			</div>
 			<div class="basis-1/2 mt-16 md:mt-0">
-				<h2 class="text-4xl font-bold uppercase mb-8">Про мене</h2>
-				<p class="mb-5 leading-8">
+				<h2 class="text-4xl text-slate-700 font-bold uppercase mb-8">Про мене</h2>
+				<p class="text-slate-600 mb-5 leading-8">
 					Мене звати Інна, мені {age} роки я спеціаліст з матриці долі. Кожна людина приходить в цей
 					світ в певний день, де закладенно її призначення та задачі на це втілення. Матриця долі - це
 					ключ до вашого самопізнання та розуміння себе.
 				</p>
-				<p class="mb-5 leading-8">
+				<p class="text-slate-600 mb-5 leading-8">
 					В певний період мого життя мене почали турбувати питання «Хто я?», «Яке моє призначення»,
 					«Ким я хочу бути?». Я завжди відчувала в собі потяг до всього таємничого і цей потяг
 					познайомив мене з матрицею долі, котра дала мені краще зрозуміти себе та світ навколо.
 				</p>
-				<h4 class="text-lg font-extrabold">Напрями роботи:</h4>
+				<h4 class="text-lg font-extrabold text-slate-700">Напрями роботи:</h4>
 				<div class="flex flex-wrap gap-2 mt-4">
 					<span
 						class="text-nowrap items-center rounded-full bg-orange-100 px-2 py-1 text-xs font-medium text-orange-600"

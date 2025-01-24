@@ -112,7 +112,7 @@
 <section class="py-16">
 	<div class="container mx-auto px-4">
 		<div class="lg:hidden">
-			<h2 class="text-3xl font-bold uppercase text-center mb-10">Зони в матриці долі</h2>
+			<h2 class="text-3xl text-slate-700 font-bold uppercase text-center mb-10">Зони в матриці долі</h2>
 
 			<div class="relative">
 				<div class="flex gap-6 carousel py-6">
@@ -136,8 +136,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Портрет</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Портрет</h4>
+							<p class="text-slate-600 text-center">
 								«Візитна картка, найяскравіша енергія, яка показує, якою/яким Ви є. Коли важко, коли
 								потрібна підтримка – у вас завжди є ресурс.
 							</p>
@@ -163,8 +163,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Таланти</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Таланти</h4>
+							<p class="text-slate-600 text-center">
 								Те що дано вам вищими силами і пов'язаний із підсвідомістю, світогляд,
 								самовираження.
 							</p>
@@ -191,8 +191,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Зона комфорту</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Зона комфорту</h4>
+							<p class="text-slate-600 text-center">
 								Ця енергія допоможе зрозуміти, як Ви проявляєтеся в соціумі. Показує соціальні
 								завдання та вчинки, які ви маєте зробити для людей.
 							</p>
@@ -218,8 +218,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Матеріальна карма</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Матеріальна карма</h4>
+							<p class="text-slate-600 text-center">
 								Що сприяє матеріальному достатку та фізичному здоров’ю? Ця енергія покаже, що може
 								заважати вам отримувати матеріальні блага в житті.
 							</p>
@@ -245,8 +245,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">«Грошовий канал»</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">«Грошовий канал»</h4>
+							<p class="text-slate-600 text-center">
 								Ця енергія покаже через що до вас будуть приходити гроші, вказуючи на стан,
 								поведінку та дії, що допомагають розкрити енергію грошового каналу.
 							</p>
@@ -272,8 +272,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Кармічний хвіст</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Кармічний хвіст</h4>
+							<p class="text-slate-600 text-center">
 								Це задачі котрі ми повинні виконати в цьому втіленні. Пропрацювавши кармічний хвіст,
 								ми збудуємо міцний фундамент для нашого життя.
 							</p>
@@ -299,8 +299,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Родові програми</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Родові програми</h4>
+							<p class="text-slate-600 text-center">
 								У матриці є лінія чоловічого роду та лінія жіночого роду. Якщо ці лінії не
 								опрацьовані, то у вас можуть виникати проблеми з фінансами, відносинами.
 							</p>
@@ -326,8 +326,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Дитячо-батьківська зона</h4>
-							<p class="text-center">Образи на батьків, чого навчатимуть вас ваші діти.</p>
+							<h4 class="text-slate-700 text-xl font-bold">Дитячо-батьківська зона</h4>
+							<p class="text-slate-600 text-center">Образи на батьків, чого навчатимуть вас ваші діти.</p>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -350,8 +350,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Канал відносин</h4>
-							<p class="text-center">
+							<h4 class="text-slate-700 text-xl font-bold">Канал відносин</h4>
+							<p class="text-slate-600 text-center">
 								Що блокує вам гармонійну побудову нових міжособистих відносин та сприяє конфліктам у
 								вже існуючих відносинах?
 							</p>
@@ -377,8 +377,8 @@
 									</svg>
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">Призначення</h4>
-							<p class="text-center">Особисте, соціальне та духовне.</p>
+							<h4 class="text-slate-700 text-xl font-bold">Призначення</h4>
+							<p class="text-slate-600 text-center">Особисте, соціальне та духовне.</p>
 						</div>
 					</div>
 				</div>
@@ -390,7 +390,7 @@
 		<div class="hidden lg:block">
 			<div class="grid grid-cols-3 gap-10">
 				<div class="row-start-1 row-end-3 flex flex-col justify-between">
-					<h2 class="text-3xl font-bold uppercase">Зони в матриці долі</h2>
+					<h2 class="text-slate-700 text-3xl font-bold uppercase">Зони в матриці долі</h2>
 					<div class="flex flex-col gap-9">
 						<img src={zones} class="rounded-3xl h-full object-cover" alt="Zones matrix" />
 					</div>
@@ -408,9 +408,9 @@
 									<svelte:component this={item.icon} />
 								</div>
 							</div>
-							<h4 class="text-xl font-bold">{item.title}</h4>
+							<h4 class="text-slate-700 text-xl font-bold">{item.title}</h4>
 						</div>
-						<p>{item.description}</p>
+						<p class="text-slate-600">{item.description}</p>
 					</div>
 				{/each}
 			</div>

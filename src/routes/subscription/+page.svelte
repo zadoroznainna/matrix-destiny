@@ -11,8 +11,10 @@
 				<h2 class="text-3xl text-center font-bold text-slate-50 uppercase mb-5">
 					Підписуйся на мій Instagram
 				</h2>
-				<p class="text-lg text-yellow-50 text-center mb-10">
-					Отримайте відео-урок + методичку у подарунок просто приєднавшись до моєї сторінки!
+				<p class="text-lg text-slate-50 text-center mb-10">
+					Отримайте відео-урок + методичку у подарунок 
+					<span class="font-bold italic">"Як зрозуміти і опрацювати свою зону комфорту"</span>
+					просто приєднавшись до моєї сторінки!
 				</p>
 				<div class="group">
 					<a
@@ -22,7 +24,7 @@
 				               w-full h-full flex justify-center items-center gap-3 py-3 px-5 group-hover:no-underline focus:shadow-whitening"
 					>
 						<Instagram colorFill="currentColor" classes="w-4 h-4" />
-						<span class="text-white group-hover:text-orange-300 transition-all duration-400"
+						<span class="text-slate-50 group-hover:text-orange-300 transition-all duration-400"
 							>Підписатись</span
 						>
 					</a>

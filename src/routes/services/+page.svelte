@@ -7,7 +7,7 @@
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl font-bold text-center uppercase mb-8 pt-10">Мої послуги</h2>
+		<h2 class="text-slate-700 text-3xl font-bold text-center uppercase mb-8 pt-10">Мої послуги</h2>
 		<div class="grid grid-cols-3 gap-2 rounded-3xl overflow-hidden">
 			<div class="relative overflow-hidden group cursor-pointer rounded-r">
 				<div class="relative">

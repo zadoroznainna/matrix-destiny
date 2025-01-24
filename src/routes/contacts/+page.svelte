@@ -27,15 +27,15 @@
 	<div class="mx-auto px-4 px-xl-8 max-w-7xl">
 		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10">
 			<div class="basis-1/2 rounded-3xl flex flex-col justify-center">
-				<h2 class="text-3xl font-bold uppercase text-left mb-14">Контактні дані та соціальні мережі</h2>
-				<p class="mb-3 font-semibold">Маєте питання або бажаєте записатися на консультацію?</p>
-				<p>Просто перейдіть за зручним для вас посиланням, і я зв’яжуся з вами, щоб узгодити зручний час!</p>
-				<div class="flex flex-col space-y-6 pr-12 mt-16">
+				<h2 class="text-3xl text-slate-700 font-bold uppercase text-left mb-14">Контактні дані та соціальні мережі</h2>
+				<p class="mb-3 font-semibold text-slate-700">Маєте питання або бажаєте записатися на консультацію?</p>
+				<p class="text-slate-600">Просто перейдіть за зручним для вас посиланням, і я зв’яжуся з вами, щоб узгодити зручний час!</p>
+				<div class="flex flex-col space-y-6 pr-16 mt-16">
 					{#each contacts as contact}
-						<div class="border border-sky-700 rounded-md px-4 py-5">
+						<div class="border border-sky-700 rounded-md px-4">
 							<a
 								href="#"
-								class="w-full h-full flex justify-center items-center text-sky-700"
+								class="w-full h-full flex justify-center items-center text-sky-700 py-5"
 							>
 							<div class="flex justify-between items-center w-full">
 								<div class="flex">

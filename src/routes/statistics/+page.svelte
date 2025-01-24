@@ -53,7 +53,7 @@
 					>
 						{item.count}
 					</h3>
-					<p class="mt-4 uppercase text-center text-neutral-600">{item.name}</p>
+					<p class="mt-4 uppercase text-center text-slate-700">{item.name}</p>
 				</li>
 			{/each}
 		</ul>

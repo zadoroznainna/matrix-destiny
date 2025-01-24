@@ -12,11 +12,11 @@
 	<div class="mx-auto px-4 px-8 max-w-7xl">
 		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10">
 			<div class="basis-1/2 rounded-3xl flex flex-col justify-center">
-				<h1 class="text-7xl text-start font-bold mb-10">Інна Задорожна</h1>
-				<p class="text-2xl tracking-wide leading-8">
+				<h1 class="text-7xl text-slate-700 text-start font-bold mb-10">Інна Задорожна</h1>
+				<p class="text-2xl text-slate-500 tracking-wide leading-8">
 					Cпеціаліст з матриці долі та майстриня з трансформації вашого життя
 				</p>
-				<p class="mt-8 font-semibold">За допомогою матриці долі я зможу розказати вам:</p>
+				<p class="mt-8 font-semibold text-slate-700">За допомогою матриці долі я зможу розказати вам:</p>
 				<ul class="mb-8 space-y-3 mt-4">
 					<li class="flex items-center bg-rose-100 p-2 rounded-full">
 						<div class="p-2 bg-rose-200 rounded-full mr-3">
@@ -35,7 +35,7 @@
 								/>
 							</svg>
 						</div>
-						<p>Як побудувати гармонійні відносини</p>
+						<p class="text-slate-600">Як побудувати гармонійні відносини</p>
 					</li>
 					<li class="flex items-center bg-blue-100 p-2 rounded-full">
 						<div class="p-2 bg-blue-200 rounded-full mr-3">
@@ -54,7 +54,7 @@
 								/>
 							</svg>
 						</div>
-						<p>Які ваші таланти</p>
+						<p class="text-slate-600">Які ваші таланти</p>
 					</li>
 					<li class="flex items-center bg-orange-100 p-2 rounded-full">
 						<div class="p-2 bg-orange-200 rounded-full mr-3">
@@ -71,7 +71,7 @@
 								/>
 							</svg>
 						</div>
-						<p>Які задачі потрібно виконати в цьому втіленні</p>
+						<p class="text-slate-600">Які задачі потрібно виконати в цьому втіленні</p>
 					</li>
 					<li class="flex items-center bg-green-100 p-2 rounded-full">
 						<div class="p-2 bg-green-200 rounded-full mr-3">
@@ -90,7 +90,7 @@
 								/>
 							</svg>
 						</div>
-						<p>Що може блокувати ваші фінанси</p>
+						<p class="text-slate-600">Що може блокувати ваші фінанси</p>
 					</li>
 				</ul>
 				<div class="group w-full lg:w-1/2">

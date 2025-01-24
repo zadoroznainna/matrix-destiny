@@ -6,7 +6,7 @@
 
 <section class="pb-16 bg-gray-900 bg-opacity-85">
 	<div class="mx-auto px-4">
-		<h2 class="text-3xl font-bold text-gray-100 text-center uppercase mb-8 pt-10">
+		<h2 class="text-3xl font-bold text-slate-50 text-center uppercase mb-8 pt-10">
 			Мої сертифікати
 		</h2>
 		<div class="flex flex-column justify-center h-full">

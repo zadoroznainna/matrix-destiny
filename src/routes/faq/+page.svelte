@@ -50,27 +50,27 @@
 
 <section class="py-16">
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl font-bold text-center uppercase mb-10">Запитання та відповіді</h2>
+		<h2 class="text-3xl font-bold text-slate-700 text-center uppercase mb-10">Запитання та відповіді</h2>
 		<div class="flex justify-between place-items-center">
 			<div class="basis-1/3">
 				<img src={photoFaq} alt="Photo about" class="rounded-3xl" height="400" />
 			</div>
 			<div class="basis-2/3 pl-10">
 				<div class="mx-auto max-w-7xl">
-					<div class="mx-auto max-w-4xl divide-y divide-gray-900/10">
-						<dl class="space-y-6 divide-y divide-gray-900/10">
+					<div class="mx-auto max-w-4xl divide-y divide-slate-700/10">
+						<dl class="space-y-6 divide-y divide-slate-700/10">
 							{#each faqData as faq, index}
 								<div class={index === 0 ? 'pt-0' : 'pt-6'}>
 									<dt>
 										<button
 											type="button"
-											class="flex w-full items-start justify-between text-left text-gray-900"
+											class="flex w-full items-start justify-between text-left text-slate-700"
 											aria-controls="faq-{index}"
 											aria-expanded={activeQuestion === index}
 											on:click={() => toggleQuestion(index)}
 										>
 											<p class="text-base font-semibold leading-7 mb-0">{index + 1}. {faq.title}</p>
-											<span class="ml-6 flex items-center p-1 border border-gray-300 rounded-lg">
+											<span class="ml-6 flex items-center p-1 border border-slate-300 rounded-lg">
 												<ChevronUp classes={activeQuestion !== index ? 'hidden' : ''} />
 												<ChevronDown classes={activeQuestion === index ? 'hidden' : ''} />
 											</span>
@@ -80,7 +80,7 @@
 										class="mt-2 pr-12 {activeQuestion === index ? '' : 'hidden'}"
 										id="faq-{index}"
 									>
-										<p class="text-base leading-7 text-gray-600">
+										<p class="text-base leading-7 text-slate-600">
 											{faq.description}
 										</p>
 									</dd>
