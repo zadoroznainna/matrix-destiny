@@ -178,6 +178,7 @@
 
 	let birthdate = '';
 	let name = '';
+	let calculatedName = '';
 	let age = null;
 	let errors = {};
 
@@ -220,6 +221,7 @@
 		const [year, month, day] = birthdate.split('-');
 
 		age = calculateAge(birthdate);
+		calculatedName = name;
 
 		a = calcNumber(Number(day));
 		b = calcNumber(Number(month));
@@ -661,7 +663,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="105.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="105.772">{a}</tspan></text
 		>
 		<text
 			fill="black"
@@ -669,7 +671,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="140.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="140.772">{a2}</tspan></text
 		>
 		<text
 			fill="black"
@@ -677,7 +679,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="175.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="175.772">{a1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -685,7 +687,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="210.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="210.772">{a3}</tspan></text
 		>
 		<text
 			fill="black"
@@ -693,7 +695,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="245.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="245.772">{e}</tspan></text
 		>
 		<text
 			fill="black"
@@ -701,7 +703,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="280.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="280.772">{c1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -709,7 +711,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="315.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="315.772">{c}</tspan></text
 		>
 		<text
 			fill="black"
@@ -717,7 +719,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="188.5" y="350.772">0</tspan></text
+			letter-spacing="0em"><tspan x="188.5" y="350.772">{ts1}</tspan></text
 		>
 		<rect width="65" height="35" transform="translate(233 48.9082)" fill="#FAFAFA" />
 		<text
@@ -736,7 +738,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="105.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="105.772">{b}</tspan></text
 		>
 		<text
 			fill="black"
@@ -744,7 +746,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="140.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="140.772">{b2}</tspan></text
 		>
 		<text
 			fill="black"
@@ -752,7 +754,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="175.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="175.772">{b1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -760,7 +762,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="210.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="210.772">{b3}</tspan></text
 		>
 		<text
 			fill="black"
@@ -768,7 +770,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="245.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="245.772">{e}</tspan></text
 		>
 		<text
 			fill="black"
@@ -776,7 +778,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="280.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="280.772">{d1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -784,7 +786,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="315.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="315.772">{d}</tspan></text
 		>
 		<text
 			fill="black"
@@ -792,7 +794,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="261.5" y="350.772">0</tspan></text
+			letter-spacing="0em"><tspan x="261.5" y="350.772">{ts2}</tspan></text
 		>
 		<rect width="59" height="35" transform="translate(308 48.9082)" fill="#FAFAFA" />
 		<text
@@ -811,7 +813,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="105.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="105.772">{t1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -819,7 +821,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="140.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="140.772">{t2}</tspan></text
 		>
 		<text
 			fill="black"
@@ -827,7 +829,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="175.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="175.772">{t3}</tspan></text
 		>
 		<text
 			fill="black"
@@ -835,7 +837,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="210.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="210.772">{t4}</tspan></text
 		>
 		<text
 			fill="black"
@@ -843,7 +845,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="245.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="245.772">{t5}</tspan></text
 		>
 		<text
 			fill="black"
@@ -851,7 +853,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="280.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="280.772">{t6}</tspan></text
 		>
 		<text
 			fill="black"
@@ -859,7 +861,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="315.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="315.772">{t7}</tspan></text
 		>
 		<text
 			fill="black"
@@ -867,7 +869,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="333.5" y="350.772">0</tspan></text
+			letter-spacing="0em"><tspan x="333.5" y="350.772">{ts3}</tspan></text
 		>
 		<path
 			d="M77.2935 397.545V385.908H81.6571C82.551 385.908 83.301 386.075 83.9071 386.408C84.5169 386.742 84.9772 387.2 85.2878 387.783C85.6022 388.363 85.7594 389.022 85.7594 389.76C85.7594 390.507 85.6022 391.17 85.2878 391.749C84.9734 392.329 84.5094 392.785 83.8957 393.118C83.2821 393.448 82.5264 393.613 81.6287 393.613H78.7366V391.88H81.3446C81.8673 391.88 82.2954 391.789 82.6287 391.607C82.962 391.425 83.2082 391.175 83.3673 390.857C83.5302 390.539 83.6116 390.173 83.6116 389.76C83.6116 389.348 83.5302 388.984 83.3673 388.67C83.2082 388.355 82.9601 388.111 82.623 387.937C82.2897 387.759 81.8597 387.67 81.3332 387.67H79.4014V397.545H77.2935Z"
@@ -1298,7 +1300,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="286" y="444.682">0</tspan></text
+			letter-spacing="0em"><tspan x="286" y="444.682">{f}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1306,7 +1308,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="286" y="479.682">0</tspan></text
+			letter-spacing="0em"><tspan x="286" y="479.682">{g}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1314,7 +1316,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="286" y="514.682">0</tspan></text
+			letter-spacing="0em"><tspan x="286" y="514.682">{e}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1322,7 +1324,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="286" y="549.682">0</tspan></text
+			letter-spacing="0em"><tspan x="286" y="549.682">{e1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1330,7 +1332,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="324" y="444.682">0</tspan></text
+			letter-spacing="0em"><tspan x="324" y="444.682">{y}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1338,7 +1340,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="324" y="479.682">0</tspan></text
+			letter-spacing="0em"><tspan x="324" y="479.682">{k}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1346,7 +1348,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="324" y="514.682">0</tspan></text
+			letter-spacing="0em"><tspan x="324" y="514.682">{e1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1354,7 +1356,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="324" y="549.682">0</tspan></text
+			letter-spacing="0em"><tspan x="362" y="444.682">{m1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1362,7 +1364,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="362" y="444.682">0</tspan></text
+			letter-spacing="0em"><tspan x="362" y="479.682">{w1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1370,23 +1372,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="362" y="479.682">0</tspan></text
-		>
-		<text
-			fill="black"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="12"
-			letter-spacing="0em"><tspan x="362" y="514.682">0</tspan></text
-		>
-		<text
-			fill="black"
-			xml:space="preserve"
-			style="white-space: pre"
-			font-family="Inter"
-			font-size="12"
-			letter-spacing="0em"><tspan x="362" y="549.682">0</tspan></text
+			letter-spacing="0em"><tspan x="362" y="514.682">{e2}</tspan></text
 		>
 		<path
 			d="M60.2288 585.137V596.773H58.1379V586.887H53.047V596.773H50.9561V585.137H60.2288Z"
@@ -1441,7 +1427,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="121" y="621.909">0</tspan></text
+			letter-spacing="0em"><tspan x="121" y="621.909">{n1}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1460,7 +1446,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="121" y="652.909">0</tspan></text
+			letter-spacing="0em"><tspan x="121" y="652.909">{n2}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1476,7 +1462,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="157" y="637.409">0</tspan></text
+			letter-spacing="0em"><tspan x="157" y="637.409">{n3}</tspan></text
 		>
 		<path
 			d="M253.54 589.418H251.415C251.355 589.07 251.243 588.761 251.08 588.492C250.917 588.219 250.715 587.988 250.472 587.799C250.23 587.61 249.953 587.468 249.643 587.373C249.336 587.274 249.004 587.225 248.648 587.225C248.016 587.225 247.455 587.384 246.966 587.702C246.478 588.017 246.095 588.479 245.819 589.089C245.542 589.695 245.404 590.435 245.404 591.31C245.404 592.201 245.542 592.951 245.819 593.56C246.099 594.166 246.482 594.625 246.966 594.935C247.455 595.242 248.014 595.396 248.643 595.396C248.991 595.396 249.317 595.35 249.62 595.259C249.927 595.165 250.201 595.026 250.444 594.844C250.69 594.663 250.896 594.439 251.063 594.174C251.234 593.909 251.351 593.606 251.415 593.265L253.54 593.276C253.461 593.829 253.288 594.348 253.023 594.833C252.762 595.318 252.419 595.746 251.995 596.117C251.571 596.485 251.074 596.772 250.506 596.981C249.938 597.185 249.307 597.288 248.614 597.288C247.591 597.288 246.679 597.051 245.876 596.577C245.073 596.104 244.44 595.42 243.978 594.526C243.516 593.632 243.285 592.56 243.285 591.31C243.285 590.057 243.518 588.985 243.984 588.094C244.449 587.201 245.084 586.517 245.887 586.043C246.69 585.57 247.599 585.333 248.614 585.333C249.262 585.333 249.864 585.424 250.421 585.606C250.978 585.788 251.474 586.055 251.91 586.407C252.345 586.755 252.703 587.183 252.984 587.691C253.268 588.195 253.453 588.771 253.54 589.418Z"
@@ -1540,7 +1526,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="316" y="621.799">0</tspan></text
+			letter-spacing="0em"><tspan x="316" y="621.799">{c4}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1556,7 +1542,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="316" y="652.799">0</tspan></text
+			letter-spacing="0em"><tspan x="316" y="652.799">{c5}</tspan></text
 		>
 		<text
 			fill="black"
@@ -1572,7 +1558,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="352" y="637.299">0</tspan></text
+			letter-spacing="0em"><tspan x="352" y="637.299">{c6}</tspan></text
 		>
 		<path
 			d="M30.9062 687.175V683.213H31.5874C31.8161 683.03 32.0298 682.773 32.2287 682.442C32.4276 682.11 32.5966 681.656 32.7358 681.08C32.875 680.503 32.9711 679.757 33.0241 678.843L33.2926 674.537H39.8004V683.213H40.9339V687.165H39.1641V684.719H32.6761V687.175H30.9062ZM33.7351 683.213H38.0305V676.083H34.9531L34.794 678.843C34.7509 679.535 34.6813 680.155 34.5852 680.702C34.4891 681.249 34.3681 681.731 34.2223 682.149C34.0765 682.563 33.9141 682.918 33.7351 683.213Z"
@@ -1649,7 +1635,7 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="100.75" y="709.446">0</tspan></text
+			letter-spacing="0em"><tspan x="100.75" y="709.446">{d3}</tspan></text
 		>
 		<path
 			d="M222.245 674.537V684.719H220.415V676.068H215.961V684.719H214.131V674.537H222.245Z"
@@ -1738,12 +1724,12 @@
 			style="white-space: pre"
 			font-family="Inter"
 			font-size="12"
-			letter-spacing="0em"><tspan x="295.75" y="709.446">0</tspan></text
+			letter-spacing="0em"><tspan x="295.75" y="709.446">{p5}</tspan></text
 		>
 	</svg>
-	i
 
-	<h2 class="text-3xl font-bold text-center uppercase mb-10">Розрахунок матриці долі</h2>
+
+	<h2 class="text-3xl text-slate-700 font-bold text-center uppercase mb-10">Розрахунок матриці долі</h2>
 	<div class="mx-auto px-4 px-xl-8 max-w-7xl">
 		<div>
 			<div class="mb-12">
@@ -1751,7 +1737,7 @@
 					<div class="relative w-full sm:w-64">
 						<label
 							for="name"
-							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
+							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-slate-700"
 							>Ваше ім'я</label
 						>
 						<input
@@ -1759,7 +1745,8 @@
 							name="name"
 							id="name"
 							bind:value={name}
-							class="block w-full h-full rounded-md sm:rounded-l-2xl sm:rounded-r-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
+							class="block w-full h-full rounded-md sm:rounded-l-2xl sm:rounded-r-md border-0 py-1.5 text-slate-900 ring-1 
+						    ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							placeholder="Катерина"
 						/>
 					</div>
@@ -1767,20 +1754,20 @@
 					<div class="relative sm:w-64">
 						<label
 							for="date birth"
-							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-gray-900"
+							class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-slate-700"
 							>Дата народження</label
 						>
 						<input
 							type="date"
 							name="date birth"
 							id="date birth"
-							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset
+							class="block w-full h-full rounded-md border-0 py-1.5 text-slate-900 ring-1 ring-inset ring-slate-300
 							placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
 							bind:value={birthdate}
 						/>
 
 						{#if errors.birthdate}
-							<p class="absolute text-red-500 text-xs text-light">{errors.birthdate}</p>
+							<p class="absolute text-red-600 text-xs text-light">{errors.birthdate}</p>
 						{/if}
 					</div>
 					<button
@@ -1790,11 +1777,14 @@
 						>Розрахувати</button
 					>
 				</form>
-				{#if age}
-					<div class="mt-4 text-center">
-						<h4>Ваш вік: <span class="font-semibold">{age}</span></h4>
-					</div>
-				{/if}
+				<div class="flex flex-col gap-4 mt-10 text-center">
+					{#if calculatedName}
+					    <p class="text-xl">Ваше ім'я: <span class="font-semibold">{calculatedName}</span></p>
+				   {/if}
+				   {#if age}
+					    <p class="text-xl">Ваш вік: <span class="font-semibold">{age}</span></p>
+				    {/if}
+				</div>
 			</div>
 
 			<div class="relative w-full md:w-2/3 mx-auto pt-6">
@@ -1976,6 +1966,7 @@
 								y="415.227"
 								text-anchor="middle"
 								dominant-baseline="middle"
+								font-weight="600"
 							>
 								{a}
 							</text>
@@ -4935,9 +4926,16 @@
 						</div>
 					</div>
 				</div>
+
+				<div class="flex justify-center mt-12">
+					<button on:click={handlePdfDownload} class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
+					  text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group">
+					  <span class="absolute w-0 h-0 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-56 group-hover:h-56"></span>
+					  <span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
+					  <span class="relative transition-all duration-300 group-hover:text-white">Завантажити PDF</span>
+					</button>
+				</div>
 			{/if}
 		</div>
 	</div>
 </section>
-
-<button on:click={handlePdfDownload}>Завантажити</button>
