@@ -1,6 +1,7 @@
 <script>
+	import { scrollToSection } from '$lib/utils/scroll.js';
 	import photoHero from '$lib/images/photoHero.jpeg';
-	import ArrowRightCircle from '../icones/ArrowRightCircle.svelte';
+	import ArrowRightCircle from '$lib/components/icons/ArrowRightCircle.svelte';
 </script>
 
 <svelte:head>
@@ -8,15 +9,21 @@
 	<meta name="description" content="About this app" />
 </svelte:head>
 
-<section class="pt-8 pb-16">
-	<div class="mx-auto px-4 px-8 max-w-7xl">
-		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10">
-			<div class="basis-1/2 rounded-3xl flex flex-col justify-center">
-				<h1 class="text-7xl text-slate-700 text-start font-bold mb-10">Інна Задорожна</h1>
+<section class="pt-12 lg:pt-16 pb-16 lg:pb-20">
+	<div class="mx-auto px-4 sm:px-8 max-w-7xl">
+		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10 xl:gap-14">
+			<div class="basis-1/2 flex flex-col justify-center">
+				<h1
+					class="text-5xl sm:text-6xl lg:text-7xl text-slate-700 text-start font-heading italic font-bold mb-10 lg:mb-12"
+				>
+					Інна Задорожна
+				</h1>
 				<p class="text-2xl text-slate-500 tracking-wide leading-8">
 					Cпеціаліст з матриці долі та майстриня з трансформації вашого життя
 				</p>
-				<p class="mt-8 font-semibold text-slate-700">За допомогою матриці долі я зможу розказати вам:</p>
+				<p class="mt-8 font-semibold font-heading tracking-wider italic text-slate-700">
+					За допомогою матриці долі я зможу розказати вам:
+				</p>
 				<ul class="mb-8 space-y-3 mt-4">
 					<li class="flex items-center bg-rose-100 p-2 rounded-full">
 						<div class="p-2 bg-rose-200 rounded-full mr-3">
@@ -35,7 +42,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-slate-600">Як побудувати гармонійні відносини</p>
+						<p class="text-slate-600 pr-3">Як побудувати гармонійні відносини</p>
 					</li>
 					<li class="flex items-center bg-blue-100 p-2 rounded-full">
 						<div class="p-2 bg-blue-200 rounded-full mr-3">
@@ -54,7 +61,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-slate-600">Які ваші таланти</p>
+						<p class="text-slate-600 pr-3">Які ваші таланти</p>
 					</li>
 					<li class="flex items-center bg-orange-100 p-2 rounded-full">
 						<div class="p-2 bg-orange-200 rounded-full mr-3">
@@ -71,7 +78,7 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-slate-600">Які задачі потрібно виконати в цьому втіленні</p>
+						<p class="text-slate-600 pr-3">Які задачі потрібно виконати в цьому втіленні</p>
 					</li>
 					<li class="flex items-center bg-green-100 p-2 rounded-full">
 						<div class="p-2 bg-green-200 rounded-full mr-3">
@@ -90,23 +97,23 @@
 								/>
 							</svg>
 						</div>
-						<p class="text-slate-600">Що може блокувати ваші фінанси</p>
+						<p class="text-slate-600 pr-3">Що може блокувати ваші фінанси</p>
 					</li>
 				</ul>
 				<div class="group w-full lg:w-1/2">
-					<a
-					href="#_"
-					class="flex justify-between items-center w-full relative rounded-full overflow-hidden ring-1 ring-slate-500 transition-all duration-500 group-hover:ring-2 px-5 py-3 font-xl
-				text-slate-500"
-				>
-					<span
-						class="relative text-slate-60 font-medium transition-all duration-500 group-hover:font-bold"
-						>Перейти до послуг</span
+					<button
+						on:click|preventDefault={() => scrollToSection('#aboutMatrix')}
+						class="flex justify-between items-center w-full relative rounded-full overflow-hidden ring-1 ring-slate-500 transition-all duration-500 px-5 py-3 font-xl text-slate-500"
 					>
-					<ArrowRightCircle classes="w-8 h-8 transition-transform duration-500 group-hover:translate-x-[7px]" />
-				</a>
+						<span
+							class="relative text-slate-60 font-medium transition-all duration-500 group-hover:font-bold"
+							>Детальніше</span
+						>
+						<ArrowRightCircle
+							classes="w-8 h-8 transition-transform duration-500 group-hover:translate-x-[7px]"
+						/>
+					</button>
 				</div>
-				
 			</div>
 			<div class="basis-1/2">
 				<img src={photoHero} alt="Photo about" class="w-full rounded-3xl h-full object-cover" />

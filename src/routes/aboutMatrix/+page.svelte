@@ -1,40 +1,42 @@
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
+<script>
+	import { scrollToSection } from '$lib/utils/scroll.js';
+</script>
 
 <section
-	class="py-16 bg-gradient-to-r from-slate-500 from-10% via-slate-400 via-40% to-slate-500 to-90% rounded-[40px]"
+	id="aboutMatrix"
+	class="py-16 lg:py-20 bg-gradient-to-r from-slate-800 to-slate-600 rounded-[40px] mx-2"
 >
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl font-bold uppercase text-center text-slate-50 mb-10">
+		<h2
+			class="text-3xl lg:text-4xl font-bold font-heading tracking-wide uppercase text-center text-slate-50 mb-8 lg:mb-10"
+		>
 			Що таке матриця долі? Які питання допомогає вирішити?
 		</h2>
 		<div class="flex flex-col items-center gap-5 px-14">
 			<div class="mb-3">
-				<p class="text-center text-slate-200">
-					Матриця долі – це інструмент самопізнання, в основі котрого лежить закон реінкарнації. Цей
-					метод має 22 енергії, котрі мають як плюсове значення (це те до чого ми прагнемо щоб
-					виконати наше призначення) і мінусове значення (це те що заважає нам виконати наше
-					призначення).
+				<p class="text-center text-slate-300">
+					<span class="font-semibold">Матриця долі</span> – це інструмент самопізнання, в основі котрого
+					лежить закон реінкарнації. Цей метод має 22 енергії, котрі мають як плюсове значення (це те
+					до чого ми прагнемо щоб виконати наше призначення) і мінусове значення (це те що заважає нам
+					виконати наше призначення).
 				</p>
 			</div>
 			<div class="mb-3">
-				<p class="text-center text-slate-200">
+				<p class="text-center text-slate-300">
 					Для розшифровки енергій використовуються Старші Аркани карт Таро (22 Аркани). Кожен Аркан
 					символізує етап життєвого шляху людини та послідовність її розвитку у різних аспектах.
 					Застосування Матриці Долі дозволяє глибше вивчити суть кожного Аркана.
 				</p>
 			</div>
-			<div class="mb-3">
-				<p class="text-center font-medium text-slate-200 italic">
+			<div class="mb-3 rounded-full px-6 py-2 bg-slate-600">
+				<p class="text-center font-heading tracking-wider font-medium text-slate-300 italic">
 					Щоб скласти Матрицю Долі, потрібно врахувати число, місяць, рік народження та стать
 					людини.
 				</p>
 			</div>
 			<div>
-				<a
-					href="#"
+				<button
+					on:click|preventDefault={() => scrollToSection('#сalculator')}
 					class="arrow-link flex flex-col items-center transition ease-linear duration-400"
 				>
 					<svg
@@ -52,7 +54,7 @@
 						/>
 					</svg>
 					<p class="text-sm text-slate-100 text-opacity-40 pt-2">Спробуй розрахувати вже зараз!</p>
-				</a>
+				</button>
 			</div>
 		</div>
 	</div>
