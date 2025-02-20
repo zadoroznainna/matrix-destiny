@@ -7,6 +7,11 @@
 
 	const showMobileMenu = () => (isMobileMenuShown = true);
 	const closeMobileMenu = () => (isMobileMenuShown = false);
+
+	const handleMobileScroll = (anchor) => {
+		scrollToSection(anchor);
+		closeMobileMenu();
+	};
 </script>
 
 <header class="bg-white">
@@ -110,7 +115,7 @@
 				<div class="mt-6 px-4 flow-root">
 					<div class="mx-auto mb-6">
 						<button
-							on:click|preventDefault={() => scrollToSection("#сalculator")}
+							on:click|preventDefault={() => handleMobileScroll('#сalculator')}
 							class="block px-3 py-2 text-base w-full font-semibold leading-7 text-center text-orange-400 border border-orange-400 rounded-lg transition-all duration-300 hover:text-orange-500 hover:border-orange-500"
 							>Розрахувати матрицю долі</button
 						>
@@ -121,7 +126,7 @@
 								{#if item.id !== 2}
 									<a
 										href={item.hrefLink}
-										on:click|preventDefault={() => scrollToSection(item.hrefLink)}
+										on:click|preventDefault={() => handleMobileScroll(item.hrefLink)}
 										class="group -mx-3 flex items-center justify-center gap-x-6 transition-all duration-300 rounded-lg p-3 text-base font-semibold leading-7 text-slate-700 hover:bg-slate-50"
 									>
 										{item.title}
