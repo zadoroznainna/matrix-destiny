@@ -1,6 +1,6 @@
 <script>
 	import { onMount } from 'svelte';
-	import ChevronUp from '../../routes/icones/ChevronUp.svelte';
+	import ChevronUp from '$lib/components/icons/ChevronUp.svelte';
 
 	let showButton = false;
 
