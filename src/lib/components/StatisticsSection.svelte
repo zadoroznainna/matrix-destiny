@@ -3,6 +3,8 @@
 	import CalendarIcon from '$lib/components/icons/statistics/CalendarIcon.svelte';
 	import SuccessIcon from '$lib/components/icons/statistics/SuccessIcon.svelte';
 
+	import Countup from 'svelte-countup';
+
 	let startYear = 2021;
 	let currentYear = new Date().getFullYear();
 	let years = currentYear - startYear;
@@ -35,6 +37,7 @@
 <section class="py-20 bg-slate-50 mx-2 rounded-3xl">
 	<div class="container mx-auto px-4">
 		<ul class="flex flex-col space-y-16 justify-between items-center md:flex-row md:space-y-0">
+			<li></li>
 			{#each items as item}
 				<li class="flex flex-col items-center flex-1 md:self-start">
 					<div class="flex items-center justify-center mb-2">
@@ -46,7 +49,14 @@
 					<h3
 						class={`text-6xl lg:text-8xl bg-gradient-to-r inline-block text-transparent bg-clip-text ${item.gradient}`}
 					>
-						{item.count}
+						<Countup
+							initial={0}
+							value={item.count}
+							duration={3000}
+							step={1}
+							roundto={1}
+							format={true}
+						/>
 					</h3>
 					<p class="mt-4 uppercase text-center text-slate-700">{item.name}</p>
 				</li>

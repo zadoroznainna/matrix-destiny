@@ -39,7 +39,7 @@
 		pointer-events: none;
 	}
 	.exit-top {
-		transform: translateY(-200px)
+		transform: translateY(-100px)
 	}
 	.exit-bottom {
 		transform: translateY(100px)
