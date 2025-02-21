@@ -52,11 +52,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
-
 <section class="py-16 lg:py-20" id="tariff">
 	<div class="relative z-10">
 		<h2

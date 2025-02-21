@@ -32,11 +32,6 @@
 	];
 </script>
 
-<svelte:head>
-	<title>Statistics</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
-
 <section class="py-20 bg-slate-50 mx-2 rounded-3xl">
 	<div class="container mx-auto px-4">
 		<ul class="flex flex-col space-y-16 justify-between items-center md:flex-row md:space-y-0">

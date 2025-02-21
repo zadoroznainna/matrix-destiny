@@ -4,11 +4,6 @@
 	import ArrowRightCircle from '$lib/components/icons/ArrowRightCircle.svelte';
 </script>
 
-<svelte:head>
-	<title>About</title>
-	<meta name="description" content="About this app" />
-</svelte:head>
-
 <section class="pt-12 lg:pt-16 pb-16 lg:pb-20">
 	<div class="mx-auto px-4 sm:px-8 max-w-7xl">
 		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10 xl:gap-14">
