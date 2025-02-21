@@ -14,8 +14,6 @@
 	import Education from '$lib/components/EducationSection.svelte';
 	import Contacts from '$lib/components/ContactsSection.svelte';
 	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
-
-	import Animate from '$lib/components/Animate.svelte';
 </script>
 
 <svelte:head>
