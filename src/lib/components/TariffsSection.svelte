@@ -26,7 +26,7 @@
 		'2-2,5 години, відео-консультація зі мною у Zoom',
 		'1 місяць, моя підтримка та супровід',
 		'Короткий прогноз на майбутнє',
-		'Детально розберемо 2 зони на ваш вибір',
+		'Детально розберемо 2 зони на ваш вибір'
 	];
 
 	const extraTariffData = [
@@ -82,7 +82,10 @@
 						<div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
 							<div class="rounded-3xl bg-white py-10 px-9 ring-1 shadow-2xl ring-black/5">
 								<div class="flex justify-between mb-6 lg:mb-3">
-									<h3 id="tier-scale" class="text-base font-semibold font-heading tracking-wider italic text-slate-700 leading-8">
+									<h3
+										id="tier-scale"
+										class="text-base font-semibold font-heading tracking-wider italic text-slate-700 leading-8"
+									>
 										Базовий
 									</h3>
 								</div>
@@ -103,7 +106,7 @@
 									<a
 										href="#"
 										aria-describedby="tier-scale"
-										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center text-sm font-semibold transition-all duration-500 leading-6 text-white focus-visible:outline 
+										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center text-sm font-semibold transition-all duration-500 leading-6 text-white focus-visible:outline
 										focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-500 shadow-sm hover:bg-slate-600 focus-visible:outline-slate-600"
 										>Обрати</a
 									>
@@ -147,7 +150,10 @@
 						<div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
 							<div class="rounded-3xl bg-white py-10 px-9 ring-1 shadow-2xl ring-black/5">
 								<div class="flex justify-between mb-6 lg:mb-3">
-									<h3 id="tier-scale" class="text-base font-semibold font-heading tracking-wider italic leading-6 text-slate-700">
+									<h3
+										id="tier-scale"
+										class="text-base font-semibold font-heading tracking-wider italic leading-6 text-slate-700"
+									>
 										Середній
 									</h3>
 
@@ -175,9 +181,8 @@
 									<a
 										href="#"
 										aria-describedby="tier-scale"
-										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center transition-all duration-500 text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2 
-										focus-visible:outline-offset-2 bg-orange-400 shadow-sm hover:bg-orange-500"
-										>Обрати</a
+										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center transition-all duration-500 text-sm font-semibold leading-6 text-white focus-visible:outline focus-visible:outline-2
+										focus-visible:outline-offset-2 bg-orange-400 shadow-sm hover:bg-orange-500">Обрати</a
 									>
 								</div>
 								<div class="mt-8 flow-root sm:mt-10">
@@ -211,7 +216,10 @@
 						<div class="grid grid-cols-1 rounded-3xl p-2 shadow-md shadow-black/5">
 							<div class="rounded-3xl bg-white py-10 px-9 ring-1 shadow-2xl ring-black/5">
 								<div class="flex justify-between mb-6 lg:mb-3">
-									<h3 id="tier-scale" class="text-base font-semibold font-heading tracking-wider italic leading-8 text-slate-700">
+									<h3
+										id="tier-scale"
+										class="text-base font-semibold font-heading tracking-wider italic leading-8 text-slate-700"
+									>
 										Повний
 									</h3>
 
@@ -239,7 +247,7 @@
 									<a
 										href="#"
 										aria-describedby="tier-scale"
-										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center text-sm font-semibold transition-all duration-500 leading-6 text-white focus-visible:outline 
+										class="sm:w-32 lg:w-full rounded-full py-2 px-3 text-center text-sm font-semibold transition-all duration-500 leading-6 text-white focus-visible:outline
 										focus-visible:outline-2 focus-visible:outline-offset-2 bg-slate-500 shadow-sm hover:bg-slate-600 focus-visible:outline-slate-600"
 										>Обрати</a
 									>
@@ -277,7 +285,9 @@
 							class="flex flex-col items-start gap-x-8 gap-y-6 sm:gap-y-10 lg:p-10 lg:col-span-3 lg:items-center"
 						>
 							{#each extraTariffData as extraTariff}
-								<div class="w-full flex flex-col lg:flex-row items-center gap-8 ring-1 ring-gray-900/10 p-6 lg:p-8 rounded-3xl">
+								<div
+									class="w-full flex flex-col lg:flex-row items-center gap-8 ring-1 ring-gray-900/10 p-6 lg:p-8 rounded-3xl"
+								>
 									<div class="lg:min-w-0 lg:flex-1 lg:pr-12">
 										<h3
 											class="leading-6 text-lg font-heading tracking-wider italic font-semibold sm:leading-8 text-slate-700 mb-3"
@@ -301,7 +311,6 @@
 											</a>
 										</div>
 									</div>
-								
 								</div>
 							{/each}
 						</div>

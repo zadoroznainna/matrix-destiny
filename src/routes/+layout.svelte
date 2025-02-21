@@ -1,8 +1,8 @@
 <script>
 	import '../app.postcss';
-	import Header from './Header.svelte';
-	import Footer from './footer/+page.svelte';
-	import './styles.css';
+	import Header from '$lib/components/Header.svelte';
+	import Footer from '$lib/components/Footer.svelte';
+	import '../styles.css';
 </script>
 
 <div class="app font-body">

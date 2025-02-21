@@ -16,20 +16,11 @@
 	let yearText = showNextYear ? `${startYear}-${startYear + 1}` : `${startYear}`;
 
 	const socialsMedia = [
-		{
-			title: 'Instagram',
-			icon: Instagram
-		},
+		{ title: 'Instagram', icon: Instagram },
 
-		{
-			title: 'Telegram',
-			icon: Telegram
-		},
+		{ title: 'Telegram', icon: Telegram },
 
-		{
-			title: 'Youtube',
-			icon: Youtube
-		}
+		{ title: 'Youtube', icon: Youtube }
 	];
 </script>
 
@@ -118,7 +109,7 @@
 								<li>
 									<a
 										href={item.hrefLink}
-										on:click|preventDefault={() => scrollToSection(item.hrefLink)}
+										on:click={(e) => scrollToSection(e, item.hrefLink)}
 										class="text-sm leading-6 text-slate-300 transition duration-500 hover:text-slate-50"
 										>{item.title}</a
 									>

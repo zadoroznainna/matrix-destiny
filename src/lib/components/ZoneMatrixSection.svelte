@@ -106,7 +106,9 @@
 
 <section class="py-16 lg:py-20">
 	<div class="px-4 lg:hidden">
-		<h2 class="text-3xl text-slate-700 font-bold uppercase text-center mb-8">Зони в матриці долі</h2>
+		<h2 class="text-3xl text-slate-700 font-bold uppercase text-center mb-8">
+			Зони в матриці долі
+		</h2>
 
 		<div class="relative">
 			<div class="flex gap-6 carousel py-10">
@@ -159,8 +161,7 @@
 						</div>
 						<h3 class="text-slate-700 text-xl font-bold">Таланти</h3>
 						<p class="text-slate-600 text-center">
-							Те що дано вам вищими силами і пов'язаний із підсвідомістю, світогляд,
-							самовираження.
+							Те що дано вам вищими силами і пов'язаний із підсвідомістю, світогляд, самовираження.
 						</p>
 					</div>
 				</div>
@@ -241,8 +242,8 @@
 						</div>
 						<h3 class="text-slate-700 text-xl font-bold">«Грошовий канал»</h3>
 						<p class="text-slate-600 text-center">
-							Ця енергія покаже через що до вас будуть приходити гроші, вказуючи на стан,
-							поведінку та дії, що допомагають розкрити енергію грошового каналу.
+							Ця енергія покаже через що до вас будуть приходити гроші, вказуючи на стан, поведінку
+							та дії, що допомагають розкрити енергію грошового каналу.
 						</p>
 					</div>
 				</div>
@@ -321,7 +322,9 @@
 							</div>
 						</div>
 						<h3 class="text-slate-700 text-xl font-bold">Дитячо-батьківська зона</h3>
-						<p class="text-slate-600 text-center">Образи на батьків, чого навчатимуть вас ваші діти.</p>
+						<p class="text-slate-600 text-center">
+							Образи на батьків, чого навчатимуть вас ваші діти.
+						</p>
 					</div>
 				</div>
 				<div class="carousel-item">
@@ -385,7 +388,9 @@
 		<div class="hidden lg:block">
 			<div class="grid grid-cols-3 gap-10">
 				<div class="row-start-1 row-end-3 flex flex-col justify-between">
-					<h2 class="text-slate-700 text-4xl font-bold font-heading tracking-wide uppercase mb-10">Зони в матриці долі</h2>
+					<h2 class="text-slate-700 text-4xl font-bold font-heading tracking-wide uppercase mb-10">
+						Зони в матриці долі
+					</h2>
 					<div class="flex flex-col gap-9 h-full">
 						<img src={zones} class="rounded-3xl h-full object-cover" alt="Zones matrix" />
 					</div>
@@ -403,7 +408,9 @@
 									<svelte:component this={item.icon} />
 								</div>
 							</div>
-							<h3 class="text-slate-700 text-xl font-heading tracking-wider italic font-bold">{item.title}</h3>
+							<h3 class="text-slate-700 text-xl font-heading tracking-wider italic font-bold">
+								{item.title}
+							</h3>
 						</div>
 						<p class="text-slate-600">{item.description}</p>
 					</div>

@@ -1,25 +1,29 @@
 <script>
-	import Matrix from './Matrix.svelte';
-	import Tariff from './tariff/+page.svelte';
-	import About from './about/+page.svelte';
-	import Statistics from './statistics/+page.svelte';
-	import Hero from './hero/+page.svelte';
-	import Steps from './steps/+page.svelte';
-	import AboutMatrix from './aboutMatrix/+page.svelte';
-	import ZoneMatrix from './zoneMatrix/+page.svelte';
-	import Testimonials from './testimonials/+page.svelte';
-	import Subscription from './subscription/+page.svelte';
-	import Faq from "./faq/+page.svelte";
-	import Services from "./services/+page.svelte";
-	import Education from "./education/+page.svelte";
-	import Contacts from "./contacts/+page.svelte";
+	import Hero from '$lib/components/HeroSection.svelte';
+	import Statistics from '$lib/components/StatisticsSection.svelte';
+	import About from '$lib/components/AboutSection.svelte';
+	import AboutMatrix from '$lib/components/AboutMatrixSection.svelte';
+	import ZoneMatrix from '$lib/components/ZoneMatrixSection.svelte';
+	import Matrix from '$lib/components/Matrix.svelte';
+	import Tariff from '$lib/components/TariffsSection.svelte';
+	import Steps from '$lib/components/StepsSection.svelte';
+	import Testimonials from '$lib/components/TestimonialsSection.svelte';
+	import Subscription from '$lib/components/SubscriptionSection.svelte';
+	import Faq from '$lib/components/FaqSection.svelte';
+	import Services from '$lib/components/ServicesSection.svelte';
+	import Education from '$lib/components/EducationSection.svelte';
+	import Contacts from '$lib/components/ContactsSection.svelte';
 	import ScrollToTopButton from '$lib/components/ScrollToTopButton.svelte';
-	import Error from "./+error.svelte";
+
+	import Animate from '$lib/components/Animate.svelte';
 </script>
 
 <svelte:head>
 	<title>Інна Задорожна – Експерт з Матриці Долі | Аналіз та Консультації</title>
-	<meta name="description" content="Інна Задорожна – експерт з аналізу Матриці Долі. Допоможу розкрити ваші таланти, знайти покликання, покращити стосунки та фінанси. Отримайте персональну консультацію та змініть своє життя на краще!" />
+	<meta
+		name="description"
+		content="Інна Задорожна – експерт з аналізу Матриці Долі. Допоможу розкрити ваші таланти, знайти покликання, покращити стосунки та фінанси. Отримайте персональну консультацію та змініть своє життя на краще!"
+	/>
 </svelte:head>
 
 <div>
@@ -30,13 +34,12 @@
 	<ZoneMatrix />
 	<Matrix />
 	<Subscription />
-	<Services/>
+	<Services />
 	<Steps />
 	<Tariff />
-	<Faq/>
-	<Education/>
+	<Faq />
+	<Education />
 	<Testimonials />
-	<Contacts/>
-	<ScrollToTopButton/>
-	<!-- <Error/> -->
+	<Contacts />
+	<ScrollToTopButton />
 </div>

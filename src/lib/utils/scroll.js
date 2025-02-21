@@ -1,6 +1,9 @@
-export function scrollToSection(id) {
+export function scrollToSection(e, id) {
 	const element = document.getElementById(id.replace('#', ''));
-	if (element) {
-		element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-	}
-};
+
+	// event.preventDefault();
+	const link = e.currentTarget;
+	const anchorId = new URL(link.href).hash.replace('#', '');
+	const anchor = document.getElementById(anchorId);
+	window.scrollTo({ top: anchor.offsetTop, behavior: 'smooth' });
+}

@@ -1,13 +1,13 @@
 <script>
-	import client_1 from "$lib/images/client_1.jpg";
-	import client_2 from "$lib/images/client_2.jpg";
-	import client_3 from "$lib/images/client_3.jpg";
-	import client_4 from "$lib/images/client_4.jpg";
-	import client_5 from "$lib/images/client_5.jpg";
-	import client_6 from "$lib/images/client_6.jpg";
-	import client_7 from "$lib/images/client_7.jpg";
-	import client_8 from "$lib/images/client_8.jpg";
-	import client_9 from "$lib/images/client_9.jpg";
+	import client_1 from '$lib/images/client_1.jpg';
+	import client_2 from '$lib/images/client_2.jpg';
+	import client_3 from '$lib/images/client_3.jpg';
+	import client_4 from '$lib/images/client_4.jpg';
+	import client_5 from '$lib/images/client_5.jpg';
+	import client_6 from '$lib/images/client_6.jpg';
+	import client_7 from '$lib/images/client_7.jpg';
+	import client_8 from '$lib/images/client_8.jpg';
+	import client_9 from '$lib/images/client_9.jpg';
 	const testimonialsData = [
 		{
 			text: "Інночка, дякую велике тобі за розбір матриці долі😊 У мене з'явилась шалена мотивація, після того як ти розповіла, яке у мене призначення в житті😍 У глибині душі я завжди відчувала, що я не на своєму місці і не могла зрозуміти чим займатися по життю🤔 Але завдяки тобі я почала розбиратися в собі, прислухатися до тих знаків долі, про які ти мені розповідала і вони насправді мені допомагають у повсякденному житті та у планах на майбутнє💕",
@@ -49,7 +49,7 @@
 			image: client_9,
 			name: 'Люда',
 			isExpanded: false
-		},	
+		},
 
 		{
 			text: 'Иночко дуже дякую тобі, за розбір матриць все дуже точно, 100% попадання. Ти мені підсвітила, те що я відчувала, і це дає змогу зрозуміти, що з цим робити далі. І в взагалі я тепер знаю про себе набагато більше і знаю, що в мене все вийде і я з усім впораюсь, та що я на правильном шляху💪. І навіть врятувала в тяжкій ситуації. ❤️',
@@ -84,7 +84,11 @@
 
 <section class="py-16 lg:py-20" id="testimonials">
 	<div class="container mx-auto px-4">
-		<h2 class="text-3xl lg:text-4xl font-bold font-heading tracking-wide text-slate-700 uppercase text-center mb-8 lg:mb-10">Відгуки</h2>
+		<h2
+			class="text-3xl lg:text-4xl font-bold font-heading tracking-wide text-slate-700 uppercase text-center mb-8 lg:mb-10"
+		>
+			Відгуки
+		</h2>
 		<div class="mx-auto max-w-xl text-center"></div>
 		<div class="mx-auto mb-8 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
 			<div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
@@ -108,13 +112,20 @@
 									{item.isExpanded ? item.text : truncatedText(item.text, 320)}
 								</p>
 								{#if item.text.length > 320}
-									<button class="text-orange-500 hover:text-orange-400 transition-all duration-300" on:click={() => toggleExpandText(index)}>
+									<button
+										class="text-orange-500 hover:text-orange-400 transition-all duration-300"
+										on:click={() => toggleExpandText(index)}
+									>
 										{item.isExpanded ? 'Приховати' : 'Читати повністю'}
 									</button>
 								{/if}
 							</blockquote>
 							<figcaption class="mt-6 flex items-center gap-x-4">
-								<img class="h-10 w-10 rounded-full bg-slate-50 object-cover" src={item.image} alt={item.name} />
+								<img
+									class="h-10 w-10 rounded-full bg-slate-50 object-cover"
+									src={item.image}
+									alt={item.name}
+								/>
 								<div>
 									<div class="font-semibold text-slate-700">{item.name}</div>
 								</div>

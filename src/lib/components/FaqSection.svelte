@@ -56,9 +56,15 @@
 		>
 			Запитання та відповіді
 		</h2>
-		<div class="flex flex-col-reverse xl:flex-row justify-between place-items-center gap-10 xl:gap-14">
+		<div
+			class="flex flex-col-reverse xl:flex-row justify-between place-items-center gap-10 xl:gap-14"
+		>
 			<div class="w-full xl:basis-1/3 h-96 md:h-[700px] xl:h-full">
-				<img src={photoFaq} alt="Photo about" class="rounded-3xl w-full h-full object-cover object-top"/>
+				<img
+					src={photoFaq}
+					alt="Photo about"
+					class="rounded-3xl w-full h-full object-cover object-top"
+				/>
 			</div>
 			<div class="basis-2/3">
 				<div class="mx-auto max-w-7xl">
@@ -75,7 +81,12 @@
 											on:click={() => toggleQuestion(index)}
 										>
 											<p class="text-base font-semibold leading-7 mb-0">{index + 1}. {faq.title}</p>
-											<span class="ml-6 flex items-center p-1 border border-slate-300 rounded-lg {activeQuestion === index ? "border-sky-200 text-sky-700" : "border-slate-300 text-slate-700"}">
+											<span
+												class="ml-6 flex items-center p-1 border border-slate-300 rounded-lg {activeQuestion ===
+												index
+													? 'border-sky-200 text-sky-700'
+													: 'border-slate-300 text-slate-700'}"
+											>
 												<ChevronUp classes={activeQuestion !== index ? 'hidden' : ''} />
 												<ChevronDown classes={activeQuestion === index ? 'hidden' : ''} />
 											</span>

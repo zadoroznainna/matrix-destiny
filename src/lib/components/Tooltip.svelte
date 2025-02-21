@@ -1,12 +1,12 @@
 <script>
 	import { scale } from 'svelte/transition';
-	import Muladhara from '$lib/components/chakras/Muladhara.svelte';
-	import Swadhistana from '$lib/components/chakras/Swadhistana.svelte';
-	import Manipura from '$lib/components/chakras/Manipura.svelte';
-	import Anahata from '$lib/components/chakras/Anahata.svelte';
-	import Vishudha from '$lib/components/chakras/Vishudha.svelte';
-	import Ajna from '$lib/components/chakras/Ajna.svelte';
-	import Sahasrara from '$lib/components/chakras/Sahasrara.svelte';
+	import Muladhara from '$lib/components/icons/chakras/Muladhara.svelte';
+	import Swadhistana from '$lib/components/icons/chakras/Swadhistana.svelte';
+	import Manipura from '$lib/components/icons/chakras/Manipura.svelte';
+	import Anahata from '$lib/components/icons/chakras/Anahata.svelte';
+	import Vishudha from '$lib/components/icons/chakras/Vishudha.svelte';
+	import Ajna from '$lib/components/icons/chakras/Ajna.svelte';
+	import Sahasrara from '$lib/components/icons/chakras/Sahasrara.svelte';
 
 	export let chakra;
 	export let close;
@@ -14,11 +14,7 @@
 	export let classes;
 
 	const chakras = { Muladhara, Swadhistana, Manipura, Anahata, Vishudha, Ajna, Sahasrara };
-	const colors = {
-		Manipura: 'yellow',
-		Swadhistana: 'orange',
-		Sahasrara: 'purple'
-	};
+	const colors = { Manipura: 'yellow', Swadhistana: 'orange', Sahasrara: 'purple' };
 </script>
 
 <div

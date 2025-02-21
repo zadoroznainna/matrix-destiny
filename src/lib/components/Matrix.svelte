@@ -1,13 +1,13 @@
 <script>
 	import { slide } from 'svelte/transition';
 	import Tooltip from './Tooltip.svelte';
-	import Ajna from '$lib/components/chakras/Ajna.svelte';
-	import Anahata from '$lib/components/chakras/Anahata.svelte';
-	import Manipura from '$lib/components/chakras/Manipura.svelte';
-	import Muladhara from '$lib/components/chakras/Muladhara.svelte';
-	import Sahasrara from '$lib/components/chakras/Sahasrara.svelte';
-	import Swadhistana from '$lib/components/chakras/Swadhistana.svelte';
-	import Vishudha from '$lib/components/chakras/Vishudha.svelte';
+	import Ajna from '$lib/components/icons/chakras/Ajna.svelte';
+	import Anahata from '$lib/components/icons/chakras/Anahata.svelte';
+	import Manipura from '$lib/components/icons/chakras/Manipura.svelte';
+	import Muladhara from '$lib/components/icons/chakras/Muladhara.svelte';
+	import Sahasrara from '$lib/components/icons/chakras/Sahasrara.svelte';
+	import Swadhistana from '$lib/components/icons/chakras/Swadhistana.svelte';
+	import Vishudha from '$lib/components/icons/chakras/Vishudha.svelte';
 
 	import Sphere from '$lib/components/patterns/Sphere.svelte';
 	import Box from '$lib/components/patterns/Box.svelte';
@@ -399,23 +399,12 @@
 		var docDefinition = {
 			pageOrientation: 'landscape',
 			content: [
-				{
-					text: `${name} (${birthdate}), Ваш вік: ${age}`,
-					alignment: 'center'
-				},
+				{ text: `${name} (${birthdate}), Ваш вік: ${age}`, alignment: 'center' },
 				{
 					alignment: 'justify',
 					columns: [
-						{
-							svg: document.getElementById('left-pdf').outerHTML,
-							width: 300,
-							height: 500
-						},
-						{
-							svg: document.getElementById('matrix-svg').outerHTML,
-							width: 450,
-							height: 450
-						}
+						{ svg: document.getElementById('left-pdf').outerHTML, width: 300, height: 500 },
+						{ svg: document.getElementById('matrix-svg').outerHTML, width: 450, height: 450 }
 					]
 				}
 			]
@@ -433,7 +422,7 @@
 	}
 </script>
 
-<section class="py-16 lg:py-20" id="сalculator">
+<section class="py-16 lg:py-20" id="calculator">
 	<svg
 		class="hidden"
 		id="left-pdf"
@@ -1735,7 +1724,9 @@
 		>
 	</svg>
 
-	<h2 class="text-3xl lg:text-4xl text-slate-700 font-bold font-heading tracking-wide text-center uppercase mb-8 lg:mb-10">
+	<h2
+		class="text-3xl lg:text-4xl text-slate-700 font-bold font-heading tracking-wide text-center uppercase mb-8 lg:mb-10"
+	>
 		Розрахунок матриці долі
 	</h2>
 	<div class="mx-auto px-4 px-xl-8 max-w-7xl">
@@ -1795,10 +1786,14 @@
 			</form>
 			<div class="flex flex-col gap-4 mt-12 text-center">
 				{#if calculatedName}
-					<p class="text-lg lg:text-xl font-semibold">Ваше ім'я: <span class="font-normal">{calculatedName}</span></p>
+					<p class="text-lg lg:text-xl font-semibold">
+						Ваше ім'я: <span class="font-normal">{calculatedName}</span>
+					</p>
 				{/if}
 				{#if age}
-					<p class="text-lg lg:text-xl font-semibold">Ваш вік: <span class="font-normal">{age}</span></p>
+					<p class="text-lg lg:text-xl font-semibold">
+						Ваш вік: <span class="font-normal">{age}</span>
+					</p>
 				{/if}
 			</div>
 		</div>
@@ -4875,7 +4870,9 @@
 					class="absolute w-0 h-0 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-56 group-hover:h-56"
 				></span>
 				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
-				<span class="relative transition-all duration-300 group-hover:text-white" aria-label={showContent ? 'Скрыть контент' : 'Показать контент'}
+				<span
+					class="relative transition-all duration-300 group-hover:text-white"
+					aria-label={showContent ? 'Скрыть контент' : 'Показать контент'}
 					>{showContent ? 'Приховати' : 'Розгорнути'}</span
 				>
 			</button>
