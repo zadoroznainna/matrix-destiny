@@ -62,7 +62,7 @@
 			<div class="w-full xl:basis-1/3 h-96 md:h-[700px] xl:h-full">
 				<img
 					src={photoFaq}
-					alt="Photo about"
+					alt="Фотографія Задорожної Інни, яка надає консультації"
 					class="rounded-3xl w-full h-full object-cover object-top"
 				/>
 			</div>

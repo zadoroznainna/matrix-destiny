@@ -130,7 +130,7 @@
 			</div>
 			<div class="basis-1/2">
 				<Animate variant="fade" duration={1.7}>
-					<img src={photoHero} alt="Photo about" class="w-full rounded-3xl h-full object-cover" />
+					<img src={photoHero} alt="Портрет Задорожної Інни" class="w-full rounded-3xl h-full object-cover" />
 				</Animate>
 			</div>
 		</div>

@@ -11,21 +11,24 @@
 
 	const items = [
 		{
-			count: '100+',
+			count: '100',
+			sign: "+",
 			name: 'Проведених особистих консультацій',
 			icon: PeopleIcon,
 			gradient: 'from-rose-400 via-fuschia-700 to-red-600',
 			iconColor: 'text-rose-500'
 		},
 		{
-			count: `${years}+`,
+			count: `${years}`,
+			sign: "+",
 			name: 'Років в нумеролії',
 			icon: CalendarIcon,
 			gradient: 'from-blue-500 via-sky-400 to-blue-500',
 			iconColor: 'text-blue-500'
 		},
 		{
-			count: '95%',
+			count: '95',
+			sign: "%",
 			name: 'Клієнтів знайшли відповіді на свої питання',
 			icon: SuccessIcon,
 			gradient: 'from-teal-400 via-green-500 to-lime-500',
@@ -57,6 +60,7 @@
 							roundto={1}
 							format={true}
 						/>
+						<span>{item.sign}</span>
 					</h3>
 					<p class="mt-4 uppercase text-center text-slate-700">{item.name}</p>
 				</li>

@@ -99,7 +99,7 @@
 						</ul>
 					</div>
 					<div class="h-96 lg:h-full">
-						<img src={photoSteps} class="rounded-3xl object-cover w-full h-full" alt="Steps work" />
+						<img src={photoSteps} class="rounded-3xl object-cover w-full h-full" alt="Зображення матриці долі на екрані ноутбука" />
 					</div>
 				</div>
 			</div>

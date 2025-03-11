@@ -380,7 +380,7 @@
 				</div>
 			</div>
 
-			<div class="carousel-bg absolute top-0 right-0 h-full w-12" />
+			<div class="carousel-bg absolute top-0 right-0 h-full w-12"></div>
 		</div>
 	</div>
 
@@ -392,7 +392,7 @@
 						Зони в матриці долі
 					</h2>
 					<div class="flex flex-col gap-9 h-full">
-						<img src={zones} class="rounded-3xl h-full object-cover" alt="Zones matrix" />
+						<img src={zones} class="rounded-3xl h-full object-cover" alt="Екран телефону з розрахунком матриці долі" />
 					</div>
 				</div>
 

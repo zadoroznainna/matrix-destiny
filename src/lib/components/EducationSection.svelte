@@ -19,7 +19,7 @@
 			>
 				<img
 					src={educationFirst}
-					alt="Сертифікат - чакри в матриці"
+					alt="Зображення сертифікату про навчання - чакри в матриці"
 					class="w-full rounded-3xl h-full object-cover"
 				/>
 			</div>
@@ -28,7 +28,7 @@
 			>
 				<img
 					src={educationSecond}
-					alt="Сертифікат - матриця долі"
+					alt="Зображення сертифікату про навчання - матриця долі"
 					class="w-full rounded-3xl h-full object-cover"
 				/>
 			</div>
@@ -37,7 +37,7 @@
 			>
 				<img
 					src={educationThird}
-					alt="Сертифікат- цвяхостояння"
+					alt="Зображення сертифікату про навчання- цвяхостояння"
 					class="w-full rounded-3xl h-full object-cover"
 				/>
 			</div>

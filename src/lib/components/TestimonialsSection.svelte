@@ -124,7 +124,7 @@
 								<img
 									class="h-10 w-10 rounded-full bg-slate-50 object-cover"
 									src={item.image}
-									alt={item.name}
+									alt="Фотографія {item.name}, що залишила відгук"
 								/>
 								<div>
 									<div class="font-semibold text-slate-700">{item.name}</div>

@@ -58,7 +58,7 @@
 			<div class="lg:basis-1/2 h-[500px] md:h-[700px] lg:h-full">
 				<img
 					src={photoContacts}
-					alt="Photo contacts"
+					alt="Зображення Зодорожної Інни у блоці контактів"
 					class="w-full rounded-3xl h-full object-cover object-top"
 				/>
 			</div>
