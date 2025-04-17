@@ -1,7 +1,4 @@
-export function scrollToSection(e, id) {
-	const element = document.getElementById(id.replace('#', ''));
-
-	// event.preventDefault();
+export function scrollToSection(e) {
 	const link = e.currentTarget;
 	const anchorId = new URL(link.href).hash.replace('#', '');
 	const anchor = document.getElementById(anchorId);

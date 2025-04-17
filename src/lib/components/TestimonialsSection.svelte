@@ -8,6 +8,9 @@
 	import client_7 from '$lib/images/client_7.jpg';
 	import client_8 from '$lib/images/client_8.jpg';
 	import client_9 from '$lib/images/client_9.jpg';
+
+	import Animate from '$lib/components/Animate.svelte';
+
 	const testimonialsData = [
 		{
 			text: "Інночка, дякую велике тобі за розбір матриці долі😊 У мене з'явилась шалена мотивація, після того як ти розповіла, яке у мене призначення в житті😍 У глибині душі я завжди відчувала, що я не на своєму місці і не могла зрозуміти чим займатися по життю🤔 Але завдяки тобі я почала розбиратися в собі, прислухатися до тих знаків долі, про які ти мені розповідала і вони насправді мені допомагають у повсякденному житті та у планах на майбутнє💕",
@@ -84,53 +87,58 @@
 
 <section class="py-16 lg:py-20" id="testimonials">
 	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl lg:text-4xl font-bold font-heading tracking-wide text-slate-700 uppercase text-center mb-8 lg:mb-10"
-		>
-			Відгуки
-		</h2>
+		<Animate variant="top" duration={1}>
+			<h2
+				class="text-3xl lg:text-4xl font-bold font-heading tracking-wide text-slate-700 uppercase text-center mb-8 lg:mb-10"
+			>
+				Відгуки
+			</h2>
+		</Animate>
+
 		<div class="mx-auto max-w-xl text-center"></div>
 		<div class="mx-auto mb-8 flow-root max-w-2xl lg:mx-0 lg:max-w-none">
 			<div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
 				{#each testimonialsData as item, index (item)}
 					<div class="pt-8 sm:inline-block sm:w-full sm:px-4">
-						<figure class="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
-							<blockquote class="text-slate-700">
-								<svg
-									class="inline-block text-zinc-200"
-									xmlns="http://www.w3.org/2000/svg"
-									width="2em"
-									height="2em"
-									viewBox="0 0 24 24"
-									{...$$props}
-									><path
-										d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"
-										fill="currentColor"
-									/></svg
-								>
-								<p class="inline-block transition-all duration-500">
-									{item.isExpanded ? item.text : truncatedText(item.text, 320)}
-								</p>
-								{#if item.text.length > 320}
-									<button
-										class="text-orange-500 hover:text-orange-400 transition-all duration-300"
-										on:click={() => toggleExpandText(index)}
+						<Animate variant="scale" duration={1.5} delay={(index + 1) * 0.2}>
+							<figure class="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
+								<blockquote class="text-slate-700">
+									<svg
+										class="inline-block text-zinc-200"
+										xmlns="http://www.w3.org/2000/svg"
+										width="2em"
+										height="2em"
+										viewBox="0 0 24 24"
+										{...$$props}
+										><path
+											d="M6.5 10c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.318.142-.686.238-1.028.466c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.945c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 6.5 10zm11 0c-.223 0-.437.034-.65.065c.069-.232.14-.468.254-.68c.114-.308.292-.575.469-.844c.148-.291.409-.488.601-.737c.201-.242.475-.403.692-.604c.213-.21.492-.315.714-.463c.232-.133.434-.28.65-.35l.539-.222l.474-.197l-.485-1.938l-.597.144c-.191.048-.424.104-.689.171c-.271.05-.56.187-.882.312c-.317.143-.686.238-1.028.467c-.344.218-.741.4-1.091.692c-.339.301-.748.562-1.05.944c-.33.358-.656.734-.909 1.162c-.293.408-.492.856-.702 1.299c-.19.443-.343.896-.468 1.336c-.237.882-.343 1.72-.384 2.437c-.034.718-.014 1.315.028 1.747c.015.204.043.402.063.539l.025.168l.026-.006A4.5 4.5 0 1 0 17.5 10z"
+											fill="currentColor"
+										/></svg
 									>
-										{item.isExpanded ? 'Приховати' : 'Читати повністю'}
-									</button>
-								{/if}
-							</blockquote>
-							<figcaption class="mt-6 flex items-center gap-x-4">
-								<img
-									class="h-10 w-10 rounded-full bg-slate-50 object-cover"
-									src={item.image}
-									alt="Фотографія {item.name}, що залишила відгук"
-								/>
-								<div>
-									<div class="font-semibold text-slate-700">{item.name}</div>
-								</div>
-							</figcaption>
-						</figure>
+									<p class="inline-block transition-all duration-500">
+										{item.isExpanded ? item.text : truncatedText(item.text, 320)}
+									</p>
+									{#if item.text.length > 320}
+										<button
+											class="text-orange-500 hover:text-orange-400 transition-all duration-300"
+											on:click={() => toggleExpandText(index)}
+										>
+											{item.isExpanded ? 'Приховати' : 'Читати повністю'}
+										</button>
+									{/if}
+								</blockquote>
+								<figcaption class="mt-6 flex items-center gap-x-4">
+									<img
+										class="h-10 w-10 rounded-full bg-slate-50 object-cover"
+										src={item.image}
+										alt="Фотографія {item.name}, що залишила відгук"
+									/>
+									<div>
+										<div class="font-semibold text-slate-700">{item.name}</div>
+									</div>
+								</figcaption>
+							</figure>
+						</Animate>
 					</div>
 				{/each}
 			</div>
@@ -138,6 +146,9 @@
 		<div class="flex justify-center mt-14">
 			<a
 				href="https://www.instagram.com/stories/highlights/17966482079238593/"
+				target="_blank"
+				aria-label="Читати більше відгуків"
+				title="Читати більше відгуків"
 				class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
 					text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group w-52"
 			>

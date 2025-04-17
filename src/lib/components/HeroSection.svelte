@@ -10,25 +10,25 @@
 	<div class="mx-auto px-4 sm:px-8 max-w-7xl">
 		<div class="flex flex-col md:flex-row justify-between items-stretch gap-10 xl:gap-14">
 			<div class="basis-1/2 flex flex-col justify-center">
-				<Animate variant="top"
+				<Animate variant="top" duration={1}
 					><h1
 						class="text-5xl sm:text-6xl lg:text-7xl text-slate-700 text-start font-heading italic font-bold mb-10 lg:mb-12"
 					>
 						Інна Задорожна
 					</h1>
 				</Animate>
-				<Animate variant="top" duration={1.2}>
+				<Animate variant="top" duration={1} delay={0.2}>
 					<p class="text-2xl text-slate-500 tracking-wide leading-8">
 						Cпеціаліст з матриці долі та майстриня з трансформації вашого життя
 					</p>
 				</Animate>
-				<Animate variant="top" duration={1.3} delay={0.2}>
+				<Animate variant="top" duration={1} delay={0.4}>
 					<p class="mt-8 font-semibold font-heading tracking-wider italic text-slate-700">
 						За допомогою матриці долі я зможу розказати вам:
 					</p>
 				</Animate>
 				<ul class="mb-8 space-y-3 mt-4">
-					<Animate variant="top" duration={1.4} delay={0.3}>
+					<Animate variant="top" duration={1} delay={0.6}>
 						<li class="flex items-center bg-rose-100 p-2 rounded-full">
 							<div class="p-2 bg-rose-200 rounded-full mr-3">
 								<svg
@@ -49,7 +49,7 @@
 							<p class="text-slate-600 pr-3">Як побудувати гармонійні відносини</p>
 						</li>
 					</Animate>
-					<Animate variant="top" duration={1.4} delay={0.4}>
+					<Animate variant="top" duration={1} delay={0.8}>
 						<li class="flex items-center bg-blue-100 p-2 rounded-full">
 							<div class="p-2 bg-blue-200 rounded-full mr-3">
 								<svg
@@ -70,7 +70,7 @@
 							<p class="text-slate-600 pr-3">Які ваші таланти</p>
 						</li>
 					</Animate>
-					<Animate variant="top" duration={1.4} delay={0.6}>
+					<Animate variant="top" duration={1} delay={1.0}>
 						<li class="flex items-center bg-orange-100 p-2 rounded-full">
 							<div class="p-2 bg-orange-200 rounded-full mr-3">
 								<svg
@@ -89,7 +89,7 @@
 							<p class="text-slate-600 pr-3">Які задачі потрібно виконати в цьому втіленні</p>
 						</li>
 					</Animate>
-					<Animate variant="top" duration={1.5} delay={0.7}>
+					<Animate variant="top" duration={1} delay={1.2}>
 						<li class="flex items-center bg-green-100 p-2 rounded-full">
 							<div class="p-2 bg-green-200 rounded-full mr-3">
 								<svg
@@ -111,10 +111,12 @@
 						</li>
 					</Animate>
 				</ul>
-				<Animate variant="top" duration={1.6} delay={0.8}>
+				<Animate variant="top" duration={1} delay={1.4}>
 					<div class="group w-full lg:w-1/2">
-						<button
-							on:click|preventDefault={() => scrollToSection('#aboutMatrix')}
+						<a
+							href="/#services"
+							on:click={scrollToSection}
+							aria-label="Детальніше"
 							class="flex justify-between items-center w-full relative rounded-full overflow-hidden ring-1 ring-slate-500 transition-all duration-500 px-5 py-3 font-xl text-slate-500"
 						>
 							<span
@@ -124,14 +126,16 @@
 							<ArrowRightCircle
 								classes="w-8 h-8 transition-transform duration-500 group-hover:translate-x-[7px]"
 							/>
-						</button>
+						</a>
 					</div>
 				</Animate>
 			</div>
 			<div class="basis-1/2">
-				<Animate variant="fade" duration={1.7}>
-					<img src={photoHero} alt="Портрет Задорожної Інни" class="w-full rounded-3xl h-full object-cover" />
-				</Animate>
+				<img
+					src={photoHero}
+					alt="Портрет Задорожної Інни"
+					class="w-full rounded-3xl h-full object-cover"
+				/>
 			</div>
 		</div>
 	</div>

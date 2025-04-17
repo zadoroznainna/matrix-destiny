@@ -10,6 +10,7 @@
 	import Relations from '$lib/components/icons/zones/Relations.svelte';
 	import Appointment from '$lib/components/icons/zones/Appointment.svelte';
 	import zones from '$lib/images/zones_m.jpeg';
+	import Animate from '$lib/components/Animate.svelte';
 
 	const zoneData = [
 		{
@@ -106,9 +107,11 @@
 
 <section class="py-16 lg:py-20">
 	<div class="px-4 lg:hidden">
-		<h2 class="text-3xl text-slate-700 font-bold uppercase text-center mb-8">
-			Зони в матриці долі
-		</h2>
+		<Animate variant="top" duration={1}>
+			<h2 class="text-3xl text-slate-700 font-bold uppercase text-center mb-8">
+				Зони в матриці долі
+			</h2>
+		</Animate>
 
 		<div class="relative">
 			<div class="flex gap-6 carousel py-10">
@@ -388,11 +391,20 @@
 		<div class="hidden lg:block">
 			<div class="grid grid-cols-3 gap-10">
 				<div class="row-start-1 row-end-3 flex flex-col justify-between">
-					<h2 class="text-slate-700 text-4xl font-bold font-heading tracking-wide uppercase mb-10">
-						Зони в матриці долі
-					</h2>
+					<Animate variant="left" duration={1}>
+						<h2
+							class="text-slate-700 text-4xl font-bold font-heading tracking-wide uppercase mb-10"
+						>
+							Зони в матриці долі
+						</h2>
+					</Animate>
+
 					<div class="flex flex-col gap-9 h-full">
-						<img src={zones} class="rounded-3xl h-full object-cover" alt="Екран телефону з розрахунком матриці долі" />
+						<img
+							src={zones}
+							class="rounded-3xl h-full object-cover"
+							alt="Екран телефону з розрахунком матриці долі"
+						/>
 					</div>
 				</div>
 
@@ -402,11 +414,13 @@
 					>
 						<div class="flex items-center gap-4">
 							<div class="flex items-center justify-center">
-								<div
-									class={`flex rounded-full h-16 w-16 ${item.backgroundClass} items-center justify-center`}
-								>
-									<svelte:component this={item.icon} />
-								</div>
+								<Animate variant="scale" duration={1} delay={(index + 1) * 0.1}>
+									<div
+										class={`flex rounded-full h-16 w-16 ${item.backgroundClass} items-center justify-center`}
+									>
+										<svelte:component this={item.icon} />
+									</div>
+								</Animate>
 							</div>
 							<h3 class="text-slate-700 text-xl font-heading tracking-wider italic font-bold">
 								{item.title}
@@ -420,7 +434,8 @@
 			<div class="flex justify-center mt-14">
 				<button
 					on:click={toggleItems}
-					href="#_"
+					aria-label={showingAll ? 'Приховати список' : 'Показати всі пункти списку'}
+					type="button"
 					class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
 					text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group w-52"
 				>

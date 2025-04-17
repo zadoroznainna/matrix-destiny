@@ -4,6 +4,8 @@
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
 	import ChevronUp from '$lib/components/icons/ChevronUp.svelte';
 
+	import Animate from '$lib/components/Animate.svelte';
+
 	const faqData = [
 		{
 			title: 'Матриця долі це ворожіння?',
@@ -51,11 +53,13 @@
 
 <section class="py-16 lg:py-20">
 	<div class="container mx-auto px-4">
-		<h2
-			class="text-3xl lg:text-4xl font-heading tracking-wide font-bold text-slate-700 text-center uppercase mb-8 lg:mb-10"
-		>
-			Запитання та відповіді
-		</h2>
+		<Animate variant="top" duration={1}>
+			<h2
+				class="text-3xl lg:text-4xl font-heading tracking-wide font-bold text-slate-700 text-center uppercase mb-8 lg:mb-10"
+			>
+				Запитання та відповіді
+			</h2>
+		</Animate>
 		<div
 			class="flex flex-col-reverse xl:flex-row justify-between place-items-center gap-10 xl:gap-14"
 		>
@@ -67,48 +71,53 @@
 				/>
 			</div>
 			<div class="basis-2/3">
-				<div class="mx-auto max-w-7xl">
-					<div class="mx-auto max-w-4xl divide-y divide-slate-700/10">
-						<dl class="space-y-6 divide-y divide-slate-700/10">
-							{#each faqData as faq, index}
-								<div class={index === 0 ? 'pt-0' : 'pt-6'}>
-									<dt>
-										<button
-											type="button"
-											class="flex w-full items-start justify-between text-left text-slate-700"
-											aria-controls="faq-{index}"
-											aria-expanded={activeQuestion === index}
-											on:click={() => toggleQuestion(index)}
-										>
-											<p class="text-base font-semibold leading-7 mb-0">{index + 1}. {faq.title}</p>
-											<span
-												class="ml-6 flex items-center p-1 border border-slate-300 rounded-lg {activeQuestion ===
-												index
-													? 'border-sky-200 text-sky-700'
-													: 'border-slate-300 text-slate-700'}"
+				<Animate variant="right" duration={1} delay={0.4}>
+					<div class="mx-auto max-w-7xl">
+						<div class="mx-auto max-w-4xl divide-y divide-slate-700/10">
+							<dl class="space-y-6 divide-y divide-slate-700/10">
+								{#each faqData as faq, index}
+									<div class={index === 0 ? 'pt-0' : 'pt-6'}>
+										<dt>
+											<button
+												type="button"
+												class="flex w-full items-start justify-between text-left text-slate-700"
+												aria-controls="faq-{index}"
+												aria-expanded={activeQuestion === index}
+												aria-label="Читати відповідь на запитання"
+												on:click={() => toggleQuestion(index)}
 											>
-												<ChevronUp classes={activeQuestion !== index ? 'hidden' : ''} />
-												<ChevronDown classes={activeQuestion === index ? 'hidden' : ''} />
-											</span>
-										</button>
-									</dt>
-									{#if activeQuestion === index}
-										<dd
-											id="faq-{index}"
-											class="mt-2 pr-12"
-											in:slide={{ duration: 300 }}
-											out:slide={{ duration: 300 }}
-										>
-											<p class="text-base leading-7 text-slate-600">
-												{faq.description}
-											</p>
-										</dd>
-									{/if}
-								</div>
-							{/each}
-						</dl>
+												<p class="text-base font-semibold leading-7 mb-0">
+													{index + 1}. {faq.title}
+												</p>
+												<span
+													class="ml-6 flex items-center p-1 border border-slate-300 rounded-lg {activeQuestion ===
+													index
+														? 'border-sky-200 text-sky-700'
+														: 'border-slate-300 text-slate-700'}"
+												>
+													<ChevronUp classes={activeQuestion !== index ? 'hidden' : ''} />
+													<ChevronDown classes={activeQuestion === index ? 'hidden' : ''} />
+												</span>
+											</button>
+										</dt>
+										{#if activeQuestion === index}
+											<dd
+												id="faq-{index}"
+												class="mt-2 pr-12"
+												in:slide={{ duration: 300 }}
+												out:slide={{ duration: 300 }}
+											>
+												<p class="text-base leading-7 text-slate-600">
+													{faq.description}
+												</p>
+											</dd>
+										{/if}
+									</div>
+								{/each}
+							</dl>
+						</div>
 					</div>
-				</div>
+				</Animate>
 			</div>
 		</div>
 	</div>

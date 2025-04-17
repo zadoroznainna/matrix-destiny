@@ -22,6 +22,8 @@
 	import InformationTooltip from '$lib/components/InformationTooltip.svelte';
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
 
+	import Animate from '$lib/components/Animate.svelte';
+
 	export let a = '0';
 	export let a1 = '0';
 	export let a2 = '0';
@@ -1724,11 +1726,14 @@
 		>
 	</svg>
 
-	<h2
-		class="text-3xl lg:text-4xl text-slate-700 font-bold font-heading tracking-wide text-center uppercase mb-8 lg:mb-10"
-	>
-		Розрахунок матриці долі
-	</h2>
+	<Animate variant="top" duration={1}>
+		<h2
+			class="text-3xl lg:text-4xl text-slate-700 font-bold font-heading tracking-wide text-center uppercase mb-8 lg:mb-10"
+		>
+			Розрахунок матриці долі
+		</h2>
+	</Animate>
+
 	<div class="mx-auto px-4 px-xl-8 max-w-7xl">
 		<div class="mb-12">
 			<form on:submit={handleSubmit} class="grid grid-cols-2 lg:grid-cols-4 justify-center gap-4">
@@ -1769,6 +1774,7 @@
 					{/if}
 				</div>
 				<button
+					aria-label="Розрахувати матрицю долі"
 					type="submit"
 					class="mt-2 lg:mt-0 col-span-2 sm:col-span-1 uppercase font-semibold bg-orange-400 border border-transparent trasition-all duration-500
 					 text-slate-50 px-7 py-4 rounded-md hover:bg-white hover:text-orange-400 hover:border
@@ -1776,6 +1782,8 @@
 				>
 				<button
 					on:click={handlePdfDownload}
+					type="button"
+					aria-label="Завантажити PDF"
 					class="peer mt-2 lg:mt-0 col-span-2 sm:col-span-1 uppercase font-semibold border
 						  hover:bg-orange-400 hover:text-slate-50 hover:border-transparent transition-all
 						  px-7 py-4 rounded-md bg-white text-orange-400 border-orange-500
@@ -4863,6 +4871,8 @@
 		<div class="flex justify-center mt-14">
 			<button
 				on:click={toggleContent}
+				aria-label={showContent ? 'Приховати контент' : 'Розгорнути контент'}
+				type="button"
 				class="relative inline-flex items-center justify-center px-7 py-3 overflow-hidden
 				    text-orange-400 rounded-md border border-orange-400 focus:shadow-custom group w-52"
 			>
@@ -4872,7 +4882,6 @@
 				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
 				<span
 					class="relative transition-all duration-300 group-hover:text-white"
-					aria-label={showContent ? 'Скрыть контент' : 'Показать контент'}
 					>{showContent ? 'Приховати' : 'Розгорнути'}</span
 				>
 			</button>
