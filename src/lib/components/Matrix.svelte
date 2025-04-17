@@ -13,8 +13,6 @@
 	import Box from '$lib/components/patterns/Box.svelte';
 	import Whirlpool from '$lib/components/patterns/Whirlpool.svelte';
 	import Loop from '$lib/components/patterns/Loop.svelte';
-	import Star from '$lib/components/patterns/Star.svelte';
-	import Parallel from '$lib/components/patterns/Parallel.svelte';
 
 	import pdfMake, { log } from 'pdfmake/build/pdfmake';
 	import pdfFonts from 'pdfmake/build/vfs_fonts';
@@ -4759,10 +4757,7 @@
 				<!-- Розрахунок призначення -->
 				<div class="grid md:grid-cols-2 gap-10">
 					<!-- Пошук себе -->
-					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute top-0 left-0 -ml-16 -mt-32 rotate-90">
-							<Loop />
-						</div>
+					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
 							Пошук себе
 						</h2>
@@ -4795,10 +4790,7 @@
 					</div>
 
 					<!-- Соціалізація -->
-					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute top-0 right-0 -mr-16 -mt-32 z-0 opacity-50">
-							<Whirlpool />
-						</div>
+					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight z-30">
 							Соціалізація
 						</h2>
@@ -4831,10 +4823,7 @@
 					</div>
 
 					<!-- Духовна грамотність -->
-					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute bottom-0 left-0 -mb-[12rem] -ml-[10rem] z-0 opacity-50">
-							<Box />
-						</div>
+					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
 							Духовна грамотність
 						</h2>
@@ -4848,10 +4837,7 @@
 					</div>
 
 					<!-- Планетарна грамотність -->
-					<div class="relative border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<div class="absolute bottom-0 right-0 -mr-36 -mb-[20rem] rotate-[30deg] z-0 opacity-50">
-							<Sphere />
-						</div>
+					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
 						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
 							Планетарна грамотність
 						</h2>
