@@ -298,8 +298,11 @@
 							>
 								{#each extraTariffData as extraTariff}
 									<div
-										class="w-full flex flex-col lg:flex-row items-center gap-8 ring-1 ring-gray-900/10 p-6 lg:p-8 rounded-3xl"
+										class="relative w-full flex flex-col lg:flex-row items-center gap-8 ring-1 ring-gray-900/10 p-6 lg:p-8 rounded-3xl overflow-hidden"
 									>
+										<div
+											class="z-0 absolute w-96 h-96 right-0 blur-lg top-0 opacity-25 rounded-full bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-[#fff1be] from-28% via-[#ee87cb] via-70% to-[#b060ff]"
+										></div>
 										<div class="lg:min-w-0 lg:flex-1 lg:pr-12">
 											<h3
 												class="leading-6 text-lg font-heading tracking-wider italic font-semibold sm:leading-8 text-slate-700 mb-3"
@@ -310,7 +313,7 @@
 												{extraTariff.description}
 											</p>
 										</div>
-										<div class="flex justify-between items-center w-full lg:w-auto lg:gap-6">
+										<div class="z-10 flex justify-between items-center w-full lg:w-auto lg:gap-6">
 											<p
 												class="text-xl flex-1 lg:flex-initial md:text-2xl font-bold text-slate-700"
 											>
