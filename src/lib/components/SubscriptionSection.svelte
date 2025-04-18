@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="py-16 lg:py-20 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-cyan-300 from-28% via-sky-400 via-70% to-sky-500 bg-opacity-65 rounded-[40px] mx-2 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]"
+	class="py-16 lg:py-20 bg-[linear-gradient(115deg,var(--tw-gradient-stops))] from-sky-300 from-28% via-blue-400 via-70% to-blue-500 bg-opacity-65 rounded-[40px] mx-2 sm:bg-[linear-gradient(145deg,var(--tw-gradient-stops))]"
 >
 	<div class="container mx-auto px-4">
 		<Animate variant="scale" duration={1}>
