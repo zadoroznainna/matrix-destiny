@@ -399,7 +399,7 @@
 		var docDefinition = {
 			pageOrientation: 'landscape',
 			content: [
-				{ text: `${name} (${birthdate}), Ваш вік: ${age}`, alignment: 'center' },
+				{ text: `${name ? name + ', ' : ''} (${birthdate}), Ваш вік: ${age}`, alignment: 'center' },
 				{
 					alignment: 'justify',
 					columns: [
