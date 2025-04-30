@@ -9,11 +9,6 @@
 	import Swadhistana from '$lib/components/icons/chakras/Swadhistana.svelte';
 	import Vishudha from '$lib/components/icons/chakras/Vishudha.svelte';
 
-	import Sphere from '$lib/components/patterns/Sphere.svelte';
-	import Box from '$lib/components/patterns/Box.svelte';
-	import Whirlpool from '$lib/components/patterns/Whirlpool.svelte';
-	import Loop from '$lib/components/patterns/Loop.svelte';
-
 	import pdfMake, { log } from 'pdfmake/build/pdfmake';
 	import pdfFonts from 'pdfmake/build/vfs_fonts';
 
@@ -21,6 +16,7 @@
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
 
 	import Animate from '$lib/components/Animate.svelte';
+	import Flatpickr from './Flatpickr.svelte';
 
 	export let a = '0';
 	export let a1 = '0';
@@ -222,6 +218,7 @@
 		const [year, month, day] = birthdate.split('-');
 
 		age = calculateAge(birthdate);
+		console.log("birthdate", birthdate)
 		calculatedName = name;
 
 		a = calcNumber(Number(day));
@@ -1758,12 +1755,16 @@
 						class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-slate-700"
 						>Дата народження</label
 					>
-					<input
+					<!-- <input
 						type="date"
 						name="date birth"
 						id="date birth"
 						class="block w-full h-full rounded-md border-0 py-4 text-slate-900 ring-1 ring-inset ring-slate-300
 						placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
+						bind:value={birthdate}
+					/> -->
+					<Flatpickr
+						id="date-birth"
 						bind:value={birthdate}
 					/>
 
@@ -4866,8 +4867,7 @@
 					class="absolute w-0 h-0 transition-all duration-300 ease-out bg-orange-400 rounded-full group-hover:w-56 group-hover:h-56"
 				></span>
 				<span class="absolute inset-0 w-full h-full -mt-1 rounded-lg opacity-30"></span>
-				<span
-					class="relative transition-all duration-300 group-hover:text-white"
+				<span class="relative transition-all duration-300 group-hover:text-white"
 					>{showContent ? 'Приховати' : 'Розгорнути'}</span
 				>
 			</button>

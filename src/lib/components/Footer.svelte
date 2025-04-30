@@ -136,7 +136,7 @@
 						<ul role="list" class="mt-5 space-y-4">
 							<li>
 								<a
-									href="/"
+									href="/policy"
 									aria-label="Посилання на політику конфіденційності"
 									class="text-sm leading-6 text-slate-300 transition duration-500 hover:text-slate-50"
 									>Політика конфіденційності</a
