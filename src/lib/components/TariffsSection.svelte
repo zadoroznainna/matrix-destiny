@@ -64,7 +64,7 @@
 			</h2>
 		</Animate>
 		<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-slate-500">
-			Є кілька способів взаємодії, які можна обрати залежно від ваших потреб
+			Пропоную кілька варіантів взаємодії — оберіть той, що найкраще відповідає вашим потребам
 		</p>
 	</div>
 
@@ -289,7 +289,7 @@
 					<div class="p-9 xl:p-16">
 						<Animate variant="top" duration={1}>
 							<h3 class="col-span-3 text-xl text-slate-700 font-bold uppercase text-center mb-6">
-								Ви завжди можете окремо обрати та замовити будь-яку послугу
+								Ви завжди можете обрати та замовити будь-яку послугу окремо
 							</h3>
 						</Animate>
 						<Animate variant="scale" duration={1.5} delay={0.4}>
