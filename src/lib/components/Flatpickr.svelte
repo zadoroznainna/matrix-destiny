@@ -7,11 +7,13 @@
 	export let value = '';
 	const options = {
 		locale: Ukrainian,
-		dateFormat: 'd.m.Y'
+		dateFormat: 'd.m.Y',
+		allowInput: true,
+		maxDate: new Date()
 	};
 	let input;
 	let picker;
-	
+
 	onMount(() => {
 		picker = flatpickr(input, {
 			...options,
@@ -20,12 +22,10 @@
 				value = dateStr;
 			}
 		});
-		console.log('value', value);
 	});
-
 </script>
 
-<input bind:this={input} bind:value placeholder="20.04.1998"/>
+<input name="date" bind:this={input} bind:value placeholder="20.04.1998" />
 
 <style>
 	:global(.flatpickr-input) {
@@ -68,23 +68,23 @@
 	}
 
 	:global(.flatpickr-day.selected) {
-        background: #fb923c;
-        border-color: #fb923c;
+		background: #fb923c;
+		border-color: #fb923c;
 	}
 
-    :global(.flatpickr-day.selected:hover) {
-        background: #94a3b8;
-        border-color: #94a3b8;
-    }
+	:global(.flatpickr-day.selected:hover) {
+		background: #94a3b8;
+		border-color: #94a3b8;
+	}
 
 	:global(.flatpickr-day.today) {
 		border-color: #fdba74;
 	}
 
-    :global(.flatpickr-day:hover) {
-        background-color: #fed7aa;
-        border-color: #fed7aa;
-    }
+	:global(.flatpickr-day:hover) {
+		background-color: #fed7aa;
+		border-color: #fed7aa;
+	}
 
 	:global(.numInputWrapper span.arrowUp) {
 		border-top-right-radius: 4px;
@@ -93,5 +93,4 @@
 	:global(.numInputWrapper span.arrowDown) {
 		border-bottom-right-radius: 4px;
 	}
-
 </style>

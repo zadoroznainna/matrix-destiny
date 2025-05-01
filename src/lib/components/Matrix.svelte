@@ -215,10 +215,10 @@
 			return;
 		}
 
-		const [year, month, day] = birthdate.split('-');
+		const [day, month, year] = birthdate.split('.');
 
 		age = calculateAge(birthdate);
-		console.log("birthdate", birthdate)
+
 		calculatedName = name;
 
 		a = calcNumber(Number(day));
@@ -1755,18 +1755,8 @@
 						class="absolute -top-2 left-2 inline-block bg-white px-1 text-xs font-medium text-slate-700"
 						>Дата народження</label
 					>
-					<!-- <input
-						type="date"
-						name="date birth"
-						id="date birth"
-						class="block w-full h-full rounded-md border-0 py-4 text-slate-900 ring-1 ring-inset ring-slate-300
-						placeholder:text-slate-400 focus:ring-inset focus:ring-orange-300"
-						bind:value={birthdate}
-					/> -->
-					<Flatpickr
-						id="date-birth"
-						bind:value={birthdate}
-					/>
+
+					<Flatpickr id="date-birth" bind:value={birthdate} allowInput={true} />
 
 					{#if errors.birthdate}
 						<p class="absolute text-red-600 text-xs text-light">{errors.birthdate}</p>
