@@ -192,18 +192,17 @@
 		}
 	};
 
-	function calculateAge(birthDate) {
+	function calculateAge(date) {
 		const today = new Date();
-		const birth = new Date(birthDate);
 
-		let age = today.getFullYear() - birth.getFullYear();
-		const monthDifference = today.getMonth() - birth.getMonth();
+		let age = today.getFullYear() - date.getFullYear();
+		const monthDifference = today.getMonth() - date.getMonth();
 
-		if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < birth.getDate())) {
+		if (monthDifference < 0 || (monthDifference === 0 && today.getDate() < date.getDate())) {
 			age--;
 		}
 
-		return age;
+		return age || '0';
 	}
 
 	const handleSubmit = (event) => {
@@ -217,7 +216,9 @@
 
 		const [day, month, year] = birthdate.split('.');
 
-		age = calculateAge(birthdate);
+		const date = new Date(year, month - 1, day);
+
+		age = calculateAge(date);
 
 		calculatedName = name;
 
@@ -406,8 +407,6 @@
 				}
 			]
 		};
-
-		console.log(pdfMake.fonts);
 
 		pdfMake.createPdf(docDefinition).download('matrix.pdf');
 	}
@@ -1756,7 +1755,7 @@
 						>Дата народження</label
 					>
 
-					<Flatpickr id="date-birth" bind:value={birthdate} allowInput={true} />
+					<Flatpickr id="date-birth" bind:value={birthdate} />
 
 					{#if errors.birthdate}
 						<p class="absolute text-red-600 text-xs text-light">{errors.birthdate}</p>
