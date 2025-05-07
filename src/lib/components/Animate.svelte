@@ -1,8 +1,8 @@
 <script>
-	import {viewport} from '$lib/utils/Viewport.js'
-	
+	import { viewport } from '$lib/utils/viewport.js';
+
 	let inView = $state(false);
-	let {variant = 'fade', duration = 1, delay = 0, children} = $props()
+	let { variant = 'fade', duration = 1, delay = 0, children } = $props();
 	function handleEnterViewport() {
 		inView = true;
 	}
@@ -10,17 +10,18 @@
 		inView = false;
 	}
 </script>
-<div 
-	use:viewport 
-	onenterViewport={handleEnterViewport} 
+
+<div
+	use:viewport
+	onenterViewport={handleEnterViewport}
 	onexitViewport={handleExitViewport}
 	style="--duration: {duration}s; --delay: {delay}s"
-	>
+>
 	<div
 		class={inView ? `enter-${variant}` : `exit-${variant}`}
 		class:enter-animation={inView}
 		class:exit-animation={!inView}
-		>
+	>
 		{@render children?.()}
 	</div>
 </div>
@@ -39,18 +40,18 @@
 		pointer-events: none;
 	}
 	.exit-top {
-		transform: translateY(-100px)
+		transform: translateY(-100px);
 	}
 	.exit-bottom {
-		transform: translateY(100px)
+		transform: translateY(100px);
 	}
 	.exit-left {
-		transform: translateX(-200px)
+		transform: translateX(-200px);
 	}
 	.exit-right {
-		transform: translateX(200px)
+		transform: translateX(200px);
 	}
 	.exit-scale {
-		transform: scale(0)
+		transform: scale(0);
 	}
 </style>
