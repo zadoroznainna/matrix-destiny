@@ -71,7 +71,7 @@
 				/>
 			</div>
 			<div class="basis-2/3">
-				<Animate variant="right" duration={1} delay={0.4}>
+				<Animate variant="top" duration={1} delay={0.4}>
 					<div class="mx-auto max-w-7xl">
 						<div class="mx-auto max-w-4xl divide-y divide-slate-700/10">
 							<dl class="space-y-6 divide-y divide-slate-700/10">
