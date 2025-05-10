@@ -25,7 +25,7 @@
 	});
 </script>
 
-<input name="date" bind:this={input} bind:value placeholder="20.04.1998" />
+<input name="date" bind:this={input} bind:value placeholder="20.04.1998" autocomplete="off" />
 
 <style>
 	:global(.flatpickr-input) {
