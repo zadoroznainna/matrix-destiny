@@ -31,7 +31,7 @@
 	<div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 		<div class="xl:grid xl:grid-cols-3 xl:gap-8">
 			<div class="space-y-8">
-				<Animate variant="fade" duration={2.0}>
+				<Animate variant="fade" duration={1.5}>
 					<a href="/" class="-m-1.5 p-1.5" aria-label="Логотип сайту">
 						<span class="sr-only">Інна Задорожна</span>
 						<Logo rectClass="stroke-slate-50" letterClass="fill-slate-50" svgClass="w-28 h-28" />
@@ -68,7 +68,7 @@
 			</div>
 			<div class="mt-16 grid grid-cols-1 sm:grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
 				<div class="md:grid md:grid-cols-1 md:gap-8">
-					<Animate variant="top" duration={1.5} delay={0.4}>
+					<Animate variant="top" duration={1.5} delay={0.2}>
 						<h3 class="text-xl font-semibold leading-6 text-slate-200 mb-5">Контакти</h3>
 						<ul role="list" class="space-y-4 mb-10">
 							<li class="flex gap-4 sm:gap-2 md:gap-5">
@@ -92,8 +92,8 @@
 						</ul>
 						<h3 class="text-xl font-semibold leading-6 text-slate-200 mb-5">Технічна підтримка</h3>
 						<p class="text-sm text-slate-300 mb-5">
-							Залиште своє запитання або зверніться за технічною підтримкою, і ми з радістю вам
-							допоможемо.
+							Залиште своє запитання або зверніться за технічною підтримкою, і я з радістю вам
+							допоможу.
 						</p>
 
 						<a
@@ -107,13 +107,13 @@
 							></span>
 							<span class="absolute inset-0 w-full h-full rounded-lg opacity-30"></span>
 							<span class="relative transition-all duration-300 group-hover:text-orange-400"
-								>Напишіть нам</span
+								>Написати</span
 							>
 						</a>
 					</Animate>
 				</div>
 				<div class="grid grid-cols-2 gap-8">
-					<Animate variant="top" duration={1.5} delay={0.6}>
+					<Animate variant="top" duration={1.5} delay={0.4}>
 						<h3 class="text-base lg:text-lg font-semibold leading-6 text-slate-200">
 							Навігація сайту
 						</h3>
@@ -131,7 +131,7 @@
 							{/each}
 						</ul>
 					</Animate>
-					<Animate variant="top" duration={1.5} delay={0.8}>
+					<Animate variant="top" duration={1.5} delay={0.6}>
 						<h3 class="text-base lg:text-lg font-semibold leading-6 text-slate-200">Інформація</h3>
 						<ul role="list" class="mt-5 space-y-4">
 							<li>

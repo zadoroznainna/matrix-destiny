@@ -4538,7 +4538,7 @@
 		{#if age && showContent}
 			<div transition:slide={{ duration: 600 }}>
 				<!-- Розрахунок карти здоров’я -->
-				<div class="w-full border border-slate-300 py-9 my-10 rounded-3xl">
+				<div class="w-full border border-slate-300 p-9 my-10 rounded-3xl">
 					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
 						Розрахунок карти здоров’я
 					</h2>

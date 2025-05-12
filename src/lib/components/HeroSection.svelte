@@ -111,7 +111,7 @@
 						</li>
 					</Animate>
 				</ul>
-				<Animate variant="top" duration={1} delay={0.5}>
+				<Animate variant="top" duration={1} delay={0.3}>
 					<div class="group w-full lg:w-1/2">
 						<a
 							href="/#services"

@@ -17,7 +17,7 @@
 		</Animate>
 
 		<Animate variant="scale" duration={1} delay={0.4}>
-			<div class="flex flex-col items-center gap-5 px-8 lg:px-14">
+			<div class="flex flex-col items-center gap-5 px-4 lg:px-14">
 				<div class="mb-3">
 					<p class="text-center text-slate-300">
 						<span class="font-semibold">Матриця долі</span> – це інструмент самопізнання, в основі котрого

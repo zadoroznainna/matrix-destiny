@@ -100,7 +100,7 @@
 			<div class="-mt-8 sm:-mx-4 sm:columns-2 sm:text-[0] lg:columns-3">
 				{#each testimonialsData as item, index (item)}
 					<div class="pt-8 sm:inline-block sm:w-full sm:px-4">
-						<Animate variant="scale" duration={1.5} delay={(index + 1) * 0.2}>
+						<Animate variant="scale" duration={1.5} delay={(index + 1) * 0.1}>
 							<figure class="rounded-2xl bg-slate-50 p-8 text-sm leading-6">
 								<blockquote class="text-slate-700">
 									<svg

@@ -82,7 +82,7 @@
 						>
 					</Animate>
 				</div>
-				<Animate variant="fade" duration={1} delay={1.8}>
+				<Animate variant="fade" duration={1} delay={1.4}>
 					<div class="flex items-center gap-4 mt-7 text-slate-700">
 						<a
 							href="https://www.instagram.com/zadoroznainna/"

@@ -52,7 +52,7 @@
 				</p>
 				<div class="flex flex-col space-y-6 xl:pr-16 mt-14">
 					{#each contacts as contact, index (contact)}
-						<Animate variant="top" duration={1.5} delay={(index + 1) * 0.2}>
+						<Animate variant="top" duration={1.5} delay={(index + 1) * 0.1}>
 							<div class="group border border-sky-700 rounded-md px-4">
 								<a
 									href={contact.href}
