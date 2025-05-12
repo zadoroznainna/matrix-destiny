@@ -72,7 +72,7 @@
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
 						<div class="w-full h-auto p-3 lg:p-5 rounded-xl bg-slate-500 bg-opacity-75">
-							<Animate variant="scale" duration={1} delay={0.4}>
+							<Animate variant="scale" duration={1} delay={0.3}>
 								<h3
 									class="flex justify-between items-center text-xl font-semibold font-heading tracking-wider italic text-gray-50 md:mb-5"
 								>
@@ -112,7 +112,7 @@
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
 						<div class="w-full h-auto p-3 lg:p-5 rounded-xl bg-slate-500 bg-opacity-75">
-							<Animate variant="scale" duration={1} delay={0.6}>
+							<Animate variant="scale" duration={1} delay={0.4}>
 								<h3
 									class="flex justify-between items-center text-xl font-semibold font-heading tracking-wider italic text-slate-50 md:mb-5"
 								>

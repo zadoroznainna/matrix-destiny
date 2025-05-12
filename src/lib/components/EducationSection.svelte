@@ -19,7 +19,7 @@
 		<div
 			class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-10 max-w-6xl mx-auto px-8 sm:px-20 md:px-0"
 		>
-			<Animate variant="scale" duration={1.5} delay={0.4}>
+			<Animate variant="scale" duration={1.5} delay={0.2}>
 				<div
 					class="rounded-3xl p-2 shadow-md grayscale hover:grayscale-0 hover:scale-105 duration-300 cursor-pointer"
 				>
@@ -30,7 +30,7 @@
 					/>
 				</div>
 			</Animate>
-			<Animate variant="scale" duration={1.5} delay={0.6}>
+			<Animate variant="scale" duration={1.5} delay={0.4}>
 				<div
 					class="rounded-3xl p-2 shadow-md grayscale hover:grayscale-0 hover:scale-105 duration-300 cursor-pointer"
 				>
@@ -41,7 +41,7 @@
 					/>
 				</div>
 			</Animate>
-			<Animate variant="scale" duration={1.5} delay={0.8}>
+			<Animate variant="scale" duration={1.5} delay={0.6}>
 				<div
 					class="rounded-3xl p-2 shadow-md grayscale hover:grayscale-0 hover:scale-105 duration-300 cursor-pointer"
 				>

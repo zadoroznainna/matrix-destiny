@@ -9,7 +9,8 @@
 		locale: Ukrainian,
 		dateFormat: 'd.m.Y',
 		allowInput: true,
-		maxDate: new Date()
+		maxDate: new Date(),
+		placeholder: '20.04.1998'
 	};
 	let input;
 	let picker;
@@ -22,10 +23,12 @@
 				value = dateStr;
 			}
 		});
+		input.setAttribute('placeholder', '20.04.1998');
 	});
+
 </script>
 
-<input name="date" bind:this={input} bind:value placeholder="20.04.1998" autocomplete="off" />
+<input name="date" bind:this={input} bind:value autocomplete="off" />
 
 <style>
 	:global(.flatpickr-input) {
