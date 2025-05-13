@@ -10,7 +10,7 @@
 		dateFormat: 'd.m.Y',
 		allowInput: true,
 		maxDate: new Date(),
-		placeholder: '20.04.1998'
+		disableMobile: 'true'
 	};
 	let input;
 	let picker;
@@ -25,7 +25,6 @@
 		});
 		input.setAttribute('placeholder', '20.04.1998');
 	});
-
 </script>
 
 <input name="date" bind:this={input} bind:value autocomplete="off" />
