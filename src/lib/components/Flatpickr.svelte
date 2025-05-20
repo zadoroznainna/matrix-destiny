@@ -9,7 +9,6 @@
 		locale: Ukrainian,
 		dateFormat: 'd.m.Y',
 		allowInput: true,
-		maxDate: new Date(),
 		disableMobile: 'true'
 	};
 	let input;
