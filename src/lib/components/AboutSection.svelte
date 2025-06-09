@@ -1,5 +1,5 @@
 <script>
-	import photoAbout from '$lib/images/photoAbout.jpeg';
+	import photoAbout from '$lib/images/photoAbout.jpg';
 	import Instagram from '$lib/components/icons/social/Instagram.svelte';
 	import Telegram from '$lib/components/icons/social/Telegram.svelte';
 	import Gmail from '$lib/components/icons/social/Gmail.svelte';

@@ -1,6 +1,6 @@
 <script>
 	import { slide } from 'svelte/transition';
-	import photoFaq from '$lib/images/photoFaq.jpeg';
+	import photoFaq from '$lib/images/photoFaq.jpg';
 	import ChevronDown from '$lib/components/icons/ChevronDown.svelte';
 	import ChevronUp from '$lib/components/icons/ChevronUp.svelte';
 

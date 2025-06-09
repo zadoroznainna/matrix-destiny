@@ -1,6 +1,6 @@
 <script>
 	import { scrollToSection } from '$lib/utils/scroll.js';
-	import photoHero from '$lib/images/photoHero.jpeg';
+	import photoHero from '$lib/images/photoHero.jpg';
 	import ArrowRightCircle from '$lib/components/icons/ArrowRightCircle.svelte';
 
 	import Animate from '$lib/components/Animate.svelte';
