@@ -30,6 +30,8 @@
 						class="transform transition-transform duration-500 ease-in-out group-hover:scale-110 object-cover object-center h-full w-full"
 						src={serviceStud}
 						alt="Послуга цвяхостояння"
+						width="496"
+						height="744"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
 						<div class="w-full p-3 h-auto lg:p-5 rounded-xl bg-slate-500 bg-opacity-75">
@@ -69,6 +71,8 @@
 						class="transform transition-transform duration-500 ease-in-out group-hover:scale-110 object-cover object-center h-full w-full"
 						src={serviceMatrix}
 						alt="Послуга розбору матриці долі"
+						width="496"
+						height="744"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
 						<div class="w-full h-auto p-3 lg:p-5 rounded-xl bg-slate-500 bg-opacity-75">
@@ -109,6 +113,8 @@
 						class="transform transition-transform duration-500 ease-in-out group-hover:scale-110 object-cover object-center h-full w-full"
 						src={serviceProgosis}
 						alt="Послуга прогностики"
+						width="496"
+						height="744"
 					/>
 					<div class="absolute bottom-0 inset-0 flex justify-center items-end p-6">
 						<div class="w-full h-auto p-3 lg:p-5 rounded-xl bg-slate-500 bg-opacity-75">

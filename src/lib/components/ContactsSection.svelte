@@ -85,6 +85,8 @@
 					src={photoContacts}
 					alt="Зображення Зодорожної Інни у блоці контактів"
 					class="w-full rounded-3xl h-full object-cover object-top"
+					width="596"
+					height="820"
 				/>
 			</div>
 		</div>

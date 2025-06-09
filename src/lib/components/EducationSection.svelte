@@ -27,6 +27,8 @@
 						src={educationFirst}
 						alt="Зображення сертифікату про навчання - чакри в матриці"
 						class="w-full rounded-3xl h-full object-cover"
+						width="341"
+						height="241"
 					/>
 				</div>
 			</Animate>
@@ -38,6 +40,8 @@
 						src={educationSecond}
 						alt="Зображення сертифікату про навчання - матриця долі"
 						class="w-full rounded-3xl h-full object-cover"
+						width="341"
+						height="241"
 					/>
 				</div>
 			</Animate>
@@ -49,6 +53,8 @@
 						src={educationThird}
 						alt="Зображення сертифікату про навчання- цвяхостояння"
 						class="w-full rounded-3xl h-full object-cover"
+						width="341"
+						height="241"
 					/>
 				</div>
 			</Animate>

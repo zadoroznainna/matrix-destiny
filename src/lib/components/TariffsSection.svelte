@@ -14,20 +14,24 @@
 	];
 
 	const secondTariffsData = [
-		'Детальний аналіз усіх зон матриці долі',
-		'20+ сторінок, PDF файл з розбором та практичними рекомендаціями',
+		'Аналіз усіх зон матриці долі (детальний)',
+		'20+ сторінок, PDF файл з розбором',
 		'Голосові повідомлення',
-		'1-1,5 години, відео-консультація зі мною у Zoom',
 		'14 днів, моя підтримка та супровід',
-		'Короткий прогноз на майбутнє'
+		'1-1,5 години, відео-консультація зі мною у Zoom',
+		'Короткий прогноз на майбутнє',
+		'Практичні рекомендації'
 	];
 
 	const thirdTariffsData = [
-		'Поглиблений розбір усіх зон матриці долі',
-		'30+ сторінок, PDF файл з розбором, практичними рекомендаціями, а також техніки та медитації',
-		'2-2,5 години, відео-консультація зі мною у Zoom',
+		'Аналіз усіх зон матриці долі (поглиблений)',
+		'30+ сторінок, PDF файл з розбором',
+		'Голосові повідомлення',
 		'1 місяць, моя підтримка та супровід',
+		'2-2,5 години, відео-консультація зі мною у Zoom',
 		'Короткий прогноз на майбутнє',
+		'Практичні рекомендації',
+		'Додаткові техніки та медитації',
 		'Детально розберемо 2 зони на ваш вибір'
 	];
 
@@ -56,16 +60,18 @@
 
 <section class="py-16 lg:py-20" id="tariff">
 	<div class="relative z-10">
-		<Animate variant="top" duration={1}>
-			<h2
-				class="mx-auto max-w-4xl text-center text-3xl lg:text-4xl uppercase font-bold font-heading tracking-wide text-slate-700 mb-8 lg:mb-10"
-			>
-				Формати роботи і вартість
-			</h2>
-		</Animate>
-		<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-slate-500">
-			Пропоную кілька варіантів взаємодії — оберіть той, що найкраще відповідає вашим потребам
-		</p>
+		<div class="mx-auto px-4 px-xl-8 max-w-7xl">
+			<Animate variant="top" duration={1}>
+				<h2
+					class="mx-auto max-w-4xl text-center text-3xl lg:text-4xl uppercase font-bold font-heading tracking-wide text-slate-700 mb-8 lg:mb-10"
+				>
+					Формати роботи і вартість
+				</h2>
+			</Animate>
+			<p class="mx-auto mt-4 max-w-2xl text-center text-lg leading-8 text-slate-500">
+				Пропоную кілька варіантів взаємодії — оберіть той, що найкраще відповідає вашим потребам
+			</p>
+		</div>
 	</div>
 
 	<div class="relative py-20 xl:py-24">
@@ -125,16 +131,21 @@
 											{/each}
 											<li class="flex gap-x-3 text-slate-300 py-2">
 												<div class="text-slate-300"><Check /></div>
+												Відео-консультація зі мною у Zoom
+											</li>
+											<li class="flex gap-x-3 text-slate-300 py-2">
+												<div class="text-slate-300"><Check /></div>
+												Короткий прогноз на майбутнє
+											</li>
+											<li class="flex gap-x-3 text-slate-300 py-2">
+												<div class="text-slate-300"><Check /></div>
 												Практичні рекомендації
 											</li>
 											<li class="flex gap-x-3 text-slate-300 py-2">
 												<div class="text-slate-300"><Check /></div>
 												Додаткові техніки та медитації
 											</li>
-											<li class="flex gap-x-3 text-slate-300 py-2">
-												<div class="text-slate-300"><Check /></div>
-												Короткий прогноз на майбутнє
-											</li>
+
 											<li class="flex gap-x-3 text-slate-300 py-2">
 												<div class="text-slate-300"><Check /></div>
 												Детально розберемо 2 зони на ваш вибір
