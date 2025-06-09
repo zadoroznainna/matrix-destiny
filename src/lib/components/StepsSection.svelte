@@ -1,6 +1,6 @@
 <script>
 	import { scrollToSection } from '$lib/utils/scroll.js';
-	import photoSteps from '$lib/images/steps.jpeg';
+	import photoSteps from '$lib/images/steps.jpg';
 
 	import Animate from '$lib/components/Animate.svelte';
 

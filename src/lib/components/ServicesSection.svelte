@@ -1,8 +1,8 @@
 <script>
 	import { scrollToSection } from '$lib/utils/scroll.js';
-	import serviceStud from '$lib/images/service_stud.jpeg';
-	import serviceMatrix from '$lib/images/service_matrix.jpeg';
-	import serviceProgosis from '$lib/images/service_prognosis.jpeg';
+	import serviceStud from '$lib/images/service_stud.jpg';
+	import serviceMatrix from '$lib/images/service_matrix.jpg';
+	import serviceProgosis from '$lib/images/service_prognosis.jpg';
 	import ArrowRightCircle from '$lib/components/icons/ArrowRightCircle.svelte';
 
 	import Animate from '$lib/components/Animate.svelte';

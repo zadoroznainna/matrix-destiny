@@ -8,6 +8,7 @@
 	import Sahasrara from '$lib/components/icons/chakras/Sahasrara.svelte';
 	import Swadhistana from '$lib/components/icons/chakras/Swadhistana.svelte';
 	import Vishudha from '$lib/components/icons/chakras/Vishudha.svelte';
+	import Logo from '$lib/components/Logo.svelte';
 
 	import pdfMake, { log } from 'pdfmake/build/pdfmake';
 	import pdfFonts from 'pdfmake/build/vfs_fonts';
@@ -397,6 +398,7 @@
 	function handlePdfDownload() {
 		var docDefinition = {
 			pageOrientation: 'landscape',
+			watermark: { text: 'zadorozhnainna.com', fontSize: 90, color: "#e2e8f0" },
 			content: [
 				{ text: `${name ? name + ', ' : ''} (${birthdate}), Ваш вік: ${age}`, alignment: 'center' },
 				{

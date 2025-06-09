@@ -9,7 +9,7 @@
 	import ChildParent from '$lib/components/icons/zones/ChildParent.svelte';
 	import Relations from '$lib/components/icons/zones/Relations.svelte';
 	import Appointment from '$lib/components/icons/zones/Appointment.svelte';
-	import zones from '$lib/images/zones_m.jpeg';
+	import zones from '$lib/images/zones_m.jpg';
 	import Animate from '$lib/components/Animate.svelte';
 
 	const zoneData = [
