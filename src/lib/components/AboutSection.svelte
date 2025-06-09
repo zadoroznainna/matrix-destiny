@@ -19,7 +19,13 @@
 	<div class="mx-auto px-4 sm:px-8 max-w-7xl">
 		<div class="flex flex-col justify-between place-items-center gap-10 xl:gap-14 lg:flex-row">
 			<div class="basis-1/2 shrink-0">
-				<img src={photoAbout} alt="Зображення Задорожної Інни" class="rounded-3xl w-full" />
+				<img
+					src={photoAbout}
+					alt="Зображення Задорожної Інни"
+					class="rounded-3xl w-full"
+					width="608"
+					height="590"
+				/>
 			</div>
 			<div class="basis-1/2">
 				<Animate variant="top" duration={1}>

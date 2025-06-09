@@ -85,25 +85,27 @@
 						</h3>
 						<ul class="space-y-2">
 							{#each informationData as data, index (data)}
-								<Animate variant="top" duration={1} delay={(index + 1) * 0.3}>
-									<li class="flex items-center bg-slate-100 p-2 rounded-full">
-										<div class="p-2 bg-slate-200 rounded-full mr-3">
-											<svg
-												xmlns="http://www.w3.org/2000/svg"
-												viewBox="0 0 20 20"
-												fill="currentColor"
-												class="w-5 h-5 text-slate-400"
-											>
-												<path
-													fill-rule="evenodd"
-													d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
-													clip-rule="evenodd"
-												/>
-											</svg>
+								<li>
+									<Animate variant="top" duration={1} delay={(index + 1) * 0.3}>
+										<div class="flex items-center bg-slate-100 p-2 rounded-full">
+											<div class="p-2 bg-slate-200 rounded-full mr-3">
+												<svg
+													xmlns="http://www.w3.org/2000/svg"
+													viewBox="0 0 20 20"
+													fill="currentColor"
+													class="w-5 h-5 text-slate-400"
+												>
+													<path
+														fill-rule="evenodd"
+														d="M16.403 12.652a3 3 0 0 0 0-5.304 3 3 0 0 0-3.75-3.751 3 3 0 0 0-5.305 0 3 3 0 0 0-3.751 3.75 3 3 0 0 0 0 5.305 3 3 0 0 0 3.75 3.751 3 3 0 0 0 5.305 0 3 3 0 0 0 3.751-3.75Zm-2.546-4.46a.75.75 0 0 0-1.214-.883l-3.483 4.79-1.88-1.88a.75.75 0 1 0-1.06 1.061l2.5 2.5a.75.75 0 0 0 1.137-.089l4-5.5Z"
+														clip-rule="evenodd"
+													/>
+												</svg>
+											</div>
+											<p class="text-slate-600">{data}</p>
 										</div>
-										<p class="text-slate-600">{data}</p>
-									</li>
-								</Animate>
+									</Animate>
+								</li>
 							{/each}
 						</ul>
 					</div>
@@ -112,6 +114,8 @@
 							src={photoSteps}
 							class="rounded-3xl object-cover w-full h-full"
 							alt="Зображення матриці долі на екрані ноутбука"
+							width="724"
+							height="621"
 						/>
 					</div>
 				</div>
@@ -132,7 +136,7 @@
 				<span class="relative transition-all duration-300 group-hover:text-white"
 					>Дізнатися більше</span
 				>
-		</a>
+			</a>
 		</div>
 	</div>
 </section>

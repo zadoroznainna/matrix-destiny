@@ -208,6 +208,7 @@
 	const handleSubmit = (event) => {
 		event.preventDefault();
 
+		console.log('Розрахунок!');
 		if (birthdate === '') {
 			errors = { birthdate: 'Будь ласка оберіть вашу дату народження' };
 
@@ -1764,7 +1765,7 @@
 				<button
 					aria-label="Розрахувати матрицю долі"
 					type="submit"
-					class="mt-2 lg:mt-0 col-span-2 sm:col-span-1 uppercase font-semibold bg-orange-400 border border-transparent trasition-all duration-500
+					class="mt-2 lg:mt-0 col-span-2 sm:col-span-1 uppercase font-semibold bg-orange-400 border border-transparent transition-all duration-500
 					 text-slate-50 px-7 py-4 rounded-md hover:bg-white hover:text-orange-400 hover:border
 					 hover:border-orange-400 focus:shadow-custom">Розрахувати</button
 				>
@@ -4538,8 +4539,8 @@
 		{#if age && showContent}
 			<div transition:slide={{ duration: 600 }}>
 				<!-- Розрахунок карти здоров’я -->
-				<div class="w-full border border-slate-300 p-9 my-10 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
+				<div class="w-full border border-slate-300 p-6 md:p-9 my-10 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-3xl lg:text-4xl font-bold tracking-tight">
 						Розрахунок карти здоров’я
 					</h2>
 					<div class="mt-16 flex flex-col">
@@ -4670,13 +4671,15 @@
 				</div>
 
 				<!-- Розрахунок родових програм -->
-				<div class="w-full border border-slate-300 p-9 my-10 rounded-3xl">
-					<h2 class="mx-auto max-w-4xl text-center text-5xl font-bold tracking-tight">
+				<div class="w-full border border-slate-300 p-6 md:p-9 my-10 rounded-3xl">
+					<h2 class="mx-auto max-w-4xl text-center text-3xl lg:text-4xl font-bold tracking-tight">
 						Розрахунок родових програм
 					</h2>
-					<div class="mt-16 flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
-						<p class="text-sm md:text-base md:w-2/3">Родові програми по чоловічій лінії</p>
-						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+					<div class="mt-14 flex flex-col space-y-3 justify-between items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base text-center md:text-left">
+							Родові програми по чоловічій лінії
+						</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10">
 							<li
 								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 							>
@@ -4694,9 +4697,11 @@
 							</li>
 						</ul>
 					</div>
-					<div class="flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
-						<p class="text-sm md:text-base md:w-2/3">Родові програми по жіночій лінії</p>
-						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+					<div class="flex flex-col space-y-3 justify-between items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base text-center md:text-left">
+							Родові програми по жіночій лінії
+						</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10">
 							<li
 								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 							>
@@ -4714,9 +4719,9 @@
 							</li>
 						</ul>
 					</div>
-					<div class="flex flex-col space-y-3 justify-center items-center mb-3 md:flex-row">
-						<p class="text-sm md:text-base md:w-2/3">Код внутрішньої сили</p>
-						<ul class="flex justify-start items-center gap-4 md:gap-10 md:w-1/3">
+					<div class="flex flex-col space-y-3 justify-between items-center mb-3 md:flex-row">
+						<p class="text-sm md:text-base text-center md:text-left">Код внутрішньої сили</p>
+						<ul class="flex justify-start items-center gap-4 md:gap-10">
 							<li
 								class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 							>
@@ -4734,8 +4739,8 @@
 							</li>
 						</ul>
 					</div>
-					<div class="flex flex-col space-y-3 justify-start items-center md:flex-row">
-						<p class="text-sm md:text-base md:w-2/3">Сила роду</p>
+					<div class="flex flex-col space-y-3 justify-between items-center md:flex-row">
+						<p class="text-sm md:text-base text-center md:text-left">Сила роду</p>
 						<div
 							class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 						>
@@ -4747,14 +4752,16 @@
 				<!-- Розрахунок призначення -->
 				<div class="grid md:grid-cols-2 gap-10">
 					<!-- Пошук себе -->
-					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+					<div class="border border-slate-300 p-6 md:p-9 rounded-3xl overflow-hidden">
+						<h2 class="mx-auto max-w-4xl text-center text-2xl lg:text-3xl font-bold tracking-tight">
 							Пошук себе
 						</h2>
-						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+						<div
+							class="mt-14 flex items-center justify-around gap-3 text-lg w-full md:w-10/12 mx-auto"
+						>
 							<div class="w-6/12">
 								<div class="flex items-center justify-between mb-4">
-									<p>Лінія Неба:</p>
+									<p class="mr-3">Лінія Неба:</p>
 									<div
 										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 									>
@@ -4762,7 +4769,7 @@
 									</div>
 								</div>
 								<div class="flex items-center justify-between">
-									<p>Лінія Землі:</p>
+									<p class="mr-3">Лінія Землі:</p>
 									<div
 										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 									>
@@ -4780,14 +4787,18 @@
 					</div>
 
 					<!-- Соціалізація -->
-					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight z-30">
+					<div class="border border-slate-300 p-6 md:p-9 rounded-3xl overflow-hidden">
+						<h2
+							class="mx-auto max-w-4xl text-center text-2xl lg:text-3xl font-bold tracking-tight z-30"
+						>
 							Соціалізація
 						</h2>
-						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
+						<div
+							class="mt-14 flex items-center justify-around gap-3 text-lg w-full md:w-10/12 mx-auto"
+						>
 							<div class="w-6/12">
 								<div class="flex items-center justify-between mb-4">
-									<p>Чол:</p>
+									<p class="mr-3">Чол:</p>
 									<div
 										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 									>
@@ -4795,7 +4806,7 @@
 									</div>
 								</div>
 								<div class="flex items-center justify-between">
-									<p>Жін:</p>
+									<p class="mr-3">Жін:</p>
 									<div
 										class="shrink-0 bg-white border border-slate-300 p-2 w-14 h-14 flex justify-center items-center rounded-full"
 									>
@@ -4813,8 +4824,8 @@
 					</div>
 
 					<!-- Духовна грамотність -->
-					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+					<div class="border border-slate-300 p-6 md:p-9 rounded-3xl overflow-hidden">
+						<h2 class="mx-auto max-w-4xl text-center text-2xl lg:text-3xl font-bold tracking-tight">
 							Духовна грамотність
 						</h2>
 						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">
@@ -4827,8 +4838,8 @@
 					</div>
 
 					<!-- Планетарна грамотність -->
-					<div class="border border-slate-300 p-9 rounded-3xl overflow-hidden">
-						<h2 class="mx-auto max-w-4xl text-center text-2xl font-bold tracking-tight">
+					<div class="border border-slate-300 p-6 md:p-9 rounded-3xl overflow-hidden">
+						<h2 class="mx-auto max-w-4xl text-center text-2xl lg:text-3xl font-bold tracking-tight">
 							Планетарна грамотність
 						</h2>
 						<div class="mt-14 flex items-center justify-around text-lg w-10/12 mx-auto">

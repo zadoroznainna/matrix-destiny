@@ -404,6 +404,8 @@
 							src={zones}
 							class="rounded-3xl h-full object-cover"
 							alt="Екран телефону з розрахунком матриці долі"
+							width="475"
+							height="600"
 						/>
 					</div>
 				</div>

@@ -49,7 +49,7 @@
 							classes={`w-10 h-10 lg:w-16 lg:h-16 text-blue-500 ${item.iconColor}`}
 						/>
 					</div>
-					<h3
+					<h2
 						class={`text-6xl lg:text-8xl bg-gradient-to-r inline-block text-transparent bg-clip-text ${item.gradient}`}
 					>
 						<Countup
@@ -61,7 +61,7 @@
 							format={true}
 						/>
 						<span>{item.sign}</span>
-					</h3>
+					</h2>
 					<p class="mt-4 uppercase text-center text-slate-700">{item.name}</p>
 				</li>
 			{/each}

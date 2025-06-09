@@ -68,6 +68,8 @@
 					src={photoFaq}
 					alt="Фотографія Задорожної Інни, яка надає консультації"
 					class="rounded-3xl w-full h-full object-cover object-top"
+					width="483"
+					height="678"
 				/>
 			</div>
 			<div class="basis-2/3">
